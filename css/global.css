@@ -2,4 +2,65 @@
   width: 1190px;
   margin: 0 auto;
   margin-bottom: 30px;
+  zoom: 1;
+}
+
+.row:after {
+  content: "";
+  clear: both;
+}
+
+.header {
+  height: 112px;
+}
+
+.logo {
+  margin-top: 17px;
+  width: 207px;
+  height: 87px;
+  background: url(/images/logo.png);
+  float: left;
+}
+
+.search {
+  width: 412px;
+  height: 36px;
+  background: #ff8800;
+  padding: 2px;
+  float: left;
+  margin-top: 47px;
+  margin-left: 59px;
+}
+
+.search-wrapper {
+  width: 331px;
+  height: 36px;
+  background-color: #ffffff;
+  float: left;
+}
+
+.search-icon {
+  float: left;
+  width: 12px;
+  height: 12px;
+  margin-top: 12px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-image: url(/images/search-icon.png);
+}
+
+.search-input {
+  border: none;
+  margin-top: 9px;
+  width: 297px;
+  outline: none;
+}
+
+.search-button {
+  float: left;
+  width: 61px;
+  height: 26px;
+  padding-top: 10px;
+  padding-left: 20px;
+  cursor: pointer;
 }
