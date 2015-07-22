@@ -184,4 +184,49 @@ body {
 
 .gallery {
   height: 430px;
+  margin-bottom: 30px;
+}
+
+.recommend {
+  float: left;
+  height: 356px;
+}
+
+.recommend.left {
+  width: 219px;
+  margin-right: 7px;
+  background-color: #fdd400;
+}
+
+.recommend-left-title {
+  height: 43px;
+  line-height: 43px;
+  padding-top: 10px;
+  padding-left: 10px;
+  font-size: 25px;
+  color: #e13f4f;
+}
+
+.recommend-left-list-item {
+  height: 66px;
+  padding: 5px 15px;
+  line-height: 20px;
+  font-size: 12px;
+  overflow: hidden;
+}
+
+.recommend-left-list-item:hover {
+  color: #ffffff;
+  background-color: #efad08;
+}
+
+.recommend.middle {
+  width: 700px;
+  background-color: green;
+}
+
+.recommend.right {
+  width: 255px;
+  float: right;
+  background-color: blue;
 }
