@@ -77,13 +77,17 @@ body {
 
 .search-button {
   float: left;
-  width: 61px;
-  height: 26px;
-  padding-top: 6px;
-  padding-left: 20px;
+  width: 81px;
+  height: 36px;
   cursor: pointer;
-  color: #ffffff;
   font-size: 18px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.search-button a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .nav {
@@ -100,7 +104,7 @@ body {
   height: 493px;
   background-color: #1b73d0;
   color: #ffffff;
-  position: relative;
+  position: absolute;
 }
 
 .classification-title {
@@ -156,6 +160,28 @@ body {
   font-size: 12px;
 }
 
+.nav-list {
+  margin-left: 190px;
+}
+
+.nav-list-item {
+  float: left;
+  color: #ffffff;
+  line-height: 63px;
+  padding: 0 25px;
+}
+
+.nav-list-item a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav-list-item-saparator {
+  float: left;
+  color: #409cfc;
+  line-height: 63px;
+}
+
 .gallery {
-  height: 431px;
+  height: 430px;
 }
