@@ -1,5 +1,6 @@
 body {
   background-color: #ffffff;
+  font-family: "Microsoft YaHei";
 }
 
 .clear-fix {
@@ -71,16 +72,18 @@ body {
   margin-top: 9px;
   width: 297px;
   outline: none;
+  font-size: 12px;
 }
 
 .search-button {
   float: left;
   width: 61px;
   height: 26px;
-  padding-top: 10px;
+  padding-top: 6px;
   padding-left: 20px;
   cursor: pointer;
   color: #ffffff;
+  font-size: 18px;
 }
 
 .nav {
@@ -97,6 +100,7 @@ body {
   height: 493px;
   background-color: #1b73d0;
   color: #ffffff;
+  position: relative;
 }
 
 .classification-title {
