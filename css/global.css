@@ -68,11 +68,12 @@ body {
 }
 
 .search-input {
-  border: none;
+  border: 0;
   margin-top: 9px;
-  width: 297px;
+  width: 290px;
   outline: none;
   font-size: 12px;
+  background-color: #ffffff;
 }
 
 .search-button {
@@ -97,6 +98,7 @@ body {
 
 .nav-bar {
   margin-bottom: 0;
+  position: relative;
 }
 
 .classification {
