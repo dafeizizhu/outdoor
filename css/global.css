@@ -193,18 +193,18 @@ body {
   width: 926px;
 }
 
-.recommend-item {
+.recommend-routes, .recommend-content {
   float: left;
   height: 358px;
 }
 
-.recommend-item.left {
+.recommend-routes {
   width: 219px;
   margin-right: 7px;
   background-color: #fdd400;
 }
 
-.recommend-left-title {
+.recommend-routes-title {
   height: 43px;
   line-height: 43px;
   padding-top: 10px;
@@ -213,7 +213,7 @@ body {
   color: #e13f4f;
 }
 
-.recommend-left-list-item {
+.recommend-routes-list-item {
   height: 66px;
   padding: 5px 15px;
   line-height: 20px;
@@ -221,16 +221,21 @@ body {
   overflow: hidden;
 }
 
-.recommend-left-list-item:hover {
+.recommend-routes-list-item:hover {
   color: #ffffff;
   background-color: #efad08;
 }
 
-.recommend-item.middle {
-  width: 481px;
+.recommend-content {
+  width: 700px;
 }
 
-.recommend-middle-top {
+.recommend-content-left {
+  width: 481px;
+  float: left;
+}
+
+.recommend-content-left-top {
   background-color: #efad08;
   color: #ffffff;
   line-height: 22px;
@@ -239,44 +244,43 @@ body {
   height: 163px;
 }
 
-.recommend-middle-top p {
+.recommend-content-left-top p {
   margin: 0;
 }
 
-.recommend-middle-top .price {
+.recommend-content-left-top .price {
   line-height: 54px;
   font-size: 25px;
 }
 
-.recommend-middle-top .currency {
+.recommend-content-left-top .currency {
   color: #f8134e;
   font-size: 14px;
 }
 
-.recommend-middle-top .number {
+.recommend-content-left-top .number {
   color: #f8134e;
   font-family: "Impact";
   font-size: 35px;
 }
 
-.recommend-middle-bottom {
+.recommend-content-left-bottom {
   margin-top: 10px;
 }
 
-.recommend-middle-bottom-left {
+.recommend-content-left-bottom-left {
   width: 238px;
   height: 165px;
   float: left;
 }
 
-.recommend-middle-bottom-right {
+.recommend-content-left-bottom-right {
   width: 238px;
   height: 165px;
   float: right;
 }
 
-.recommend-item.right {
+.recommend-content-right {
   width: 214px;
   float: right;
-  background-color: blue;
 }
