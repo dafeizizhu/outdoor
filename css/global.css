@@ -94,6 +94,7 @@ body {
 .nav {
   height: 63px;
   background-color: #05498a;
+  min-width: 1190px;
 }
 
 .nav-bar {
@@ -191,6 +192,7 @@ body {
 
 .recommend {
   width: 926px;
+  float: left;
 }
 
 .recommend-routes, .recommend-content {
@@ -283,4 +285,100 @@ body {
 .recommend-content-right {
   width: 214px;
   float: right;
+}
+
+.about {
+  width: 255px;
+  height: 358px;
+  float: right;
+}
+
+.about-item {
+  height: 67px;
+  margin-bottom: 10px;
+  padding-left: 77px;
+  background-repeat: no-repeat;
+}
+
+.about-item.us {
+  background-image: url(/images/about-item-icon-us.png);
+}
+
+.about-item.cost {
+  background-image: url(/images/about-item-icon-cost.png);
+}
+
+.about-item.contact {
+  background-image: url(/images/about-item-icon-contact.png);
+}
+
+.about-item-title {
+  line-height: 42px;
+}
+
+.about-item-title .zh-cn {
+  font-family: "Microsoft YaHei";
+  font-size: 18px;
+  color: #ffa600;
+}
+
+.about-item-title .en-us {
+  font-family: "Arial";
+  font-size: 8px;
+  color: #a4a4a4;
+}
+
+.about-item-content {
+  font-family: "Microsoft YaHei";
+  font-size: 12px;
+  color: #666666;
+}
+
+.about-contact-info-wechat {
+  float: left;
+  width: 90px;
+  height: 127px;
+}
+
+.about-contact-info-wechat-title {
+  font-size: 14px;
+  line-height: 36px;
+  color: #a4a4a4;
+}
+
+.about-contact-info-wechat-qrcode {
+  width: 90px;
+  height: 90px;
+}
+
+.about-contact-info-tel {
+  float: left;
+  width: 160px;
+  height: 89px;
+}
+
+.about-contact-info-tel img {
+  margin-top: 27px;
+}
+
+.about-contact-info-weibo {
+  float: left;
+  font-size: 14px;
+  color: #a4a4a4;
+  padding-left: 21px;
+  background-repeat: no-repeat;
+  background-image: url(/images/about-contact-weibo-icon.png);
+  margin-left: 5px;
+  margin-top: 17px;
+}
+
+.about-contact-info-tweibo {
+  float: left;
+  font-size: 14px;
+  color: #a4a4a4;
+  padding-left: 21px;
+  background-repeat: no-repeat;
+  background-image: url(/images/about-contact-tweibo-icon.png);
+  margin-left: 5px;
+  margin-top: 17px;
 }
