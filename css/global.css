@@ -370,6 +370,7 @@ body {
   background-image: url(/images/about-contact-weibo-icon.png);
   margin-left: 5px;
   margin-top: 17px;
+  line-height: 19px;
 }
 
 .about-contact-info-tweibo {
@@ -381,6 +382,7 @@ body {
   background-image: url(/images/about-contact-tweibo-icon.png);
   margin-left: 5px;
   margin-top: 17px;
+  line-height: 19px;
 }
 
 .catalog {
@@ -441,12 +443,12 @@ body {
 
 .catalog-contents-item-list {
   float: left;
-  width: 693px;
-  height: 417px;
+  width: 694px;
+  height: 418px;
   padding-left: 21px;
   padding-top: 12px;
-  border-right: 2px solid #e5e5e5;
-  border-bottom: 2px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .catalog-contents-item-list-item {
@@ -460,7 +462,7 @@ body {
 .catalog-contents-item-list-item-thumb {
   width: 206px;
   height: 125px;
-  background-color: red;
+  background-color: gray;
 }
 
 .catalog-contents-item-list-item-title {
@@ -481,4 +483,108 @@ body {
   font-size: 15px;
   line-height: 25px;
   color: #ff383a;
+}
+
+.right-side {
+  float: right;
+  width: 255px;
+}
+
+.services {
+  margin-top: 42px;
+}
+
+.services-satisfaction {
+  height: 61px;
+  padding-top: 5px;
+  padding-left: 9px;
+  margin-bottom: 12px;
+}
+
+.services-satisfaction-icon {
+  float: left;
+  width: 59px;
+  height: 55px;
+  background-color: #ff8800;
+  color: #ffffff;
+  text-align: center;
+}
+
+.services-satisfaction-icon-title {
+  font-size: 12px;
+  line-height: 25px;
+}
+
+.services-satisfaction-icon-number {
+  font-family: "Impact";
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.services-satisfaction-contents {
+  float: left;
+  padding-left: 22px;
+  padding-top: 2px;
+}
+
+.services-satisfaction-contents-item {
+  line-height: 24px;
+  font-size: 12px;
+  color: #666666;
+}
+
+.services-satisfaction-contents-item .count {
+  font-family: "Impact";
+  font-size: 16px;
+  color: #ff8800;
+}
+
+.services-satisfaction-contents-item .unit {
+  color: #ff8800;
+}
+
+.services-promise {
+
+}
+
+.services-promise-title {
+  height: 34px;
+  line-height: 34px;
+  background-image: url(/images/services-promise-title-icon.png);
+  background-repeat: no-repeat;
+  background-color: #ff8800;
+  padding-left: 29px;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.services-promise-list-item {
+  padding: 8px 6px;
+  border-left: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+}
+
+.services-promise-list-item .content {
+  background-repeat: no-repeat;
+  padding-left: 59px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #666666;
+}
+
+.services-promise-list-item .content .title {
+  color: #fc9404;
+}
+
+.services-promise-list-item.stroke .content {
+  background-image: url(/images/services-promise-list-item-icon-stroke.png);
+}
+
+.services-promise-list-item.price .content {
+  background-image: url(/images/services-promise-list-item-icon-price.png);
+}
+
+.services-promise-list-item.service .content {
+  background-image: url(/images/services-promise-list-item-icon-service.png);
 }
