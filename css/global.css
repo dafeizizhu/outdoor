@@ -115,15 +115,21 @@ body {
 }
 
 .classification-item {
+  padding-top: 7px;
   padding-left: 10px;
   padding-bottom: 7px;
   border-bottom: 1px solid #609dde;
-  margin-bottom: 8px;
 }
 
 .classification-item.last {
   margin-bottom: 0;
   border-bottom: none;
+}
+
+.classification-item.selected {
+  border-left: 2px solid #fe3837;
+  background-color: #303539;
+  padding-left: 8px;
 }
 
 .classification-item-title {
@@ -161,6 +167,39 @@ body {
   line-height: 28px;
   text-align: center;
   font-size: 12px;
+}
+
+.classification-item-detail {
+  display: none;
+  position: absolute;
+  width: 1006px;
+  height: 426px;
+  border: 2px solid #1b73d0;
+  background-color: #ffffff;
+  color: #969696;
+  top: 63px;
+  left: 190px;
+  z-index: 2;
+}
+
+.classification-item-detail-list {
+  padding: 10px;
+}
+
+.classification-item-detail-list-item-title {
+  font-size: 14px;
+  color: #5f5f69;
+  position: absolute;
+}
+
+.classification-item-detail-list-item-list {
+  padding-left: 87px;
+  border-bottom: 1px solid #e0e1e6;
+}
+
+.classification-item-detail-list-item-list-item {
+  font-size: 14px;
+  margin-bottom: 33px;
 }
 
 .nav-list {
@@ -264,7 +303,7 @@ body {
   overflow: hidden;
 }
 
-.recommend-routes-list-item:hover {
+.recommend-routes-list-item.selected {
   color: #ffffff;
   background-color: #efad08;
 }
