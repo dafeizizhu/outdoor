@@ -588,3 +588,128 @@ body {
 .services-promise-list-item.service .content {
   background-image: url(/images/services-promise-list-item-icon-service.png);
 }
+
+.announcement-and-tools {
+  margin-top: 42px;
+}
+
+.announcement {
+  margin-bottom: 5px;
+}
+
+.announcement-title {
+  font-size: 16px;
+  height: 35px;
+  line-height: 35px;
+  color: #ffffff;
+  background-color: #91c300;
+  padding-right: 10px;
+  background-repeat: no-repeat;
+  background-image: url(/images/announcement-title-icon.png);
+  padding-left: 29px;
+}
+
+.announcement-title .more {
+  float: right;
+  font-size: 12px;
+}
+
+.announcement-list {
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 5px 10px;
+}
+
+.announcement-list-item {
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+  width: 200px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.announcement-list-item:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-left: 9px solid #aaaaaa;
+  border-bottom: 5px solid transparent;
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.tools-title {
+  height: 39px;
+  background-color: #fc9404;
+  color: #ffffff;
+  background-repeat: no-repeat;
+  background-image: url(/images/tools-title-icon.png);
+  padding-left: 28px;
+  padding-top: 13px;
+}
+
+.tools-title-main {
+  font-size: 16px;
+}
+
+.tools-title-sub {
+  font-size: 12px;
+}
+
+.tools-list {
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  background-color: #f3f3f3;
+}
+
+.tools-list-item {
+  width: 83px;
+  height: 26px;
+  float: left;
+  padding-top: 54px;
+  text-align: center;
+  font-size: 12px;
+  background-repeat: no-repeat;
+}
+
+.tools-list-item.jipiao, .tools-list-item.huoche {
+  border-right: 1px dashed #ffffff;
+  border-bottom: 1px dashed #ffffff;
+}
+
+.tools-list-item.gongjiao {
+  border-bottom: 1px dashed #ffffff;
+}
+
+.tools-list-item.tianqi, .tools-list-item.huilv {
+  border-right: 1px dashed #ffffff;
+}
+
+.tools-list-item.jipiao {
+  background-image: url(/images/tools-list-item-icon-jipiao.png);
+}
+
+.tools-list-item.huoche {
+  background-image: url(/images/tools-list-item-icon-huoche.png);
+}
+
+.tools-list-item.gongjiao {
+  background-image: url(/images/tools-list-item-icon-gongjiao.png);
+}
+
+.tools-list-item.tianqi {
+  background-image: url(/images/tools-list-item-icon-tianqi.png);
+}
+
+.tools-list-item.huilv {
+  background-image: url(/images/tools-list-item-icon-huilv.png);
+}
+
+.tools-list-item.ditu {
+  background-image: url(/images/tools-list-item-icon-ditu.png);
+}
