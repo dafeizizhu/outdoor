@@ -765,3 +765,65 @@ body {
   height: 80px;
   overflow: hidden;
 }
+
+.hotels {
+  margin-top: 42px;
+}
+
+.hotels-title {
+  height: 45px;
+  line-height: 45px;
+  color: #ffffff;
+  padding-left: 27px;
+  padding-right: 10px;
+  background-color: #ffc032;
+  background-repeat: no-repeat;
+  background-image: url(/images/hotels-title-icon.png);
+}
+
+.hotels-title .more {
+  float: right;
+  font-size: 12px;
+}
+
+.hotels-list {
+  padding-left: 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.hotels-list-item {
+  width: 240px;
+  height: 145px;
+  margin-bottom: 10px;
+}
+
+.hotels-list-item-thumb {
+  position: absolute;
+}
+
+.hotels-list-item-title {
+  position: relative;
+  height: 35px;
+  line-height: 35px;
+  background-color: #000000;
+  opacity: 0.5;
+  text-align: center;
+  top: 110px;
+}
+
+.hotels-list-item-title span {
+  opacity: 1;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.banner {
+  float: left;
+  width: 924px;
+  height: 90px;
+  margin-top: 12px;
+}
