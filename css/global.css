@@ -713,3 +713,55 @@ body {
 .tools-list-item.ditu {
   background-image: url(/images/tools-list-item-icon-ditu.png);
 }
+
+.guide {
+  margin-top: 42px;
+}
+
+.guide-title {
+  height: 45px;
+  line-height: 45px;
+  background-color: #f858aa;
+  color: #ffffff;
+  padding-left: 28px;
+  padding-right: 10px;
+  background-repeat: no-repeat;
+  background-image: url(/images/guide-title-icon.png);
+}
+
+.guide-title .more {
+  float: right;
+  font-size: 12px;
+}
+
+.guide-list {
+  padding-top: 10px;
+  padding-left: 6px;
+  padding-bottom: 4px;
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.guide-list-item {
+  margin-bottom: 20px;
+}
+
+.guide-list-item-avatar {
+  float: left;
+  width: 67px;
+  height: 67px;
+}
+
+.guide-list-item-description {
+  font-size: 15px;
+  line-height: 20px;
+  color: #666666;
+  padding-left: 76px;
+}
+
+.guide-ad {
+  width: 240px;
+  height: 80px;
+  overflow: hidden;
+}
