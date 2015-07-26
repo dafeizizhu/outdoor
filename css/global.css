@@ -308,6 +308,16 @@ body {
   background-color: #efad08;
 }
 
+.recommend-contents-wrapper {
+  width: 700px;
+  height: 358px;
+  overflow: hidden;
+}
+
+.recommend-contents-list {
+  position: relative;
+}
+
 .recommend-content {
   width: 700px;
 }

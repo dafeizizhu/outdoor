@@ -42,3 +42,29 @@ $(function () {
     }
   })
 })
+
+$(function () {
+  var $recommendRoutes = $('.jq-recommend-route')
+  var $recommendContents = $('.jq-recommend-content')
+  var $recommendContentsList = $('.jq-recommend-content-list')
+
+  $recommendRoutes.on('click', function (evt) {
+    var $target = $(this)
+    $recommendRoutes.removeClass('selected')
+    $target.addClass('selected')
+
+    $.each($recommendRoutes, function (recommendRouteIndex, recommendRoute) {
+      if ($recommendRoutes[recommendRouteIndex] == $target[0]) {
+        var top = 0
+        $.each($recommendContents, function (recommendContentIndex, recommendContent) {
+          if (recommendContentIndex < recommendRouteIndex) {
+            top += $(recommendContent).height()
+          }
+        })
+        $recommendContentsList.animate({
+          top: -top + 'px'
+        }, 1000)
+      }
+    })
+  })
+})
