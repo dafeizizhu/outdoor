@@ -475,10 +475,20 @@ body {
   line-height: 19px;
 }
 
-.catalog {
+.catalogs {
   float: left;
   width: 926px;
+}
+
+.catalog {
+  float: left;
+  margin-top: 30px;
+  width: 926px;
   height: 481px;
+}
+
+.catalog.first {
+  margin-top: 0;
 }
 
 .catalog-title {
@@ -575,9 +585,15 @@ body {
   color: #ff383a;
 }
 
+.right {
+  float: right;
+  width: 255px;
+}
+
 .right-side {
   float: right;
   width: 255px;
+  height: 511px;
 }
 
 .services {
