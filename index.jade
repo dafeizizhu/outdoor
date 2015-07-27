@@ -26,8 +26,231 @@ html
                 div.classification-item-container.clear-fix
                   each content in item.contents
                     div.classification-item-content #{content}
+                if item.details
+                  div.classification-item-detail.jq-classification-item-detail
+                    div.classification-item-detail-list
+                      each detail in item.details
+                        div.classification-item-detail-list-item
+                          div.classification-item-detail-list-item-title #{detail.title}
+                          div.classification-item-detail-list-item-list
+                            each detailItem in detail.items
+                              div.classification-item-detail-list-item-list-item #{detailItem}
         div.nav-list
-          each navItem in navItems
+          each navItem, index in navItems
             div.nav-list-item
               a(href='#{navItem.href}') #{navItem.text}
-            div.nav-list-item-saparator |
+            if index != navItems.length - 1
+              div.nav-list-item-saparator |
+    div.clear-fix.gallery
+      div.gallery-content
+        div.gallery-content-wrapper
+          div.gallery-content-list.jq-gallery-list
+            each galleryUrl in galleryUrls
+              div.gallery-content-list-item.jq-gallery-list-item
+                img(src='#{galleryUrl}')
+          div.gallery-content-tabs
+            each galleryTab, index in galleryTabs
+              - var selected = (index == 0 ? 'selected' : '')
+              div(class='gallery-content-tabs-item jq-gallery-tabs-item #{selected}')
+                span #{galleryTab}
+    div.row.clear-fix
+      div.recommend.clear-fix
+        div.recommend-routes
+          div.recommend-routes-title 精品路线推荐
+          div.recommend-routes-list
+            each recommendRoute, index in recommendRoutes
+              - var selected = (index == 0 ? 'selected' : '')
+              div(class='recommend-routes-list-item jq-recommend-route #{selected}') #{recommendRoute}
+        div.recommend-contents
+          div.recommend-contents-wrapper
+            div.recommend-contents-list.jq-recommend-content-list
+              each recommendContent in recommendContents
+                div.recommend-content.clear-fix.jq-recommend-content
+                  div.recommend-content-left
+                    div.recommend-content-left-top
+                      p 【云南丽江5天】逢双号出团“云南－丽江古城、香格里拉、普达措、泸沽湖”经典五日游
+                      p 【出团时间】：2014年逢双号成团
+                      p 【集合地点】：全国出发丽江集合
+                      p 【行程天数】：5天4晚
+                    div.recommend-content-left-bottom
+                      div.recommend-content-left-bottom-left
+                        img(src='/images/placeholder/recommend-content-left-bottom-left.png')
+                      div.recommend-content-left-bottom-right
+                        img(src='/images/placeholder/recommend-content-left-bottom-right.png')
+                  div.recommend-content-right
+                    img(src='/images/placeholder/recommend-content-right.png')
+      div.about
+        div.about-item.us
+          div.about-item-title
+            span.zh-cn 关于我们
+            span.en-us ABOUT US
+          div.about-item-content 了解“龙迹户外”的成长故事
+        div.about-item.cost
+          div.about-item-title
+            span.zh-cn 报名缴费
+            span.en-us COSTING
+          div.about-item-content 了解“龙迹户外”的成长故事
+        div.about-item.contact
+          div.about-item-title
+            span.zh-cn 联系我们
+            span.en-us CONTRACTION
+          div.about-item-content 了解“龙迹户外”的成长故事
+        div.about-contact-info.clear-fix
+          div.about-contact-info-wechat
+            div.about-contact-info-wechat-title 官方微信
+            div.about-contact-info-wechat-qrcode
+              img(src='/images/about-contact-wechat.png')
+          div.about-contact-info-tel
+            img(src='/images/about-contact-tel.png')
+          div.about-contact-info-weibo 官方微博
+          div.about-contact-info-tweibo 官方微博
+    div.row.clear-fix
+      div.catalogs.clear-fix
+        each catalog, index in catalogs
+          - var first = (index == 0 ? 'first' : '')
+          div(class='catalog #{first}')
+            div.catalog-header.clear-fix
+              div.catalog-title #{catalog.title}
+              div.catalog-tabs
+                each tab, index in catalog.tabs
+                  - var selected = (index == 0 ? 'selected' : '')
+                  div(class='catalog-tabs-item #{selected}') #{tab}
+                div.catalog-tabs-more 更多线路&gt;
+            div.catalog-contents
+              div.catalog-contents-item
+                div.catalog-contents-item-left
+                  img(src='#{catalog.adImageUrl}')
+                div.catalog-contents-item-list.clear-fix
+                  each item in catalog.items
+                    div.catalog-contents-item-list-item
+                      div.catalog-contents-item-list-item-thumb
+                      div.catalog-contents-item-list-item-title
+                        span.main #{item.title.main}
+                        span.sub #{item.title.sub}
+                      div.catalog-contents-item-list-item-price #{item.price}
+      div.right.clear-fix
+        div.right-side
+          div.services
+            div.services-satisfaction.clear-fix
+              div.services-satisfaction-icon
+                div.services-satisfaction-icon-title 满意度
+                div.services-satisfaction-icon-number 100%
+              div.services-satisfaction-contents
+                div.services-satisfaction-contents-item 已累计完成订单：
+                  span.count 57782+
+                  span.unit 笔
+                div.services-satisfaction-contents-item 已累计接待咨询：
+                  span.count 112188+
+                  span.uint 次
+            div.services-promise
+              div.services-promise-title 服务承诺
+              div.services-promise-list
+                div.services-promise-list-item.stroke
+                  div.content
+                    span.title 阳光行程
+                    | ：坚持不够购物点全程纯玩，把更多的时间放在游玩和自由活动上，让行程变得更好玩、更自由、更实惠。
+                div.services-promise-list-item.price
+                  div.content
+                    span.title 阳光价格
+                    | ：坚持不够购物点全程纯玩，把更多的时间放在游玩和自由活动上，让行程变得更
+                div.services-promise-list-item.service
+                  div.content
+                    span.title 阳光服务
+                    | ：坚持不够购物点全程纯玩，把更多的时间放在游玩和自由活动上，让行程变得更好玩、更自由、更实惠。
+        div.right-side
+          div.announcement-and-tools
+            div.announcement
+              div.announcement-title
+                span.more 更多&gt;
+                | 龙迹公告
+              div.announcement-list
+                div.announcement-list-item 2015年羊年放假安排及休息等等等等
+                div.announcement-list-item 2015年羊年放假安排及休息等等等等
+                div.announcement-list-item 2015年羊年放假安排及休息等等等等
+                div.announcement-list-item 2015年羊年放假安排及休息等等等等
+                div.announcement-list-item 2015年羊年放假安排及休息等等等等
+                div.announcement-list-item 2015年羊年放假安排及休息等等等等
+                div.announcement-list-item 2015年羊年放假安排及休息等等等等
+            div.tools
+              div.tools-title
+                div.tools-title-main 旅行工具
+                div.tools-title-sub 完美的旅行只留给有计划的人
+              div.tools-list.clear-fix
+                div.tools-list-item.jipiao 机票查询
+                div.tools-list-item.huoche 火车查询
+                div.tools-list-item.gongjiao 公交查询
+                div.tools-list-item.tianqi 天气预报
+                div.tools-list-item.huilv 汇率查询
+                div.tools-list-item.ditu 地图
+        div.right-side
+          div.guide
+            div.guide-title
+              span.more 更多&gt;
+              | 贴心领队
+            div.guide-list
+              each val in [1, 2, 3]
+                div.guide-list-item
+                  div.guide-list-item-avatar
+                    img(src='/images/placeholder/guide-list-item-avatar.png')
+                  div.guide-list-item-description 龙迹户外俱乐部专职领队人生格言：探索自然，领悟人生
+              div.guide-ad
+                img(src='/images/placeholder/guide-ad.png')
+        div.right-side
+          div.hotels
+            div.hotels-title
+              span.more 更多&gt;
+              | 酒店推荐
+            div.hotels-list
+              each val in [1, 2, 3]
+                div.hotels-list-item
+                  div.hotels-list-item-thumb
+                    img(src='/images/placeholder/hotels-list-item-thumb.png')
+                  div.hotels-list-item-title
+                    span 阳朔凤凰酒店
+    div.row.clear-fix
+      div.photoes.clear-fix
+        div.photoes-title 美图拍摄
+        div.photoes-hr
+        div.photoes-content
+          div.photoes-content-row
+            div.photoes-content-row-cell.width-592
+              img(src='/images/placeholder/photo-1.png')
+            div.photoes-content-row-cell.width-180
+              img(src='/images/placeholder/photo-2.png')
+              img(src='/images/placeholder/photo-3.png')
+            div.photoes-content-row-cell.width-140
+              img(src='/images/placeholder/photo-4.png')
+          div.photoes-content-row
+            div.photoes-content-row-cell.width-220
+              img(src='/images/placeholder/photo-5.png')
+            div.photoes-content-row-cell.width-180
+              img(src='/images/placeholder/photo-6.png')
+              img(src='/images/placeholder/photo-7.png')
+            div.photoes-content-row-cell.width-180
+              img(src='/images/placeholder/photo-8.png')
+              img(src='/images/placeholder/photo-9.png')
+            div.photoes-content-row-cell.width-327
+              img(src='/images/placeholder/photo-10.png')
+    div.footer.clear-fix
+      div.row
+        div.footer-col
+          div.footer-col-title 关于我们
+          div.footer-col-text 地址:广州市天河北路177号祥龙花园祥龙阁1308室
+        div.footer-col
+          div.footer-col-title 联系我们
+          div.footer-col-text 电话：020-38488154  38488594
+          div.footer-col-text 办公时间：9:30~21:00(周一~周六）
+        div.footer-col
+          div.footer-col-title 关注龙迹户外
+          div.footer-col-text 关注我们的微博，
+          div.footer-col-text 微信，促销活动随时掌握
+          div.footer-col-weibo.sina 官方微博
+          div.footer-col-weibo.t 官方微博
+        div.footer-col
+          div.footer-col-weixin
+            img(src='/images/footer-contact.png')
+    script(src='/common/jquery/1.11.3/jquery.js')
+    script(src='/js/index.js')
+    <!--[if lte IE7]>
+    <script src="/js/index-ie7-fix.js"></script>
+    <![endif]-->
