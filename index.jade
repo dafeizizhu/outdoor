@@ -1,0 +1,33 @@
+doctype html
+html
+  head
+    title Test
+    link(rel='stylesheet' href='/common/normalize.css/3.0.3/normalize.css')
+    link(rel='stylesheet' href='/css/global.css')
+    link(rel='stylesheet' href='/css/global-ie7-fix.css')
+  body
+    div.row.header
+      div.logo
+      div.search
+        div.search-wrapper
+          div.search-icon
+          input.search-input(type='text', placeholder='请输入目的地、关键字')
+        div.search-button
+          a(href='') 搜 索
+    div.nav.clear-fix
+      div.row.nav-bar
+        div.classification
+          div.classification-title 旅游线路分类
+          div.classification-list
+            each item, index in classificationItems
+              - var last = (index == classificationItems.length - 1 ? 'last' : '')
+              div(class='classification-item jq-classification-item #{last}')
+                div(class='classification-item-title #{item.title.style}') #{item.title.text}
+                div.classification-item-container.clear-fix
+                  each content in item.contents
+                    div.classification-item-content #{content}
+        div.nav-list
+          each navItem in navItems
+            div.nav-list-item
+              a(href='#{navItem.href}') #{navItem.text}
+            div.nav-list-item-saparator |
