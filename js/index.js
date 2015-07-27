@@ -41,6 +41,10 @@ $(function () {
       $classificationItemDetail.css('display', 'block')
     }
   })
+
+  $classificationItemDetails.on('click', function (evt) {
+    evt.stopPropagation()
+  })
 })
 
 $(function () {
@@ -66,5 +70,13 @@ $(function () {
         }, 1000)
       }
     })
+  })
+})
+
+$(function () {
+  var zIndexNumber = 10000
+  $('div').each(function () {
+    $(this).css('zIndex', zIndexNumber);
+    zIndexNumber -= 10
   })
 })

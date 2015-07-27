@@ -1,3 +1,15 @@
 .classification {
   +margin-left: -190px;
 }
+
+.gallery-content-wrapper {
+  +position: relative;
+}
+
+.gallery-content-tabs {
+  +top: 376px;
+}
+
+.recommend-contents-wrapper {
+  +position: relative;
+}
