@@ -17,5 +17,8 @@
   "license": "BSD-2-Clause",
   "bugs": {
     "url": "https://github.com/dafeizizhu/outdoor/issues"
+  },
+  "devDependencies": {
+    "gulp": "~3.9.0"
   }
 }
