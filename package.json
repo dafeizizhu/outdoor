@@ -1,0 +1,21 @@
+{
+  "name": "outdoor",
+  "version": "0.0.0",
+  "description": "a outdoor website",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dafeizizhu/outdoor.git"
+  },
+  "keywords": [
+    "outdoor"
+  ],
+  "author": "maizhiying",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/dafeizizhu/outdoor/issues"
+  }
+}
