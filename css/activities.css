@@ -1,0 +1,186 @@
+.crumb {
+  margin-top: 22px;
+  font-size: 14px;
+}
+
+.filters-item {
+  margin-bottom: 17px;
+  line-height: 25px;
+}
+
+.filters-item.big {
+  line-height: 47px;
+}
+
+.filters-item-title {
+  font-size: 24px;
+  float: left;
+}
+
+.filters-item-options {
+  padding-left: 130px;
+}
+
+.filters-item-options-item {
+  padding: 0 30px;
+  border-left: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+  border-top: 1px solid #e8e8e8;
+  float: left;
+}
+
+.filters-item-options-item.last {
+  border-right: 1px solid #e8e8e8;
+}
+
+.filters-item-options-item.selected {
+  color: #ffffff;
+  font-size: 16px;
+  background-color: #00a5f6;
+  border-color: #00a5f6;
+  padding: 0 40px;
+}
+
+.filters-item-options-item.last.selected {
+  border-color: #00a5f6;
+}
+
+.filters-item.big .filters-item-options-item {
+  font-size: 22px;
+}
+
+.filters-item.big .filters-item-options-item.selected {
+  padding: 0 50px;
+}
+
+.filters-item-range {
+  float: right;
+}
+
+.filters-item-range-wrapper {
+  height: 28px;
+  border: 1px solid #d7d8dd;
+  width: 180px;
+  float: left;
+}
+
+.filters-item-range-datepicker {
+  border: 0;
+  outline: none;
+  width: 140px;
+}
+
+.filters-item-range-icon {
+  width: 26px;
+  height: 28px;
+  background-image: url('/images/datepicker-icon.png');
+  float: right;
+}
+
+.filters-item-range-saparator {
+  float: left;
+  margin: 0 3px;
+}
+
+.filters-item-range-search {
+  float: right;
+  width: 72px;
+  height: 30px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #ffb431;
+  line-height: 30px;
+  color: #ffffff;
+  margin-left: 14px;
+}
+
+.content {
+  border: 1px solid #e5e5e5;
+  padding-bottom: 30px;
+}
+
+.routes {
+  padding: 24px 20px;
+}
+
+.routes-item {
+  border-bottom: 1px dotted #e5e5e5;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.routes-item.last {
+  margin-bottom: 0;
+}
+
+.routes-item-thumb {
+  width: 384px;
+  height: 209px;
+  float: left;
+}
+
+.routes-item-description {
+  float: left;
+  margin-left: 23px;
+}
+
+.routes-item-description-title {
+  font-size: 18px;
+  color: #00b7ee;
+  margin-bottom: 13px;
+}
+
+.routes-item-description-location {
+  line-height: 32px;
+  color: #0ea500;
+}
+
+.routes-item-description-text {
+  line-height: 32px;
+  color: #333333;
+}
+
+.routes-item-detail {
+  float: right;
+}
+
+.routes-item-detail-price {
+  line-height: 30px;
+  color: #ff6600;
+}
+
+.routes-item-detail-price .number {
+  font-size: 30px;
+}
+
+.routes-item-detail-price .unit {
+  font-size: 15px;
+}
+
+.routes-item-detail-go-button {
+  width: 112px;
+  height: 39px;
+  background-color: #ffb431;
+  line-height: 39px;
+  text-align: center;
+}
+
+.routes-item-detail-go-button a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.pager {
+  margin: 0 auto;
+  display: table;
+}
+
+.pager-prev, .pager-page, .pager-next {
+  float: left;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #cccccc;
+  margin-right: 10px;
+  line-height: 36px;
+  text-align: center;
+}

@@ -2,8 +2,9 @@ doctype html
 html
   head
     title 活动大厅
-    link(rel='stylesheet', href='css/global.css')
-    link(rel='stylesheet', href='css/activities.css')
+    link(rel='stylesheet', href='/common/normalize.css/3.0.3/normalize.css')
+    link(rel='stylesheet', href='/css/global.css')
+    link(rel='stylesheet', href='/css/activities.css')
   body
     include ./includes/header.jade
     div.nav.clear-fix
@@ -13,15 +14,15 @@ html
       div.crumb 您当前所处的位置：首页 &gt; 广州周边
     div.row
       div.filters
-        div.filters-item.big
+        div.filters-item.big.clear-fix
           div.filters-item-title 路线类型：
           div.filters-item-options
             div.filters-item-options-item.selected 全部
             div.filters-item-options-item 广东周边
             div.filters-item-options-item 川藏滇专线
             div.filters-item-options-item 国内纯玩
-            div.filters-item-options-item 出境旅游
-        div.filters-item
+            div.filters-item-options-item.last 出境旅游
+        div.filters-item.clear-fix
           div.filters-item-title 目的地：
           div.filters-item-options
             div.filters-item-options-item.selected 全部
@@ -29,54 +30,60 @@ html
             div.filters-item-options-item 澳门
             div.filters-item-options-item 阳朔
             div.filters-item-options-item 阳江
-            div.filters-item-options-item 惠东
-        div.filters-item
+            div.filters-item-options-item.last 惠东
+        div.filters-item.clear-fix
           div.filters-item-title 行程天数：
           div.filters-item-options
             div.filters-item-options-item.selected 全部
             div.filters-item-options-item 1-3天
             div.filters-item-options-item 3-5天
             div.filters-item-options-item 5-7天
-            div.filters-item-options-item 7天以上
-        div.filters-item
+            div.filters-item-options-item.last 7天以上
+        div.filters-item.clear-fix
           div.filters-item-title 出行时间：
           div.filters-item-options
             div.filters-item-options-item.selected 全部
             div.filters-item-options-item 最近3天
             div.filters-item-options-item 最近1周
-            div.filters-item-options-item 最近1月
+            div.filters-item-options-item.last 最近1月
           div.filters-item-range
-            input.filters-item-range-datepicker.start(type='text')
-            | 至
-            input.filters-item-range-datepicker.end(type='text')
-      div.row
-        div.routes
-          each val in [1]
-            div.routes-item
-              div.routes-item-thumb
-              div.routes-item-description
-                div.routes-item-description-title &lt;西宁-拉萨-林芝双飞一卧10日游&gt;览日喀则，四星舒适游
-                div.routes-item-description-location 出发城市：广州
-                div.routes-item-description-text 行程：3天2夜
-                div.routes-item-description-text 途径地：西宁，拉萨，林芝
-                div.routes-item-description-text 出行时间：2015年3月8日
-              div.routes-item-detail
-                div.routes-item-detail-price
-                  span.number ￥239
-                  span.unit 元
-                div.routes-item-detail-go
-                  div.routes-item-detail-go-button
-                    a(href='') 查看详情
-      div.row
-        div.pager
-          div.pager-prev.disabled
-            span 
-          div.pager-page.selected 1
-          div.pager-page 2
-          div.pager-page 3
-          div.pager-page 4
-          div.pager-page 5
-          div.pager-page ...
-          div.pager-page 17
-          div.pager-next
-            span
+            div.filters-item-range-wrapper
+              input.filters-item-range-datepicker.start(type='text')
+              div.filters-item-range-icon
+            div.filters-item-range-saparator 至
+            div.filters-item-range-wrapper
+              input.filters-item-range-datepicker.end(type='text')
+              div.filters-item-range-icon
+            div.filters-item-range-search 搜索
+    div.row.content
+      div.routes
+        each val in [1, 2, 3, 4, 5, 6, 7, 8 ,9, 10]
+          - var last = (val == 10 ? 'last' : '')
+          div(class='routes-item clear-fix #{last}')
+            div.routes-item-thumb
+              img(src='/images/placeholder/routes-item-thumb.png')
+            div.routes-item-description
+              div.routes-item-description-title &lt;西宁-拉萨-林芝双飞一卧10日游&gt;览日喀则，四星舒适游
+              div.routes-item-description-location 出发城市：广州
+              div.routes-item-description-text 行程：3天2夜
+              div.routes-item-description-text 途径地：西宁，拉萨，林芝
+              div.routes-item-description-text 出行时间：2015年3月8日
+            div.routes-item-detail
+              div.routes-item-detail-price
+                span.number ￥239
+                span.unit 元
+              div.routes-item-detail-go
+                div.routes-item-detail-go-button
+                  a(href='') 查看详情
+      div.pager.clear-fix
+        div.pager-prev.disabled
+          span 
+        div.pager-page.selected 1
+        div.pager-page 2
+        div.pager-page 3
+        div.pager-page 4
+        div.pager-page 5
+        div.pager-page ...
+        div.pager-page 17
+        div.pager-next
+          span
