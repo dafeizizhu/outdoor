@@ -1,0 +1,6 @@
+div.nav-list
+  each navItem, index in navItems
+    div.nav-list-item
+      a(href='#{navItem.href}') #{navItem.text}
+    if index != navItems.length - 1
+      div.nav-list-item-saparator |

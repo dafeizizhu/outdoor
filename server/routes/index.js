@@ -12,7 +12,8 @@ router.use(function (req, res, next) {
       encoding: 'utf-8'
     }, function (err, templateContent) {
       res.send((jade.compile(templateContent, {
-        pretty: true
+        pretty: true,
+        filename: templateFilePath
       })(data[req.path])))
     })
   } else {

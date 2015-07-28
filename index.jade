@@ -7,14 +7,7 @@ html
     link(rel='stylesheet' href='/css/index.css')
     link(rel='stylesheet' href='/css/index-ie7-fix.css')
   body
-    div.row.header
-      div.logo
-      div.search
-        div.search-wrapper
-          div.search-icon
-          input.search-input(type='text', placeholder='请输入目的地、关键字')
-        div.search-button
-          a(href='') 搜 索
+    include ./includes/header.jade
     div.nav.clear-fix
       div.row.nav-bar
         div.classification
@@ -36,12 +29,7 @@ html
                           div.classification-item-detail-list-item-list
                             each detailItem in detail.items
                               div.classification-item-detail-list-item-list-item #{detailItem}
-        div.nav-list
-          each navItem, index in navItems
-            div.nav-list-item
-              a(href='#{navItem.href}') #{navItem.text}
-            if index != navItems.length - 1
-              div.nav-list-item-saparator |
+        include ./includes/nav-list.jade
     div.clear-fix.gallery
       div.gallery-content
         div.gallery-content-wrapper
