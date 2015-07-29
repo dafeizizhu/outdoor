@@ -119,3 +119,11 @@ body {
   color: #409cfc;
   line-height: 63px;
 }
+
+.crumb {
+  margin-top: 22px;
+  font-size: 14px;
+  color: #a3a4a4;
+}
+
+
