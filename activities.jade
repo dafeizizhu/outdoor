@@ -5,6 +5,7 @@ html
     link(rel='stylesheet', href='/common/normalize.css/3.0.3/normalize.css')
     link(rel='stylesheet', href='/css/global.css')
     link(rel='stylesheet', href='/css/activities.css')
+    link(rel='stylesheet', href='/css/activities-ie7-fix.css')
   body
     include ./includes/header.jade
     div.nav.clear-fix
@@ -48,12 +49,12 @@ html
             div.filters-item-options-item.last 最近1月
           div.filters-item-range
             div.filters-item-range-wrapper
-              input.filters-item-range-datepicker.start(type='text')
               div.filters-item-range-icon
+              input.filters-item-range-datepicker.start(type='text')
             div.filters-item-range-saparator 至
             div.filters-item-range-wrapper
-              input.filters-item-range-datepicker.end(type='text')
               div.filters-item-range-icon
+              input.filters-item-range-datepicker.end(type='text')
             div.filters-item-range-search 搜索
     div.row.content
       div.routes
@@ -87,3 +88,7 @@ html
         div.pager-page 17
         div.pager-next
           span
+    script(src='/common/jquery/1.11.3/jquery.js')
+    <!--[if lte IE 7]>
+    <script src="/js/activities-ie7-fix.js"></script>
+    <![endif]-->
