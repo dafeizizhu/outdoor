@@ -17,36 +17,36 @@ html
       div.filters
         div.filters-item.big.clear-fix
           div.filters-item-title 路线类型：
-          div.filters-item-options
-            div.filters-item-options-item.selected 全部
-            div.filters-item-options-item 广东周边
-            div.filters-item-options-item 川藏滇专线
-            div.filters-item-options-item 国内纯玩
-            div.filters-item-options-item.last 出境旅游
-        div.filters-item.clear-fix
+          div.filters-item-options.jq-filter
+            div.filters-item-options-item.jq-option.selected 全部
+            div.filters-item-options-item.jq-option 广东周边
+            div.filters-item-options-item.jq-option 川藏滇专线
+            div.filters-item-options-item.jq-option 国内纯玩
+            div.filters-item-options-item.last.jq-option 出境旅游
+        div.filters-item.clear-fix.jq-filter
           div.filters-item-title 目的地：
           div.filters-item-options
-            div.filters-item-options-item.selected 全部
-            div.filters-item-options-item 香港
-            div.filters-item-options-item 澳门
-            div.filters-item-options-item 阳朔
-            div.filters-item-options-item 阳江
-            div.filters-item-options-item.last 惠东
-        div.filters-item.clear-fix
+            div.filters-item-options-item.jq-option.selected 全部
+            div.filters-item-options-item.jq-option 香港
+            div.filters-item-options-item.jq-option 澳门
+            div.filters-item-options-item.jq-option 阳朔
+            div.filters-item-options-item.jq-option 阳江
+            div.filters-item-options-item.last.jq-option 惠东
+        div.filters-item.clear-fix.jq-filter
           div.filters-item-title 行程天数：
           div.filters-item-options
-            div.filters-item-options-item.selected 全部
-            div.filters-item-options-item 1-3天
-            div.filters-item-options-item 3-5天
-            div.filters-item-options-item 5-7天
-            div.filters-item-options-item.last 7天以上
-        div.filters-item.clear-fix
+            div.filters-item-options-item.selected.jq-option 全部
+            div.filters-item-options-item.jq-option 1-3天
+            div.filters-item-options-item.jq-option 3-5天
+            div.filters-item-options-item.jq-option 5-7天
+            div.filters-item-options-item.last.jq-option 7天以上
+        div.filters-item.clear-fix.jq-filter
           div.filters-item-title 出行时间：
           div.filters-item-options
-            div.filters-item-options-item.selected 全部
-            div.filters-item-options-item 最近3天
-            div.filters-item-options-item 最近1周
-            div.filters-item-options-item.last 最近1月
+            div.filters-item-options-item.selected.jq-option 全部
+            div.filters-item-options-item.jq-option 最近3天
+            div.filters-item-options-item.jq-option 最近1周
+            div.filters-item-options-item.last.jq-option 最近1月
           div.filters-item-range
             div.filters-item-range-wrapper
               div.filters-item-range-icon
@@ -89,6 +89,7 @@ html
         div.pager-next
           span
     script(src='/common/jquery/1.11.3/jquery.js')
+    script(src='/js/activities.js')
     <!--[if lte IE 7]>
     <script src="/js/activities-ie7-fix.js"></script>
     <![endif]-->

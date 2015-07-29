@@ -27,6 +27,7 @@
   border-bottom: 1px solid #e8e8e8;
   border-top: 1px solid #e8e8e8;
   float: left;
+  cursor: pointer;
 }
 
 .filters-item-options-item.last {
@@ -183,4 +184,37 @@
   margin-right: 10px;
   line-height: 36px;
   text-align: center;
+  color: #0065bb;
+}
+
+.pager-prev span {
+  width: 0;
+  height: 0;
+  border-right: 6px solid #0065bb;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  display: inline-block;
+}
+
+.pager-next span {
+  width: 0;
+  height: 0;
+  border-left: 6px solid #0065bb;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  display: inline-block;
+}
+
+.pager-page.selected {
+  border-color: #3da0e7;
+  background-color: #64bbfa;
+  color: #ffffff;
+}
+
+.pager-prev.disabled span {
+  border-right-color: #cccccc;
+}
+
+.pager-next.disabled span {
+  border-right-color: #cccccc;
 }
