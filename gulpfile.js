@@ -52,7 +52,7 @@ gulp.task('build-images', function (cb) {
 })
 
 gulp.task('build-zip', ['build'], function (cb) {
-  gulp.src('./dist/*')
+  gulp.src('./dist/**/*')
     .pipe(zip('archive_' + version + '.zip'))
     .pipe(gulp.dest('./build'))
     .on('end', cb)
