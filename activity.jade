@@ -6,6 +6,7 @@ html
     meta(http-equiv='X-UA-Compatible' content='IE=edge')
     link(rel='stylesheet', href='/common/normalize.css/3.0.3/normalize.css')
     link(rel='stylesheet', href='/css/global.css')
+    link(rel='stylesheet', href='/css/activity.css')
   body
     include ./includes/header.jade
     div.nav.clear-fix
@@ -14,44 +15,93 @@ html
     div.row
       div.crumb 首页 &gt; 川藏滇专线 &gt; 云南丽江5天游
     div.row.clear-fix
-      div.detail
+      div.detail.clear-fix
         div.detail-title <丽江大理双廊双飞5日游>双廊客栈自由活动，0购物，普陀私家温泉
         div.detail-summary.clear-fix
-          div.detail-sumary-icon 跟团游
-          div.detail-sumary-code 编号23552858：
-          div.detail-sumary-text 本产品由北京途牛国际旅行社有限公司广州分公司及具有资质的合作旅行社提供相关服务
-          div.detail-sumary-rank
-            div.detail-sumary-rank-star
-            div.detail-sumary-rank-star
-            div.detail-sumary-rank-star
-        div.detail-gallery
+          div.detail-summary-icon 
+          div.detail-summary-code 编号23552858：
+          div.detail-summary-text 本产品由北京途牛国际旅行社有限公司广州分公司及具有资质的合作旅行社提供相关服务
+          div.detail-summary-rank
+            div.detail-summary-rank-star
+            div.detail-summary-rank-star
+            div.detail-summary-rank-star
+        div.detail-gallery.clear-fix
           div.detail-gallery-main
+            img(src='/images/placeholder/detail-gallery-big.png')
           div.detail-gallery-thumbs
             div.detail-gallery-thumbs-prev
             div.detail-gallery-thumbs-list
               div.detail-gallery-thumbs-list-item
+                img(src='/images/placeholder/detail-gallery-small.png')
               div.detail-gallery-thumbs-list-item
+                img(src='/images/placeholder/detail-gallery-small.png')
               div.detail-gallery-thumbs-list-item
-              div.detail-gallery-thumbs-list-item
+                img(src='/images/placeholder/detail-gallery-small.png')
+              div.detail-gallery-thumbs-list-item.last
+                img(src='/images/placeholder/detail-gallery-small.png')
             div.detail-gallery-thumbs-next
         div.detail-description
           div.detail-description-title 活动类型:广东周边
-          div.detail-description-text 活动时间：2014-11-21 20:00 至 2014-11-23 20:30
-          div.detail-description-text 活动地点：韶关南雄
-          div.detail-description-text 交通信息：飞机去飞机回
-          div.detail-description-text 报名截止：2014-11-20 12:00
+          div.detail-description-text 
+            em 活动时间：
+            | 2014-11-21 20:00 至 2014-11-23 20:30
+          div.detail-description-text 
+            em 活动地点：
+            | 韶关南雄
+          div.detail-description-text
+            em 交通信息：
+            | 飞机去飞机回
+          div.detail-description-text 
+            em 报名截止：
+            | 2014-11-20 12:00
     div.row
-      div.content
-        div.contents-tabs
+      div.contents
+        div.contents-tabs.clear-fix
           div.contents-tabs-item.selected 团队行程
           div.contents-tabs-item 费用说明
           div.contents-tabs-item 报名方式
           div.contents-tabs-item 重要说明
           div.contents-tabs-item 集合地点
           div.contents-tabs-item 温馨提示
-          div.contetns-tabs-item 免费说明
+          div.contents-tabs-item 免费说明
         div.contents-details
-          div.contents-details-item.xingcheng 团队行程
+          div.contents-details-item.clear-fix.xingcheng
+            div.contents-details-item-left
+            div.contents-details-item-content
+              div.contents-details-item-content-text 
+                em 行程安排
+              div.contents-details-item-content-text
+                em.red 特别提示：
+                | 自2014年8月起交通管制凌晨2点~5点旅游大巴必须停车熄火、强制休息不可行车，所以所有的大巴团如遇此时间段到不了目的地则请各位做好多3小时车程的准备，为安全第一请理解。
+              div.contents-details-item-content-schedule.first
+                div.contents-details-item-content-schedule-title
+                  div.contents-details-item-content-schedule-title-day 第1天
+                  div.contents-details-item-content-schedule-title-text 宿阳朔
+                div.contents-details-item-content-schedule-list
+                  div.contents-details-item-content-schedule-list-item
+                    div.contents-details-item-content-schedule-list-item-time 19:20
+                    div.contents-details-item-content-schedule-list-item-text 广州上车点：广州天河体育中心东大门（中国电信大厦对面，地铁一号线体育中心站C出口附近）集合发车
+                  div.contents-details-item-content-schedule-list-item.last
+                    div.contents-details-item-content-schedule-list-item-time 20:00
+                    div.contents-details-item-content-schedule-list-item-text 佛山上车点：佛山龙溪地铁站C出口集合上车；集合出发，上车后领队会安排大家相互认识，不会让大家的旅途感到寂寞；路上小小辛苦是难免的，但美景当前，值！（车上空调较冷切记要带件较厚的长袖衣服或毛巾被防寒！)晚上1点左右到达阳朔，安排酒店入住，休息。温馨提示：集合时间、地点以出发前短信通知为准！请收到短信后请及时回复；如有晕车的朋友请提前吃好晕车药
+              div.contents-details-item-content-schedule
+                div.contents-details-item-content-schedule-title
+                  div.contents-details-item-content-schedule-title-day 第2天
+                  div.contents-details-item-content-schedule-title-text 杨堤到兴坪漓江徒步
+                div.contents-details-item-content-schedule-list
+                  div.contents-details-item-content-schedule-list-item
+                    div.contents-details-item-content-schedule-list-item-time 8:30
+                    div.contents-details-item-content-schedule-list-item-text 起床洗漱，早餐(自理) 
+                  div.contents-details-item-content-schedule-list-item
+                    div.contents-details-item-content-schedule-list-item-time 9:30
+                    div.contents-details-item-content-schedule-list-item-text 酒店大堂集合坐车约40分钟去到杨堤.杨堤到兴坪这一段风光是阳朔景点的代表，最佳游览方式徒步，不紧不慢不晒， 非常悠闲，风景如画，绝对是超佳享受；
+                    div.contents-details-item-content-schedule-list-item-text
+                      img(src='/images/placeholder/detail-schedule-item-pic.png')
+                      | &nbsp;&nbsp;&nbsp;&nbsp;
+                      img(src='/images/placeholder/detail-schedule-item-pic.png')
+                    div.contents-details-item-content-schedule-list-item-text 在漓江西岸的鸳鸯滩下，距桂林约46公里处。杨堤两岸翠竹成林，连成十里的绿色翠屏，摇曳在青山、秀水飞瀑、浅滩之间，给人以清幽、宁静之感。 从杨堤村后的人仔山眺望杨堤，映入眼帘的更是一幅绚丽多彩的自然风光：洲上阡陌纵横，庄稼如茵；山村竹树葱茏，炊烟袅袅；水上渔筏摇曳，鸬鹚斗水；山涧牛羊欢叫，牧笛悠扬。如果遇到阴雨天气，就能目睹漓江著名的“杨堤烟雨”景观——就像中国山水画，群峰绿水之间，景物隐约迷离。
+                    div.contents-details-item-content-schedule-list-item-subtitle 浪石风光
+                    div.contents-details-item-content-schedule-list-item-text 在漓江左岸林茵翠海中，可见青砖黛瓦村舍依江而立，叫浪石村。到此，就进入漓江景区的山水精华所在，两岸奇峰罗列水曲天窄，右岸有大黄山、文笔峰、笔架山、狮子山等，高低错落；左岸有观音山、白兔山、金鸡岭等，千姿百态。游览至此，但知船伴山行，不觉山回浪转，前望水穿江峡，旁视峡衬帆影；或则云遮雾绕，烟波渺渺，山川隐约，幻景天成。
           div.contents-details-item.feiyong 费用说明
           div.contents-details-item.baoming 报名方式
           div.contents-details-item.shuoming 重要说明

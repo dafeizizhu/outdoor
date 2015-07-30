@@ -1,0 +1,228 @@
+.detail {
+  padding: 26px 34px;
+  border: 1px solid #e6e6e6;
+}
+
+.detail-title {
+  font-size: 24px;
+  color: #333333;
+  margin-bottom: 7px;
+}
+
+.detail-summary {
+  margin-bottom: 12px;
+}
+
+.detail-summary-icon {
+  float: left;
+  width: 39px;
+  height: 14px;
+  background-image: url(/images/detail-icon.png);
+  margin-right: 4px;
+}
+
+.detail-summary-code {
+  float: left;
+  font-size: 12px;
+  color: #ff8800;
+  line-height: 14px;
+}
+
+.detail-summary-text {
+  float: left;
+  font-size: 12px;
+  color: #a3a4a4;
+  line-height: 14px;
+  margin-right: 8px;
+}
+
+.detail-summary-rank {
+  float: left;
+}
+
+.detail-summary-rank-star {
+  float: left;
+  width: 14px;
+  height: 14px;
+  background-image: url(/images/detail-rank-star.png);
+  margin-right: 8px;
+}
+
+.detail-gallery {
+  width: 545px;
+  float: left;
+}
+
+.detail-gallery-main {
+  width: 545px;
+  height: 280px;
+  margin-bottom: 15px;
+}
+
+.detail-gallery-thumbs-prev {
+  float: left;
+  width: 28px;
+  height: 65px;
+  background-image: url(/images/detail-gallery-thumbs-prev.png);
+}
+
+.detail-gallery-thumbs-list {
+  float: left;
+}
+
+.detail-gallery-thumbs-list-item {
+  float: left;
+  border: 1px solid #ff9216;
+  width: 112px;
+  height: 63px;
+  margin-right: 10px;
+}
+
+.detail-gallery-thumbs-list-item.last {
+  margin-right: 0;
+}
+
+.detail-gallery-thumbs-next {
+  float: left;
+  width: 28px;
+  height: 65px;
+  background-image: url(/images/detail-gallery-thumbs-next.png);
+}
+
+.detail-description {
+  float: left;
+  padding: 7px 30px;
+  line-height: 34px;
+}
+
+.detail-description-title {
+  font-size: 20px;
+  color: #ff8800;
+  font-weight: bold;
+}
+
+.detail-description-text {
+  font-size: 14px;
+  color: #333333;
+}
+
+.detail-description-text em {
+  font-style: normal;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.contents {
+  border: 1px solid #e5e5e5;
+}
+
+.contents-tabs-item {
+  float: left;
+  height: 48px;
+  padding: 0 23px;
+  border-right: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 20px;
+  line-height: 48px;
+  color: #333333;
+  font-weight: bold;
+}
+
+.contents-tabs-item.selected {
+  border-color: #32a1ff;
+  background-color: #32a1ff;
+  color: #ffffff;
+}
+
+.contents-details-item-content-text {
+  font-size: 15px;
+  color: #333333;
+  line-height: 25px;
+}
+
+.contents-details-item {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.contents-details-item-left {
+  float: left;
+  width: 126px;
+}
+
+.contents-details-item-content {
+  padding-right: 183px;
+  padding-left: 126px;
+}
+
+.contents-details-item-content-text em {
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.contents-details-item-content-text em.red {
+  color: #da0000;
+}
+
+.contents-details-item-content-schedule.first {
+  margin-top: 26px;
+}
+
+.contents-details-item-content-schedule-title {
+  height: 54px;
+  line-height: 54px;
+  font-size: 24px;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #dddddd;
+}
+
+.contents-details-item-content-schedule-title-day {
+  float: left;
+  width: 91px;
+  color: #337fe5;
+  padding-left: 19px;
+}
+
+.contents-details-item-content-schedule-title-text {
+  padding-left: 110px;
+  color: #333333;
+}
+
+.contents-details-item-content-schedule-list-item {
+  color: #333333;
+  line-height: 25px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #dddddd;
+  overflow: hidden;
+}
+
+.contents-details-item-content-schedule-list-item.last {
+  border-bottom: none;
+}
+
+.contents-details-item-content-schedule-list-item-time {
+  float: left;
+  width: 91px;
+  padding-left: 19px;
+}
+
+.contents-details-item-content-schedule-list-item-text {
+  padding-left: 110px;
+}
+
+.contents-details-item-content-schedule-list-item-subtitle {
+  position: relative;
+  left: 110px;
+  font-size: 17px;
+  height: 28px;
+  line-height: 28px;
+  padding-left: 18px;
+  background-repeat: no-repeat;
+  background-image: url(/images/details-item-schedule-subtitle-background.png);
+  font-style: italic;
+  border-bottom: 1px solid #ffb346;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
