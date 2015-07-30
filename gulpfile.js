@@ -19,6 +19,16 @@ gulp.task('default', function () {
   console.log('This is my first gulp file')
 })
 
+var replaceUrl = function (option) {
+  return through.obj(function (file, enc, cb) {
+    //file.contents = new Buffer(String(file.contents).replace(/src="\//g, 'src="'))
+    if (file.contents) {
+      file.contents = new Buffer(String(file.contents).replace(option.regExp, option.target))
+    }
+    cb(null, file)
+  })
+}
+
 gulp.task('build-js', function (cb) {
   gulp.src(['./js/**/*.js', './common/**/*.js'], {base: './'})
     .pipe(uglify())
@@ -34,12 +44,15 @@ gulp.task('build-html', function (cb) {
     .pipe(jade({
       pretty: true
     }))
+    .pipe(replaceUrl({regExp: /src="\//g, target: 'src="'}))
+    .pipe(replaceUrl({regExp: /href="\//g, target: 'href="'}))
     .pipe(gulp.dest('./dist'))
     .on('end', cb)
 })
 
 gulp.task('build-css', function (cb) {
   gulp.src(['./css/**/*.css', './common/**/*.css'], {base: './'})
+    .pipe(replaceUrl({regExp: /url\(\//g, target: 'url(\.\.\/'}))
     .pipe(uglifycss())
     .pipe(gulp.dest('./dist'))
     .on('end', cb)
