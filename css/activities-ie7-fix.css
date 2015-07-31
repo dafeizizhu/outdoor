@@ -1,3 +1,11 @@
 .filters-item-range {
   +width: 472px;
 }
+
+.pager-prev span {
+  +margin-top: 12px;
+}
+
+.pager-next span {
+  +margin-top: 12px;
+}
