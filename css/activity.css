@@ -126,6 +126,7 @@
   line-height: 48px;
   color: #333333;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .contents-tabs-item.selected {
@@ -210,6 +211,15 @@
 
 .contents-details-item-content-schedule-list-item-text {
   padding-left: 110px;
+  font-size: 15px;
+}
+
+.contents-details-item-content-schedule-list-item-text.last {
+  margin-bottom: 32px;
+}
+
+.contents-details-item-content-schedule-list-item-text .red {
+  color: #da0000;
 }
 
 .contents-details-item-content-schedule-list-item-subtitle {
@@ -225,4 +235,60 @@
   border-bottom: 1px solid #ffb346;
   margin-top: 18px;
   margin-bottom: 18px;
+}
+
+.contents-details-item-content-schedule-list-item-thumbs {
+  padding-left: 110px;
+}
+
+.contents-details-item-content-schedule-list-item-thumbs-item {
+  float: left;
+  margin-right: 42px;
+  margin-bottom: 10px;
+}
+
+.contents-details-item-content-schedule-list-item-thumbs-item-pic {
+  width: 341px;
+  height: 217px;
+}
+
+.contents-details-item-content-schedule-list-item-thumbs-item-title {
+  text-align: center;
+  font-size: 18px;
+  line-height: 38px;
+}
+
+.contents-details-feiyong-item {
+  line-height: 40px;
+  font-size: 15px;
+  padding: 0 24px;
+}
+
+.contents-details-feiyong-item .title {
+  font-weight: bold;
+}
+
+.contents-details-feiyong-item .price {
+  color: #ff8800;
+}
+
+.contents-details-feiyong-item-list-item .icon {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-image: url(/images/details-feiyong-item-icon.png);
+  text-align: center;
+  line-height: 18px;
+  color: #ffffff;
+  margin-right: 8px;
+}
+
+.contents-details-feiyong-item-tip {
+  color: #32a1ff;
+  padding-left: 26px;
+}
+
+.contents-details-feiyong-item-tel {
+  color: #32a1ff;
+  text-decoration: underline;
 }

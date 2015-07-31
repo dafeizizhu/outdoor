@@ -57,15 +57,15 @@ html
     div.row
       div.contents
         div.contents-tabs.clear-fix
-          div.contents-tabs-item.selected 团队行程
-          div.contents-tabs-item 费用说明
-          div.contents-tabs-item 报名方式
-          div.contents-tabs-item 重要说明
-          div.contents-tabs-item 集合地点
-          div.contents-tabs-item 温馨提示
-          div.contents-tabs-item 免费说明
+          div.contents-tabs-item.selected.jq-tab 团队行程
+          div.contents-tabs-item.jq-tab 费用说明
+          div.contents-tabs-item.jq-tab 报名方式
+          div.contents-tabs-item.jq-tab 重要说明
+          div.contents-tabs-item.jq-tab 集合地点
+          div.contents-tabs-item.jq-tab 温馨提示
+          div.contents-tabs-item.jq-tab 免费说明
         div.contents-details
-          div.contents-details-item.clear-fix.xingcheng
+          div.contents-details-item.clear-fix.xingcheng.jq-detail
             div.contents-details-item-left
             div.contents-details-item-content
               div.contents-details-item-content-text 
@@ -83,7 +83,8 @@ html
                     div.contents-details-item-content-schedule-list-item-text 广州上车点：广州天河体育中心东大门（中国电信大厦对面，地铁一号线体育中心站C出口附近）集合发车
                   div.contents-details-item-content-schedule-list-item.last
                     div.contents-details-item-content-schedule-list-item-time 20:00
-                    div.contents-details-item-content-schedule-list-item-text 佛山上车点：佛山龙溪地铁站C出口集合上车；集合出发，上车后领队会安排大家相互认识，不会让大家的旅途感到寂寞；路上小小辛苦是难免的，但美景当前，值！（车上空调较冷切记要带件较厚的长袖衣服或毛巾被防寒！)晚上1点左右到达阳朔，安排酒店入住，休息。温馨提示：集合时间、地点以出发前短信通知为准！请收到短信后请及时回复；如有晕车的朋友请提前吃好晕车药
+                    div.contents-details-item-content-schedule-list-item-text 佛山上车点：佛山龙溪地铁站C出口集合上车；集合出发，上车后领队会安排大家相互认识，不会让大家的旅途感到寂寞；路上小小辛苦是难免的，但美景当前，值！（车上空调较冷切记要带件较厚的长袖衣服或毛巾被防寒！)晚上1点左右到达阳朔，安排酒店入住，休息。
+                      span.red 温馨提示：集合时间、地点以出发前短信通知为准！请收到短信后请及时回复；如有晕车的朋友请提前吃好晕车药
               div.contents-details-item-content-schedule
                 div.contents-details-item-content-schedule-title
                   div.contents-details-item-content-schedule-title-day 第2天
@@ -95,16 +96,112 @@ html
                   div.contents-details-item-content-schedule-list-item
                     div.contents-details-item-content-schedule-list-item-time 9:30
                     div.contents-details-item-content-schedule-list-item-text 酒店大堂集合坐车约40分钟去到杨堤.杨堤到兴坪这一段风光是阳朔景点的代表，最佳游览方式徒步，不紧不慢不晒， 非常悠闲，风景如画，绝对是超佳享受；
-                    div.contents-details-item-content-schedule-list-item-text
-                      img(src='/images/placeholder/detail-schedule-item-pic.png')
-                      | &nbsp;&nbsp;&nbsp;&nbsp;
-                      img(src='/images/placeholder/detail-schedule-item-pic.png')
+                    div.contents-details-item-content-schedule-list-item-thumbs
+                      div.contents-details-item-content-schedule-list-item-thumbs-item
+                        div.contents-details-item-content-schedule-list-item-thumbs-item-pic
+                          img(src='/images/placeholder/detail-schedule-item-pic.png')
+                      div.contents-details-item-content-schedule-list-item-thumbs-item
+                        div.contents-details-item-content-schedule-list-item-thumbs-item-pic
+                          img(src='/images/placeholder/detail-schedule-item-pic.png')
                     div.contents-details-item-content-schedule-list-item-text 在漓江西岸的鸳鸯滩下，距桂林约46公里处。杨堤两岸翠竹成林，连成十里的绿色翠屏，摇曳在青山、秀水飞瀑、浅滩之间，给人以清幽、宁静之感。 从杨堤村后的人仔山眺望杨堤，映入眼帘的更是一幅绚丽多彩的自然风光：洲上阡陌纵横，庄稼如茵；山村竹树葱茏，炊烟袅袅；水上渔筏摇曳，鸬鹚斗水；山涧牛羊欢叫，牧笛悠扬。如果遇到阴雨天气，就能目睹漓江著名的“杨堤烟雨”景观——就像中国山水画，群峰绿水之间，景物隐约迷离。
                     div.contents-details-item-content-schedule-list-item-subtitle 浪石风光
                     div.contents-details-item-content-schedule-list-item-text 在漓江左岸林茵翠海中，可见青砖黛瓦村舍依江而立，叫浪石村。到此，就进入漓江景区的山水精华所在，两岸奇峰罗列水曲天窄，右岸有大黄山、文笔峰、笔架山、狮子山等，高低错落；左岸有观音山、白兔山、金鸡岭等，千姿百态。游览至此，但知船伴山行，不觉山回浪转，前望水穿江峡，旁视峡衬帆影；或则云遮雾绕，烟波渺渺，山川隐约，幻景天成。
-          div.contents-details-item.feiyong 费用说明
-          div.contents-details-item.baoming 报名方式
-          div.contents-details-item.shuoming 重要说明
-          div.contents-details-item.jihe 集合地点
-          div.contents-details-item.tishi 温馨提示
-          div.contents-details-item.mianfei 免费说明
+                    div.contents-details-item-content-schedule-list-item-subtitle 九马画山
+                    div.contents-details-item-content-schedule-list-item-text 九马画山在漓江东岸画山村附近，距桂林约60公里处。它五峰连属，临江石壁上，青绿黄白，众彩纷呈，浓淡相间班驳有致，宛如一幅神骏图，因有九马画山之名，简称画山。九马栩栩如生，神态各异，或立或卧，或奔或跃，或饮江河，或嘶云天，正是“马图呈九道，奇物在人间”。关于此景，清代诗人徐沄曾赋诗赞叹：自古山如画，而今画似山。马图呈九首奇物在人间。
+                    div.contents-details-item-content-schedule-list-item-subtitle 黄布滩
+                    div.contents-details-item-content-schedule-list-item-text 黄布滩因滩底有一块米黄色的大石板，似一匹“黄布”而得名。漓江山色美，美在倒影中。漓江倒影要数黄布滩最美丽、最醉人了。这里水平如镜，清澈澄碧，绿竹护堤，倩影婆娑，山峦、翠竹、蓝天、白云倒影在碧水之中，山水一体水天一色。最能概括此景的是清朝诗人袁枚的名句：分明看见青山顶，船在青山顶上行。
+                    div.contents-details-item-content-schedule-list-item-subtitle 兴坪镇
+                    div.contents-details-item-content-schedule-list-item-text.last 兴坪古镇，依山傍水，为漓江风景荟萃之地。四周山峦奇秀，景观丰富；东有僧尼相会、狮子望天、罗汉晒肚诸景北有寿星骑驴、骆驼过江等山；西有笔架山和美女峰；南面地势开阔，螺蛳山、鲤鱼山和远出群峰相衬，高低错落，疏密相间徒步大约需要3个半小时完成这段的旅程，随性而玩； 
+                    div.contents-details-item-content-schedule-list-item-time 15:00
+                    div.contents-details-item-content-schedule-list-item-text 左右回到兴坪古镇，古镇具有悠久的历史渊源和淳朴浓重的文化氛围，曾吸引很多国外领导人慕名而来,当地卖的小工艺品也比西街便宜好多.大家可以再闲逛一下. 或者爬一下老寨峰，老寨峰有一千两百级急升梯，上下山大约一个半小时在山顶可观看到漓江支流和兴坪古镇的的全景，在山顶上感受一下一览众山小的感觉。
+                  div.contents-details-item-content-schedule-list-item.last
+                    div.contents-details-item-content-schedule-list-item-time 17:50
+                    div.contents-details-item-content-schedule-list-item-text 结束行程集合回到阳朔县城后自由活动.晚上大家可去大排档或斑鱼火锅寻阳朔美食,想看印象刘三姐的朋友请提前和领 队沟通好买票事宜,爱泡吧的朋友就赶紧去偷欢吧，西街是世界有名的"地球村"，是阳朔小镇的灵魂，它布满了情调各异的酒吧，充满了异国情调，是泡吧的天堂;爱看新鲜玩意的朋友呢就慢慢在西上踩吧,也许有意想不到的收获!西街泡吧，体会浪漫，寻找艳遇……充满迷人风情的西街会不会让你中毒呢。
+                    div.contents-details-item-content-schedule-list-item-thumbs.clear-fix
+                      div.contents-details-item-content-schedule-list-item-thumbs-item
+                        div.contents-details-item-content-schedule-list-item-thumbs-item-pic
+                          img(src='/images/placeholder/details-item-content-schedule-list-item-thumbs-item-pic.png')
+                        div.contents-details-item-content-schedule-list-item-thumbs-item-title 浪石风光
+                      div.contents-details-item-content-schedule-list-item-thumbs-item
+                        div.contents-details-item-content-schedule-list-item-thumbs-item-pic
+                          img(src='/images/placeholder/details-item-content-schedule-list-item-thumbs-item-pic.png')
+                        div.contents-details-item-content-schedule-list-item-thumbs-item-title 九马画山 
+                      div.contents-details-item-content-schedule-list-item-thumbs-item
+                        div.contents-details-item-content-schedule-list-item-thumbs-item-pic
+                          img(src='/images/placeholder/details-item-content-schedule-list-item-thumbs-item-pic.png')
+                        div.contents-details-item-content-schedule-list-item-thumbs-item-title 黄布滩
+                      div.contents-details-item-content-schedule-list-item-thumbs-item
+                        div.contents-details-item-content-schedule-list-item-thumbs-item-pic
+                          img(src='/images/placeholder/details-item-content-schedule-list-item-thumbs-item-pic.png')
+                        div.contents-details-item-content-schedule-list-item-thumbs-item-title 兴坪镇
+              div.contents-details-item-content-schedule
+                div.contents-details-item-content-schedule-title
+                  div.contents-details-item-content-schedule-title-day 第3天
+                  div.contents-details-item-content-schedule-title-text 单车-遇龙河竹排漂流-还单车-回程
+                div.contents-details-item-content-schedule-list
+                  div.contents-details-item-content-schedule-list-item
+                    div.contents-details-item-content-schedule-list-item-time 09:30
+                    div.contents-details-item-content-schedule-list-item-text 起床、洗簌 、早餐、退房，行李安排集中放在宾馆保管。
+                  div.contents-details-item-content-schedule-list-item
+                    div.contents-details-item-content-schedule-list-item-time 10:00
+                    div.contents-details-item-content-schedule-list-item-text 集合去单车行挑选自己喜爱的单车，调试并熟悉单车各种性能。
+                  div.contents-details-item-content-schedule-list-item
+                    div.contents-details-item-content-schedule-list-item-time 10:10
+                    div.contents-details-item-content-schedule-list-item-text 出发走风景极佳的遇龙河风景区,一路田园加山水风光美不胜收,踩着单车奔驰的感觉也是极洒脱的享受.
+                  div.contents-details-item-content-schedule-list-item
+                    div.contents-details-item-content-schedule-list-item-time 11:00
+                    div.contents-details-item-content-schedule-list-item-text 左右我们到达遇龙河夏棠寨玩原生态的竹排漂流，和游漓江的感觉又有不同,穿梭于迷人山水之间，在人称小漓江而胜过漓江，清澈见底的遇龙河上进行漂流、打水仗等，虽然是在河上漂着如果不是主动想湿身的不会湿身，安全好玩的！（遇龙河水质清澈，水流缓缓。遇龙河两岸山峰清秀迤逦，连绵起伏，形态万千，江岸绿草如茵，翠竹葱郁，树木繁荫。遇龙河的水如同绿色的翡翠，清澈透亮，鱼儿闲游，水筏飘摇。微风拂过水面，泛起阵阵涟漪，如同小提琴奏出的音符，静静的，轻轻的虽然叫做漂流，但这中慢慢缓缓的感觉，让你逐渐的步入仙境般的世界。）
+                  div.contents-details-item-content-schedule-list-item
+                    div.contents-details-item-content-schedule-list-item-time 12:30
+                    div.contents-details-item-content-schedule-list-item-text 中餐相约一起到村里农家吃真正的农家鸡、刚钓的漓江鱼、菜地里现采的青菜和……味道极为鲜美啊！（费用自理）
+                  div.contents-details-item-content-schedule-list-item
+                    div.contents-details-item-content-schedule-list-item-time 14:00
+                    div.contents-details-item-content-schedule-list-item-text 一起踩单车奔驰在阳朔的山水风光间,欣赏美丽的喀斯特地貌风光,让我们的欢声笑语回汤在青山绿水中间. 参观结束后大家自己骑单车自由返回县城，还掉单车后自由安排，逛街、买小礼品、泡吧…大家抓紧时间去释放未尽的西街情怀。
+                  div.contents-details-item-content-schedule-list-item.last
+                    div.contents-details-item-content-schedule-list-item-time 15:00
+                    div.contents-details-item-content-schedule-list-item-text 左右集合上车返回，晚上约21点左右回到广州，结束愉快的旅程，美美的睡上一觉，次日精神饱满的工作啦！
+                      span.red （另：时间或天气变化，或大部分团友要求改变行程，领队有权根据当时情况在不减少景点和不降低服务质量的情况下调整行程，此举均是根据带队经验为了大家更顺利的游玩而做出的改变，希望大家理解和支持）
+                    div.contents-details-item-content-schedule-list-item-thumbs
+                      div.contents-details-item-content-schedule-list-item-thumbs-item
+                        div.contents-details-item-content-schedule-list-item-thumbs-item-pic
+                          img(src='/images/placeholder/details-item-content-schedule-list-item-thumbs-item-pic.png')
+                      div.contents-details-item-content-schedule-list-item-thumbs-item
+                        div.contents-details-item-content-schedule-list-item-thumbs-item-pic
+                          img(src='/images/placeholder/details-item-content-schedule-list-item-thumbs-item-pic.png')
+          div.contents-details-item.feiyong.jq-detail
+            div.contents-details-feiyong
+              div.contents-details-feiyong-item
+                span.title [活动费用]：
+                span.price 299元/人
+                | （名额限制52人，人满截止）
+              div.contents-details-feiyong-item
+                span.title [费用包含]：
+                | 广州→阳朔全程空调旅游巴士接送、二晚阳朔酒店住宿费；遇龙河风景区(双人）竹筏费，单车租用费、全程优秀领队、赠送20万旅游意外险.
+              div.contents-details-feiyong-item
+                span.title [费用不含]：
+                div.contents-details-feiyong-item-list
+                  div.contents-details-feiyong-item-list-item
+                    span.icon 1
+                    | 全程不含餐，丰俭由人,当地美食众多,消费优惠,住宿遇单人请补房差60元/人二晚,遇龙河竹排遇单人请补差:40元/人.
+                  div.contents-details-feiyong-item-list-item
+                    span.icon 2
+                    | 漓江过渡费,沿途有三个左右过渡点,请备好散钱,长得帅的漂亮的可人的嘴甜的能免费是你的本事,但请勿因收费问题和当地人起争议
+                  div.contents-details-feiyong-item-list-item
+                    span.icon 3
+                    | 偷懒费用：杨堤—兴坪漓江徒步沿途随时竹排漂过，费用5元—80元不等，走不动时请自己砍价；
+                  div.contents-details-feiyong-item-list-item
+                    span.icon 4
+                    | 此活动费用不含税，如需旅游发票，请联系客服。
+                div.contents-details-feiyong-item-tip 如个人有需要另增加保险额度及范畴欢迎自行另购：自购保险入口
+              div.contents-details-feiyong-item
+                span.title [预交款]：
+                | 200元/人；预付定金后视正式报名成功,请及时和客服查收核对,提前1天会统一发集合信息到队员手机.
+              div.contents-details-feiyong-item
+                div.contents-details-feiyong-item-tel 咨询热线（24小时免费拔打：400-838-9008）：
+          div.contents-details-item.baoming.jq-detail 报名方式
+          div.contents-details-item.shuoming.jq-detail 重要说明
+          div.contents-details-item.jihe.jq-detail 集合地点
+          div.contents-details-item.tishi.jq-detail 温馨提示
+          div.contents-details-item.mianfei.jq-detail 免费说明
+    script(src='/common/jquery/1.11.3/jquery.js')
+    script(src='/js/activity.js')
