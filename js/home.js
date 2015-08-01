@@ -52,7 +52,7 @@ $(function () {
   var $recommendContents = $('.jq-recommend-content')
   var $recommendContentsList = $('.jq-recommend-content-list')
 
-  $recommendRoutes.on('click', function (evt) {
+  $recommendRoutes.on('mouseenter', function (evt) {
     var $target = $(this)
     $recommendRoutes.removeClass('selected')
     $target.addClass('selected')
