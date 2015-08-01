@@ -3,7 +3,7 @@ $(function () {
   var $galleryListItems = $('.jq-gallery-list-item')
   var $galleryTabs = $('.jq-gallery-tabs-item')
 
-  $galleryTabs.on('click', function (evt) {
+  $galleryTabs.on('mouseenter', function (evt) {
     var target = this;
     $.each($galleryTabs, function (galleryTabIndex, galleryTab) {
       if ($galleryTabs[galleryTabIndex] == target) {

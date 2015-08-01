@@ -142,6 +142,7 @@
   float: left;
   background-image: url(/images/background-000000-opacity-50.png);
   color: #ffffff;
+  cursor: pointer;
 }
 
 .gallery-content-tabs-item.selected {
