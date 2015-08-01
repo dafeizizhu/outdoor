@@ -72,3 +72,27 @@ $(function () {
     })
   })
 })
+
+$(function () {
+  var $catalogTabs = $('.jq-catalog-tab')
+  
+  $catalogTabs.on('click', function (evt) {
+    var target = this
+    var $target = $(target)
+
+    $target.addClass('selected').siblings($catalogTabs).removeClass('selected')
+
+    var index = 0
+    $.each($catalogTabs, function (i, catalogTab) {
+      if (catalogTab == target) {
+        index = i
+      }
+    })
+
+    $target.parents('.jq-catalog').find('.jq-catalog-content').eq(index).show().siblings('.jq-catalog-content').hide()
+  })
+
+  $.each($catalogTabs, function (i, catalogTab) {
+    $(catalogTab).parents('.jq-catalog').find('.jq-catalog-content').eq(0).show().siblings('.jq-catalog-content').hide()
+  })
+})

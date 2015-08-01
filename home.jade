@@ -99,26 +99,28 @@ html
       div.catalogs.clear-fix
         each catalog, index in catalogs
           - var first = (index == 0 ? 'first' : '')
-          div(class='catalog #{first}')
+          div(class='catalog #{first} jq-catalog')
             div.catalog-header.clear-fix
               div.catalog-title #{catalog.title}
               div.catalog-tabs
                 each tab, index in catalog.tabs
                   - var selected = (index == 0 ? 'selected' : '')
-                  div(class='catalog-tabs-item #{selected}') #{tab}
+                  div(class='catalog-tabs-item #{selected} jq-catalog-tab') #{tab}
                 div.catalog-tabs-more 更多线路&gt;
             div.catalog-contents
               div.catalog-contents-item
                 div.catalog-contents-item-left
                   img(src='#{catalog.adImageUrl}')
-                div.catalog-contents-item-list.clear-fix
-                  each item in catalog.items
-                    div.catalog-contents-item-list-item
-                      div.catalog-contents-item-list-item-thumb
-                      div.catalog-contents-item-list-item-title
-                        span.main #{item.title.main}
-                        span.sub #{item.title.sub}
-                      div.catalog-contents-item-list-item-price #{item.price}
+                div.catalog-contents-item-wrapper
+                  each tab in catalog.tabs
+                    div.catalog-contents-item-list.clear-fix.jq-catalog-content
+                      each item in catalog.items
+                        div.catalog-contents-item-list-item
+                          div.catalog-contents-item-list-item-thumb
+                          div.catalog-contents-item-list-item-title
+                            span.main #{tab} #{item.title.main}
+                            span.sub #{item.title.sub}
+                          div.catalog-contents-item-list-item-price #{item.price}
       div.right.clear-fix
         div.right-side
           div.services
