@@ -79,11 +79,13 @@ $(function () {
   $catalogTabs.on('click', function (evt) {
     var target = this
     var $target = $(target)
+    var $catalog = $target.parents('.jq-catalog')
+    var $tabs = $catalog.find('.jq-catalog-tab')
 
     $target.addClass('selected').siblings($catalogTabs).removeClass('selected')
 
     var index = 0
-    $.each($catalogTabs, function (i, catalogTab) {
+    $.each($tabs, function (i, catalogTab) {
       if (catalogTab == target) {
         index = i
       }
