@@ -312,3 +312,70 @@
   color: #32a1ff;
   text-decoration: underline;
 }
+
+.contents-details-baoming {
+  padding: 0 24px;
+}
+
+.contents-details-baoming-title {
+  font-size: 16px;
+  color: #ff0000;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contents-details-baoming-item {
+  padding-left: 123px;
+}
+
+.contents-details-baoming-item-table {
+  table-layout: fixed;
+}
+
+.contents-details-baoming-item-table td {
+  border-collapse: collapse;
+  border: 1px solid #626364;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 16px 2px;
+}
+
+.contents-details-baoming-item td.title {
+  width: 92px;
+  text-align: center;
+  color: #0066ff;
+  font-weight: bold;
+}
+
+.contents-details-baoming-item td.content {
+  width: 593px;
+}
+
+.contents-details-baoming-item td p {
+  margin: 0;
+}
+
+.contents-details-baoming-item td p em {
+  font-style: normal;
+  font-weight: bold;
+}
+
+.contents-details-baoming-item p.tel {
+  background-repeat: no-repeat;
+  background-image: url(/images/tel-icon.png);
+  padding-left: 24px;
+  color: #ff0000;
+  font-weight: bold;
+  line-height: 20px;
+}
+
+.contents-details-baoming-item p.blue {
+  color: #0000ff;
+  font-weight: bold;
+}
+
+.contents-details-baoming-item span.qq {
+  background-repeat: no-repeat;
+  background-image: url(/images/qq-icon.png);
+  padding-left: 29px;
+}
