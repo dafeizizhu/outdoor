@@ -106,7 +106,8 @@ html
                 each tab, index in catalog.tabs
                   - var selected = (index == 0 ? 'selected' : '')
                   div(class='catalog-tabs-item #{selected} jq-catalog-tab') #{tab}
-                div.catalog-tabs-more 更多线路&gt;
+                div.catalog-tabs-more
+                  a(href='') 更多线路&gt;
             div.catalog-contents
               div.catalog-contents-item
                 div.catalog-contents-item-left
