@@ -379,3 +379,82 @@
   background-image: url(/images/qq-icon.png);
   padding-left: 29px;
 }
+
+.contents-details-shuoming {
+  padding: 18px 27px;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.contents-details-shuoming-title {
+  color: #ff0000;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+.contents-details-shuoming-content {
+  padding: 0 95px;
+  margin-bottom: 4px;
+}
+
+.contents-details-shuoming-content table td {
+  border-collapse: collapse;
+  border: 1px solid #626364;
+  padding: 3px;
+}
+
+.contents-details-shuoming-content em {
+  font-style: normal;
+  font-weight: bold;
+  color: #fc9204;
+}
+
+.contents-details-shuoming-content .blue {
+  color: #0000ff;
+}
+
+.contents-details-shuoming-content .underline {
+  text-decoration: underline;
+}
+
+.contents-details-shuoming-content .icon {
+  padding: 10px;
+}
+
+.contents-details-shuoming-content .icon span {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+.contents-details-shuoming-content .icon span.icbc {
+  background-image: url(/images/icbc-icon.png);
+}
+
+.contents-details-shuoming-content .icon span.boc {
+  background-image: url(/images/boc-icon.png);
+}
+
+.contents-details-shuoming-content .icon span.abc {
+  background-image: url(/images/abc-icon.png);
+}
+
+.contents-details-shuoming-content .icon span.cmbc {
+  background-image: url(/images/cmbc-icon.png);
+}
+
+.contents-details-shuoming-content .icon span.cmb {
+  background-image: url(/images/cmb-icon.png);
+}
+
+.contents-details-shuoming-content .icon span.ccb {
+  background-image: url(/images/ccb-icon.png);
+}
+
+.contents-details-shuoming-content .icon span.bankcomm {
+  background-image: url(/images/bankcomm-icon.png);
+}
+
+.contents-details-shuoming .qrcode {
+  float: left;
+}
