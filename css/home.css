@@ -4,6 +4,7 @@
   background-color: #1b73d0;
   color: #ffffff;
   position: absolute;
+  z-index: 999999 !important;
 }
 
 .classification-title {
@@ -117,7 +118,6 @@
 
 .gallery-content-wrapper {
   width: 1000px;
-  overflow: hidden;
 }
 
 .gallery-content-list {
@@ -126,9 +126,10 @@
 }
 
 .gallery-content-list-item {
-  float: left;
   width: 1000px;
   height: 430px;
+  position: absolute;
+  overflow: hidden;
 }
 
 .gallery-content-tabs {

@@ -36,8 +36,8 @@ html
       div.gallery-content
         div.gallery-content-wrapper
           div.gallery-content-list.jq-gallery-list
-            each galleryUrl in galleryUrls
-              div.gallery-content-list-item.jq-gallery-list-item
+            each galleryUrl, galleryUrlIndex in galleryUrls
+              div.gallery-content-list-item.jq-gallery-list-item(data-index='#{galleryUrlIndex}')
                 img(src='#{galleryUrl}')
           div.gallery-content-tabs
             each galleryTab, index in galleryTabs

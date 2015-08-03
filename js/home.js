@@ -3,24 +3,64 @@ $(function () {
   var $galleryListItems = $('.jq-gallery-list-item')
   var $galleryTabs = $('.jq-gallery-tabs-item')
 
+  var current = 0
+
+  function select(index) {
+    current = index % $galleryListItems.length
+
+    $galleryListItems.eq(index).css('left', '0px')
+    
+    var prevLeft = 0
+    for (var i = index - 1; i >= 0; i--) {
+      prevLeft += $galleryListItems.eq(i).width()
+      $galleryListItems.eq(i).css('left', -prevLeft + 'px')
+    }
+
+    var nextLeft = 0
+    for (var j = index + 1; j < $galleryListItems.length; j++) {
+      nextLeft += $galleryListItems.eq(j - 1).width()
+      $galleryListItems.eq(j).css('left', nextLeft + 'px')
+    }
+
+    if (index == 0) {
+      $galleryListItems.last().css('left', -($galleryListItems.last().width()) + 'px')
+    } else if (index == $galleryListItems.length - 1) {
+      $galleryListItems.first().css('left', $galleryListItems.eq(index).width() + 'px')
+    }
+  }
+
   $galleryTabs.on('mouseenter', function (evt) {
     var target = this;
     $.each($galleryTabs, function (galleryTabIndex, galleryTab) {
       if ($galleryTabs[galleryTabIndex] == target) {
-        var left = 0;
-        $.each($galleryListItems, function (galleryListItemIndex, galleryListItem) {
-          if (galleryListItemIndex < galleryTabIndex) {
-            left += $(galleryListItem).width()
+        var step = (galleryTabIndex - current) < 0 ? (galleryTabIndex - current + $galleryTabs.length) : (galleryTabIndex - current)
+        var completeCount = 0
+
+        var move = function () {
+          if (step > 0) {
+            $galleryListItems.animate({
+              left: '-=1000'
+            }, 1000, function () {
+              completeCount = completeCount + 1
+              if (completeCount == $galleryListItems.length) {
+                select(current + 1)
+                step = step - 1
+                if (step > 0) {
+                  move()
+                }
+              }
+            })
           }
-        })
-        $galleryList.animate({
-          'left': -left + 'px'
-        }, 1000)
+        }
+
+        move()
       }
     })
     $galleryTabs.removeClass('selected')
     $(target).addClass('selected')
   })
+  
+  select(0)
 })
 
 $(function () {
