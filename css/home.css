@@ -106,6 +106,7 @@
   height: 430px;
   margin-bottom: 30px;
   background-image: url(/images/gallery-background.png);
+  background-position: center;
 }
 
 .gallery-content {
