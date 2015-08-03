@@ -5,27 +5,28 @@ $(function () {
 
   var current = 0
 
-  function select(index) {
-    current = index % $galleryListItems.length
-
+  function show(index, prev) {
     $galleryListItems.eq(index).css('left', '0px')
-    
+
     var prevLeft = 0
-    for (var i = index - 1; i >= 0; i--) {
-      prevLeft += $galleryListItems.eq(i).width()
-      $galleryListItems.eq(i).css('left', -prevLeft + 'px')
+    var prevIndex = index
+    var prevCount = prev
+    while(prevCount) {
+      prevIndex = prevIndex - 1 < 0 ? prevIndex - 1 + $galleryListItems.length : prevIndex - 1
+      prevLeft += $galleryListItems.eq(prevIndex).width()
+      $galleryListItems.eq(prevIndex).css('left', -prevLeft + 'px')
+      prevCount--
     }
+
+    var nextCount = $galleryListItems.length - prev - 1;
 
     var nextLeft = 0
-    for (var j = index + 1; j < $galleryListItems.length; j++) {
-      nextLeft += $galleryListItems.eq(j - 1).width()
-      $galleryListItems.eq(j).css('left', nextLeft + 'px')
-    }
-
-    if (index == 0) {
-      $galleryListItems.last().css('left', -($galleryListItems.last().width()) + 'px')
-    } else if (index == $galleryListItems.length - 1) {
-      $galleryListItems.first().css('left', $galleryListItems.eq(index).width() + 'px')
+    var nextIndex = index
+    while(nextCount) {
+      nextLeft += $galleryListItems.eq(nextIndex).width()
+      nextIndex = (nextIndex + 1) % $galleryListItems.length
+      $galleryListItems.eq(nextIndex).css('left', nextLeft + 'px')
+      nextCount--
     }
   }
 
@@ -33,34 +34,36 @@ $(function () {
     var target = this;
     $.each($galleryTabs, function (galleryTabIndex, galleryTab) {
       if ($galleryTabs[galleryTabIndex] == target) {
-        var step = (galleryTabIndex - current) < 0 ? (galleryTabIndex - current + $galleryTabs.length) : (galleryTabIndex - current)
-        var completeCount = 0
+        var step = galleryTabIndex > current ? galleryTabIndex - current : current - galleryTabIndex
+        var direction = galleryTabIndex > current ? '-' : '+'
 
+        show(current, galleryTabIndex > current ? 1 : 2);
+
+        var completeCount = 0
         var move = function () {
-          if (step > 0) {
+          if (current != galleryTabIndex) {
             $galleryListItems.animate({
-              left: '-=1000'
-            }, 1000, function () {
+              left: direction + '=1000'
+            }, 1000 / step, function () {
               completeCount = completeCount + 1
               if (completeCount == $galleryListItems.length) {
-                select(current + 1)
-                step = step - 1
-                if (step > 0) {
-                  move()
-                }
+                completeCount = 0
+                show(current + (direction == '-' ? 1 : -1), 1)
+                current = current + (direction == '-' ? 1 : -1)
+                move()
               }
             })
           }
         }
-
         move()
+        show(galleryTabIndex, 1)
       }
     })
     $galleryTabs.removeClass('selected')
     $(target).addClass('selected')
   })
   
-  select(0)
+  show(0, 1)
 })
 
 $(function () {
