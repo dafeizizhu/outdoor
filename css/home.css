@@ -106,6 +106,8 @@
 .gallery {
   height: 430px;
   margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
 }
 
 .gallery-content {
@@ -132,7 +134,7 @@
 
 .gallery-content-tabs {
   position: absolute;
-  top: 581px;
+  top: 375px;
 }
 
 .gallery-content-tabs-item {

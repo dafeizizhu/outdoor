@@ -32,31 +32,28 @@ $(function () {
 
   $galleryTabs.on('mouseenter', function (evt) {
     var target = this;
+    $galleryList.stop(true, true)
     $.each($galleryTabs, function (galleryTabIndex, galleryTab) {
       if ($galleryTabs[galleryTabIndex] == target) {
         var step = galleryTabIndex > current ? galleryTabIndex - current : current - galleryTabIndex
-        var direction = galleryTabIndex > current ? '-' : '+'
+        var direction = galleryTabIndex > current ? 1 : -1
+        var prevCount = galleryTabIndex > current ? 1 : 2
 
-        show(current, galleryTabIndex > current ? 1 : 2);
+        show(current, prevCount)
 
-        var completeCount = 0
         var move = function () {
           if (current != galleryTabIndex) {
-            $galleryListItems.animate({
-              left: direction + '=1000'
+            $galleryList.animate({
+              left: -(direction * 1000) + 'px'
             }, 1000 / step, function () {
-              completeCount = completeCount + 1
-              if (completeCount == $galleryListItems.length) {
-                completeCount = 0
-                show(current + (direction == '-' ? 1 : -1), 1)
-                current = current + (direction == '-' ? 1 : -1)
-                move()
-              }
+              $galleryList.css('left', '0px')
+              current = current + direction < 0 ? (current + direction + $galleryTabs.length) : ((current + direction) % $galleryTabs.length)
+              show(current, prevCount)
+              move()
             })
           }
         }
         move()
-        show(galleryTabIndex, 1)
       }
     })
     $galleryTabs.removeClass('selected')

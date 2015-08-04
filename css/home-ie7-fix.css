@@ -7,7 +7,6 @@
 }
 
 .gallery-content-tabs {
-  +top: 376px;
   +z-index: 999999 !important;
 }
 
