@@ -26,6 +26,8 @@ $(function () {
   var $items = $('.jq-gallery-main-list-item')
   var $prev = $('.jq-gallery-prev')
   var $next = $('.jq-gallery-next')
+  var $wrapper = $('.jq-gallery-tab-wrapper')
+  var $thumbList = $('.jq-gallery-tab-list')
 
   function select(index) {
     if (index < 0 || index > $tabs.length - 1) return
@@ -44,6 +46,9 @@ $(function () {
     $list.animate({
       left: -left + 'px'
     }, 500, 'linear')
+
+    var left = -(Math.floor(index / 4) * $wrapper.width())
+    $thumbList.css('left', (left ? (left - 10) : 0) + 'px')
   }
 
   $tabs.on('click', function (evt) {

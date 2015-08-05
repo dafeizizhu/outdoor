@@ -80,8 +80,17 @@
   cursor: pointer;
 }
 
-.detail-gallery-thumbs-list {
+.detail-gallery-thumbs-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 486px;
+  height: 65px;
   float: left;
+}
+
+.detail-gallery-thumbs-list {
+  width: 99999999999px;
+  position: relative;
 }
 
 .detail-gallery-thumbs-list-item {

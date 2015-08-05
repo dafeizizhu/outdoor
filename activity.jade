@@ -28,25 +28,17 @@ html
         div.detail-gallery.clear-fix
           div.detail-gallery-main
             div.detail-gallery-main-list.jq-gallery-main-list
-              div.detail-gallery-main-list-item.jq-gallery-main-list-item
-                img(src='/images/placeholder/detail-gallery-big.png')
-              div.detail-gallery-main-list-item.jq-gallery-main-list-item
-                img(src='/images/placeholder/detail-gallery-big.png')
-              div.detail-gallery-main-list-item.jq-gallery-main-list-item
-                img(src='/images/placeholder/detail-gallery-big.png')
-              div.detail-gallery-main-list-item.jq-gallery-main-list-item
-                img(src='/images/placeholder/detail-gallery-big.png')
+              each item in [1, 2, 3, 4, 5, 6, 7]
+                div.detail-gallery-main-list-item.jq-gallery-main-list-item
+                  img(src='/images/placeholder/detail-gallery-big.png')
           div.detail-gallery-thumbs
             div.detail-gallery-thumbs-prev.jq-gallery-prev
-            div.detail-gallery-thumbs-list
-              div.detail-gallery-thumbs-list-item.selected.jq-gallery-tab
-                img(src='/images/placeholder/detail-gallery-small.png')
-              div.detail-gallery-thumbs-list-item.jq-gallery-tab
-                img(src='/images/placeholder/detail-gallery-small.png')
-              div.detail-gallery-thumbs-list-item.jq-gallery-tab
-                img(src='/images/placeholder/detail-gallery-small.png')
-              div.detail-gallery-thumbs-list-item.last.jq-gallery-tab
-                img(src='/images/placeholder/detail-gallery-small.png')
+            div.detail-gallery-thumbs-wrapper.jq-gallery-tab-wrapper
+              div.detail-gallery-thumbs-list.jq-gallery-tab-list
+                each item in [1, 2, 3, 4, 5, 6, 7]
+                  - var selected = (item == 1) ? 'selected' : ''
+                  div(class='detail-gallery-thumbs-list-item #{selected} jq-gallery-tab')
+                    img(src='/images/placeholder/detail-gallery-small.png')
             div.detail-gallery-thumbs-next.jq-gallery-next
         div.detail-description
           div.detail-description-title 活动类型:广东周边
