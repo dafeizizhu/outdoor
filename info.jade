@@ -1,0 +1,30 @@
+doctype html
+html
+  head
+    title 展示页面
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    link(rel='stylesheet', href='/common/normalize.css/3.0.3/normalize.css')
+    link(rel='stylesheet', href='/css/global.css')
+    link(rel='stylesheet', href='/css/info.css')
+  body
+    include ./includes/header.jade
+    div.nav.clear-fix
+      div.row.nav-bar
+        include ./includes/nav-list.jade
+    div.row
+      div.crumb 您当前所处的位置：首页 &gt; 领队风采 &gt; 领队介绍 &gt; 正文
+    div.row
+      div.info-content
+        div.info-content-title 懒猫－广州龙迹户外创办人
+        div.info-content-text
+          p 2003年创办广州龙迹户外俱乐部至今
+          p 中国登山协会初级户外运动指导员
+          p 真名：汪桂玲，籍贯：安徽
+          p 人生格言：
+          p 性格决定人生成败
+          p 不管任何人，帮你是人情，不帮你是本分
+          p 天上掉不下来馅饼，想要什么必须自己去努力
+          p 做一个自由洒脱独立自尊自强热爱生活的女人
+          p  从2003年一次偶然的机会涉足这行起，就爱上了这个工作，我天生的乐观向上爱笑能吃苦的性格好像专为这行而生，我尽我所能为之奋斗拼搏，现在，我还是热爱着这个工作，而且我认识了如此多的朋友，他（她）们成了我生命中不可缺少的部分，年轻时曾经埋怨过命运不公，现在早已明白命运不会待谁不一样的，起伏肯定是有的，酸甜苦辣时一个正常生命过程，得之坦然，失之淡然，希望大家能热情有爱的活到老，折腾到老。
+    include ./includes/footer.jade
