@@ -1,66 +1,15 @@
 $(function () {
-  var $galleryList = $('.jq-gallery-list')
-  var $galleryListItems = $('.jq-gallery-list-item')
-  var $galleryTabs = $('.jq-gallery-tabs-item')
+  var data = []
 
-  var current = 0
-
-  function show(index, prev) {
-    $galleryListItems.eq(index).css('left', '0px')
-
-    var prevLeft = 0
-    var prevIndex = index
-    var prevCount = prev
-    while(prevCount) {
-      prevIndex = prevIndex - 1 < 0 ? prevIndex - 1 + $galleryListItems.length : prevIndex - 1
-      prevLeft += $galleryListItems.eq(prevIndex).width()
-      $galleryListItems.eq(prevIndex).css('left', -prevLeft + 'px')
-      prevCount--
-    }
-
-    var nextCount = $galleryListItems.length - prev - 1;
-
-    var nextLeft = 0
-    var nextIndex = index
-    while(nextCount) {
-      nextLeft += $galleryListItems.eq(nextIndex).width()
-      nextIndex = (nextIndex + 1) % $galleryListItems.length
-      $galleryListItems.eq(nextIndex).css('left', nextLeft + 'px')
-      nextCount--
-    }
-  }
-
-  $galleryTabs.on('mouseenter', function (evt) {
-    var target = this;
-    $galleryList.stop(true, true)
-    $.each($galleryTabs, function (galleryTabIndex, galleryTab) {
-      if ($galleryTabs[galleryTabIndex] == target) {
-        var step = galleryTabIndex > current ? galleryTabIndex - current : current - galleryTabIndex
-        var direction = galleryTabIndex > current ? 1 : -1
-        var prevCount = galleryTabIndex > current ? 1 : 2
-
-        show(current, prevCount)
-
-        var move = function () {
-          if (current != galleryTabIndex) {
-            $galleryList.animate({
-              left: -(direction * 1000) + 'px'
-            }, 500 / step, 'linear', function () {
-              $galleryList.css('left', '0px')
-              current = current + direction < 0 ? (current + direction + $galleryTabs.length) : ((current + direction) % $galleryTabs.length)
-              show(current, prevCount)
-              move()
-            })
-          }
-        }
-        move()
-      }
-    })
-    $galleryTabs.removeClass('selected')
-    $(target).addClass('selected')
+  $.each($('.ui-slide__panel'), function (index, panel) {
+    data.push({})
   })
-  
-  show(0, 1)
+
+  new roundSlide('roundSlide980', {
+    autoWidth: true,
+    width: 1508,
+    height: 450
+  }, data)
 })
 
 $(function () {
