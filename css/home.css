@@ -115,29 +115,14 @@
 
 .gallery-content {
   margin: 0 auto;
-  width: 1000px;
-  padding-left: 190px;
-}
-
-.gallery-content-wrapper {
-  width: 1000px;
-}
-
-.gallery-content-list {
-  width: 999999px;
-  position: relative;
-}
-
-.gallery-content-list-item {
-  width: 1000px;
-  height: 430px;
-  position: absolute;
-  overflow: hidden;
+  width: 1190px;
 }
 
 .gallery-content-tabs {
   position: absolute;
   top: 376px;
+  z-index: 99999;
+  left: 349px;
 }
 
 .gallery-content-tabs-item {

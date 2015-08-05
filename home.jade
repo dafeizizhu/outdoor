@@ -4,10 +4,11 @@ html
     title Test
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible' content='IE=edge')
-    link(rel='stylesheet' href='/common/normalize.css/3.0.3/normalize.css')
-    link(rel='stylesheet' href='/css/global.css')
-    link(rel='stylesheet' href='/css/home.css')
-    link(rel='stylesheet' href='/css/home-ie7-fix.css')
+    link(rel='stylesheet', href='/common/normalize.css/3.0.3/normalize.css')
+    link(rel='stylesheet', href='/css/global.css')
+    link(rel='stylesheet', href='/css/home.css')
+    link(rel='stylesheet', href='/css/home-ie7-fix.css')
+    link(rel='stylesheet', href='/css/slide.css')
   body
     include ./includes/header.jade
     div.nav.clear-fix
@@ -33,17 +34,22 @@ html
                               div.classification-item-detail-list-item-list-item #{detailItem}
         include ./includes/nav-list.jade
     div.clear-fix.gallery
-      div.gallery-content
-        div.gallery-content-wrapper
-          div.gallery-content-list.jq-gallery-list
-            each galleryUrl, galleryUrlIndex in galleryUrls
-              div.gallery-content-list-item.jq-gallery-list-item(data-index='#{galleryUrlIndex}')
-                img(src='#{galleryUrl}')
-          div.gallery-content-tabs
+      div#roundSlide980.gallery-content
+        div.ui-slide.exp-slide-round
+          div.ui-slide__controls
+            div.ui-slide__prev.btn-slide-prev
+            div.ui-slide__next.btn-slide-next
+          div
             each galleryTab, index in galleryTabs
-              - var selected = (index == 0 ? 'selected' : '')
-              div(class='gallery-content-tabs-item jq-gallery-tabs-item #{selected}')
-                span #{galleryTab}
+              div.ui-slide__panel(ref='#{index + 1}', id='ui-slide__panel#{index + 1}')
+                a.elementLink(href='javascript:void(0)', target='_blank')
+                img(src='/images/placeholder/gallery.png')
+                span.elementOverlay
+        div.gallery-content-tabs
+          each galleryTab, index in galleryTabs
+            - var selected = (index == 0 ? 'selected' : '')
+            div(ref='#{index + 1}', class='gallery-content-tabs-item jq-gallery-tabs-item #{selected}')
+              span #{galleryTab}
     div.row.clear-fix
       div.recommend.clear-fix
         div.recommend-routes
@@ -244,6 +250,7 @@ html
           div.footer-col-weixin
             img(src='/images/footer-contact.png')
     script(src='/common/jquery/1.11.3/jquery.js')
+    script(src='/js/jquery-slide.js')
     script(src='/js/home.js')
     <!--[if lte IE 7]>
     <script src="/js/home-ie7-fix.js"></script>
