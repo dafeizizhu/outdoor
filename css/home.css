@@ -114,8 +114,10 @@
 }
 
 .gallery-content {
-  margin: 0 auto;
-  width: 1190px;
+  position: absolute;
+  overflow: hidden;
+  left: 50%;
+  margin-left: -754px;
 }
 
 .gallery-content-tabs {

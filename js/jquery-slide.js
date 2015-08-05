@@ -49,8 +49,7 @@
         drawContent: function() {
             this.parent.css({
                 width: this.options.width + "px",
-                height: this.options.height + "px",
-                position: "relative"
+                height: this.options.height + "px"
             });
             this.parent.find('[class="' + this.options.className + '"]').width(this.options.width).height(this.options.height);
             this.parent.find('.ui-slide__controls div').each(function (index, controlBtn) {
@@ -140,7 +139,7 @@
             _this.slideNext.click(function() {
                 _this.turn("left");
             });
-            _this.bottonNav.click(function() {
+            _this.bottonNav.on('mouseenter', function() {
                 var ref = parseInt(this.getAttribute("ref"));
                 if (_this.pageNow == ref) return false;
 
