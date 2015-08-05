@@ -5,6 +5,13 @@
   text-align: center;
 }
 
+.info-content-subtitle {
+  font-size: 18px;
+  line-height: 40px;
+  color: #ff8800;
+  text-align: center;
+}
+
 .info-content-text p {
   text-indent: 2em;
   line-height: 20px;
