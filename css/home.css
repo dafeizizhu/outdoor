@@ -733,6 +733,8 @@
   line-height: 20px;
   color: #666666;
   padding-left: 76px;
+  word-wrap: break-word;
+  word-break: break-all;
 }
 
 .guide-ad {
