@@ -40,9 +40,10 @@ $(function () {
       }
     })
 
+    $list.stop()
     $list.animate({
       left: -left + 'px'
-    }, 1000)
+    }, 500, 'linear')
   }
 
   $tabs.on('click', function (evt) {
