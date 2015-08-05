@@ -152,4 +152,45 @@ a:hover {
   color: #a3a4a4;
 }
 
+.footer {
+  background-color: #f2f2f2;
+  padding-top: 45px;
+  height: 216px;
+}
 
+.footer-col {
+  float: left;
+  margin-right: 40px;
+}
+
+.footer-col-title {
+  font-size: 16px;
+  line-height: 24px;
+  color: #626262;
+}
+
+.footer-col-text {
+  width: 190px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #626262;
+}
+
+.footer-col-weibo {
+  float: left;
+  font-size: 14px;
+  color: #a4a4a4;
+  padding-left: 21px;
+  background-repeat: no-repeat;
+  margin-right: 5px;
+  margin-top: 5px;
+  line-height: 19px;
+}
+
+.footer-col-weibo.sina {
+  background-image: url(/images/about-contact-weibo-icon.png);
+}
+
+.footer-col-weibo.t {
+  background-image: url(/images/about-contact-tweibo-icon.png);
+}
