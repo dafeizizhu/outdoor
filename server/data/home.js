@@ -4,7 +4,11 @@ module.exports = {
       style: 'guangdong',
       text: '广东周边游'
     },
-    contents: ['香港', '澳门', '台湾', '阳朔', '阳江', '惠东']
+    contents: ['香港', '澳门', '台湾', '阳朔', '阳江', '惠东'],
+    details: [{
+      title: '广东周边游',
+      items: ['香港 | 香港 | 香港', '阳朔 | 阳朔 | 阳朔']
+    }]
   }, {
     title: {
       style: 'chuanzang',
@@ -20,19 +24,31 @@ module.exports = {
       style: 'guonei',
       text: '国内纯玩'
     },
-    contents: ['丽江', '衡山', '哈尔滨', '拉萨', '昆明', '张家界']
+    contents: ['丽江', '衡山', '哈尔滨', '拉萨', '昆明', '张家界'],
+    details: [{
+      title: '国内纯玩',
+      items: ['香港 | 香港 | 香港', '阳朔 | 阳朔 | 阳朔']
+    }]
   }, {
     title: {
       style: 'chujing',
       text: '出境旅游'
     },
-    contents: ['泰国', '沙巴', '尼泊尔', '越南', '俄罗斯', '新西兰']
+    contents: ['泰国', '沙巴', '尼泊尔', '越南', '俄罗斯', '新西兰'],
+    details: [{
+      title: '出境旅游',
+      items: ['香港 | 香港 | 香港', '阳朔 | 阳朔 | 阳朔']
+    }]
   }, {
     title: {
       style: 'tuandui',
       text: '团队专区'
     },
-    contents: ['清明', '五一', '中秋', '国庆', '过年', '元宵']
+    contents: ['清明', '五一', '中秋', '国庆', '过年', '元宵'],
+    details: [{
+      title: '团队专区',
+      items: ['香港 | 香港 | 香港', '阳朔 | 阳朔 | 阳朔']
+    }]
   }],
   navItems: [{
     href: '',

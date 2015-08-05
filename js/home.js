@@ -67,7 +67,7 @@ $(function () {
   var $classificationItems = $('.jq-classification-item')
   var $classificationItemDetails = $('.jq-classification-item-detail')
 
-  $classificationItems.on('click', function (evt) {
+  $classificationItems.on('mouseenter', function (evt) {
     var target = this;
 
     $(target).siblings($classificationItems).removeClass('selected')
@@ -80,6 +80,11 @@ $(function () {
     } else {
       $classificationItemDetail.css('display', 'block')
     }
+  }).on('mouseleave', function (evt) {
+    var target = this
+    
+    $(target).find('.jq-classification-item-detail').css('display', 'none')
+    $(target).toggleClass('selected')
   })
 
   $classificationItemDetails.on('click', function (evt) {

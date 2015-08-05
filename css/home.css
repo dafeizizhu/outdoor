@@ -29,6 +29,9 @@
   padding-left: 8px;
 }
 
+.classification-item.selected.last {
+  padding-bottom: 2px;
+}
 .classification-item-title {
   height: 23px;
   line-height: 23px;
