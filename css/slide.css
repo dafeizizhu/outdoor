@@ -174,43 +174,35 @@
 }
 
 .btn-slide-next {
-    background-image: url(/images/slide-sprite.png);
-    background-position: -235px -149px
+    background-image: url(/images/btn-slide-next-disabled.png);
 }
 
 .btn-slide-next:hover {
-    background-image: url(/images/slide-sprite.png);
-    background-position: -280px -149px
+    background-image: url(/images/btn-slide-next-hover.png);
 }
 
 .btn-slide-next.ui-slide__disabled {
     cursor: default;
-    background-image: url(/images/slide-sprite.png);
-    background-position: -325px -149px
+    background-image: url(/images/btn-slide-next-disabled.png);
 }
 
 .btn-slide-next.ui-slide__disabled:hover {
-    background-image: url(/images/slide-sprite.png);
-    background-position: -325px -149px
+    background-image: url(/images/btn-slide-next-disabled.png);
 }
 
 .btn-slide-prev {
-    background-image: url(/images/slide-sprite.png);
-    background-position: -370px -149px
+    background-image: url(/images/btn-slide-prev-disabled.png);
 }
 
 .btn-slide-prev:hover {
-    background-image: url(/images/slide-sprite.png);
-    background-position: -337px -100px
+    background-image: url(/images/btn-slide-prev-hover.png);
 }
 
 .btn-slide-prev.ui-slide__disabled {
     cursor: default;
-    background-image: url(/images/slide-sprite.png);
-    background-position: -382px -100px
+    background-image: url(/images/btn-slide-prev-disabled.png);
 }
 
 .btn-slide-prev.ui-slide__disabled:hover {
-    background-image: url(/images/slide-sprite.png);
-    background-position: -382px -100px
+    background-image: url(/images/btn-slide-prev-disabled.png);
 }
