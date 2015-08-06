@@ -22,7 +22,8 @@ html
                 div(class='classification-item-title #{item.title.style}') #{item.title.text}
                 div.classification-item-container.clear-fix
                   each content in item.contents
-                    div.classification-item-content #{content}
+                    div.classification-item-content
+                      a(href='') #{content}
                 if item.details
                   div.classification-item-detail.jq-classification-item-detail
                     div.classification-item-detail-list
@@ -31,7 +32,8 @@ html
                           div.classification-item-detail-list-item-title #{detail.title}
                           div.classification-item-detail-list-item-list
                             each detailItem in detail.items
-                              div.classification-item-detail-list-item-list-item #{detailItem}
+                              div.classification-item-detail-list-item-list-item
+                                a(href='') #{detailItem}
         include ./includes/nav-list.jade
     div.clear-fix.gallery
       div#roundSlide980.gallery-content

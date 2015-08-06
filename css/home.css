@@ -69,6 +69,10 @@
   font-size: 12px;
 }
 
+.classification-item-content a {
+  color: #ffffff;
+}
+
 .classification-item-detail {
   display: none;
   position: absolute;
