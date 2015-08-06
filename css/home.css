@@ -115,6 +115,7 @@
   margin-bottom: 30px;
   position: relative;
   overflow: hidden;
+  min-width: 1190px;
 }
 
 .gallery-content {
@@ -209,6 +210,7 @@
   font-size: 14px;
   padding: 10px;
   height: 163px;
+  position: relative;
 }
 
 .recommend-content-left-top p {
@@ -229,6 +231,31 @@
   color: #f8134e;
   font-family: "Impact";
   font-size: 35px;
+}
+
+.recommend-content-left-top-detail {
+  width: 170px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #ff7608;
+  position: absolute;
+  bottom: 6px;
+  right: 11px;
+}
+
+.recommend-content-left-top-detail:hover {
+  background-color: #ff8208;
+}
+
+.recommend-content-left-top-detail:link {
+  color: #ffffff;
+}
+
+.recommend-content-left-top-detail:visited {
+  color: #ffffff;
 }
 
 .recommend-content-left-bottom {
