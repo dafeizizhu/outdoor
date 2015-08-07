@@ -144,6 +144,8 @@
 
 .gallery-content-tabs-item.selected {
   background-image: url(/images/background-ffffff-opacity-50.png);
+  border-bottom: 2px solid #ff8800;
+  height: 52px;
 }
 
 .recommend {
