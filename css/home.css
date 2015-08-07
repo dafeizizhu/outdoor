@@ -466,7 +466,26 @@
 .catalog-contents-item-list-item-thumb {
   width: 206px;
   height: 125px;
-  background-color: gray;
+}
+
+.catalog-contents-item-list-item-mask {
+  display: none;
+  position: absolute;
+  width: 202px;
+  height: 121px;
+  line-height: 125px;
+  text-align: center;
+  color: #fc9404;
+  border: 2px solid #ff7608;
+  background-image: url(/images/background-000000-opacity-50.png);
+}
+
+.catalog-contents-item-list-item-mask:link {
+  color: #fc9404;
+}
+
+.catalog-contents-item-list-item-mask:visited {
+  color: #fc9404;
 }
 
 .catalog-contents-item-list-item-title {

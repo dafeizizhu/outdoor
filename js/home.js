@@ -93,3 +93,11 @@ $(function () {
     $(catalogTab).parents('.jq-catalog').find('.jq-catalog-content').eq(0).show().siblings('.jq-catalog-content').hide()
   })
 })
+
+$(function () {
+  $('.jq-catalog-content-item').on('mouseenter', function (evt) {
+    $(this).find('.jq-catalog-content-item-mask').show()
+  }).on('mouseleave', function (evt) {
+    $(this).find('.jq-catalog-content-item-mask').hide()
+  })
+})

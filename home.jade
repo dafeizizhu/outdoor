@@ -130,8 +130,10 @@ html
                   each tab in catalog.tabs
                     div.catalog-contents-item-list.clear-fix.jq-catalog-content
                       each item in catalog.items
-                        div.catalog-contents-item-list-item
+                        div.catalog-contents-item-list-item.jq-catalog-content-item
                           div.catalog-contents-item-list-item-thumb
+                            a.catalog-contents-item-list-item-mask.jq-catalog-content-item-mask(href='') 查看详情&gt;&gt;
+                            img(src='/images/placeholder/catalog-contents-item-list-item-thumb.png')
                           div.catalog-contents-item-list-item-title
                             span.main #{tab} #{item.title.main}
                             span.sub #{item.title.sub}
