@@ -1,0 +1,65 @@
+doctype html
+html
+  head
+    title 关于
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    link(rel='stylesheet', href='/common/normalize.css/3.0.3/normalize.css')
+    link(rel='stylesheet', href='/css/global.css')
+    link(rel='stylesheet', href='/css/about.css')
+  body
+    include ./includes/header.jade
+    div.nav.clear-fix
+      div.row.nav-bar
+        include ./includes/nav-list.jade
+    div.row
+      div.crumb 您当前所处的位置：首页 &gt; 酒店介绍
+    div.row
+      div.about
+        div.about-tabs
+          div.about-tabs-wrapper.clear-fix
+            div.about-tabs-item.selected.jq-about-tab
+              div.about-tabs-item-text 关于我们
+              div.about-tabs-item-mark
+                span
+            div.about-tabs-saperator /
+            div.about-tabs-item.jq-about-tab
+              div.about-tabs-item-text 报名交费
+              div.about-tabs-item-mark
+                span
+            div.about-tabs-saperator /
+            div.about-tabs-item.jq-about-tab
+              div.about-tabs-item-text 联系我们
+              div.about-tabs-item-mark
+                span
+            div.about-tabs-saperator /
+            div.about-tabs-item.jq-about-tab
+              div.about-tabs-item-text 龙迹招聘
+              div.about-tabs-item-mark
+                span
+            div.about-tabs-saperator /
+            div.about-tabs-item.jq-about-tab
+              div.about-tabs-item-text 用户协议
+              div.about-tabs-item-mark
+                span
+            div.about-tabs-saperator /
+            div.about-tabs-item.jq-about-tab
+              div.about-tabs-item-text 免责声明
+              div.about-tabs-item-mark
+                span
+            div.about-tabs-saperator /
+            div.about-tabs-item.jq-about-tab
+              div.about-tabs-item-text 领队介绍
+              div.about-tabs-item-mark
+                span
+        div.about-contents
+          div.about-contents-item.jq-about-content 关于我们
+          div.about-contents-item.jq-about-content 报名交费
+          div.about-contents-item.jq-about-content 联系我们
+          div.about-contents-item.jq-about-content 龙迹招聘
+          div.about-contents-item.jq-about-content 用户协议
+          div.about-contents-item.jq-about-content 免责声明
+          div.about-contents-item.jq-about-content 领队介绍
+    script(src='/common/jquery/1.11.3/jquery.js')
+    script(src='/js/about.js')
+    include ./includes/footer.jade
