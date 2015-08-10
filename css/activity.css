@@ -175,11 +175,6 @@
   padding-bottom: 15px;
 }
 
-.contents-details-item-left {
-  float: left;
-  width: 126px;
-}
-
 .contents-details-item-content {
   padding-right: 183px;
   padding-left: 126px;
@@ -195,8 +190,19 @@
   color: #da0000;
 }
 
+.contents-details-item-content-schedule {
+  position: relative;
+}
+
 .contents-details-item-content-schedule.first {
   margin-top: 26px;
+}
+
+.contents-details-item-content-schedule-left {
+  width: 126px;
+  position: absolute;
+  left: -126px;
+  height: 100%;
 }
 
 .contents-details-item-content-schedule-title {
