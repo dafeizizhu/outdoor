@@ -102,3 +102,63 @@
 .blue a {
   color: #0000ff;
 }
+
+.red {
+  color: #ff0000;
+}
+
+.red a {
+  color: #ff0000;
+}
+
+.bg-red {
+  background-color: #ff0000;
+}
+
+.upper {
+  font-size: 10px;
+  padding: 1px;
+  color: #ffffff;
+  vertical-align: top;
+}
+
+.bank-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 4px;
+  background-repeat: no-repeat;
+}
+
+.bank-icon.icbc {
+  background-image: url(/images/icbc-icon.png);
+}
+
+.bank-icon.boc {
+  background-image: url(/images/boc-icon.png);
+}
+
+.bank-icon.abc {
+  background-image: url(/images/abc-icon.png);
+}
+
+.bank-icon.cmbc {
+  background-image: url(/images/cmbc-icon.png);
+}
+
+.bank-icon.cmb {
+  background-image: url(/images/cmb-icon.png);
+}
+
+.bank-icon.ccb {
+  background-image: url(/images/ccb-icon.png);
+}
+
+.bank-icon.bankcomm {
+  background-image: url(/images/bankcomm-icon.png);
+}
+
+.bank-icon.pingan {
+  background-image: url(/images/pingan-icon.png);
+}
