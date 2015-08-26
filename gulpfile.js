@@ -58,8 +58,8 @@ gulp.task('build-css', function (cb) {
 })
 
 gulp.task('build-images', function (cb) {
-  gulp.src('./images/**/*.png')
-    .pipe(gulp.dest('./dist/images'))
+  gulp.src(['./images/**/*.png', './images/**/*.jpg', './images/**/*.gif'], {base: './'})
+    .pipe(gulp.dest('./dist'))
     .on('end', cb)
 })
 
