@@ -71,7 +71,7 @@ $(function () {
 $(function () {
   var $catalogTabs = $('.jq-catalog-tab')
   
-  $catalogTabs.on('click', function (evt) {
+  $catalogTabs.on('mouseenter', function (evt) {
     var target = this
     var $target = $(target)
     var $catalog = $target.parents('.jq-catalog')
