@@ -61,3 +61,44 @@
   margin: 0 15px;
   color: #c9c9c9;
 }
+
+.about-contents-item p {
+  text-indent: 2em;
+}
+
+.about-contents-item p.no-indent {
+  text-indent: 0;
+}
+
+.about-contents-item p.center {
+  text-align: center;
+}
+
+.about-contents-item p.right {
+  text-align: right;
+}
+
+.about-contents-item em {
+  font-weight: bold;
+  font-style: normal;
+}
+
+.about-contents-item span.small {
+  font-size: 13px;
+}
+
+.orange {
+  color: #ff6600;
+}
+
+.orange a {
+  color: #ff6600;
+}
+
+.blue {
+  color: #0000ff;
+}
+
+.blue a {
+  color: #0000ff;
+}
