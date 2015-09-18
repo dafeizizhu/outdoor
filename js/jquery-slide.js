@@ -218,8 +218,8 @@
         },
         turnpage: function(page, dir) {
             var _this = this;
-            if (_this.locked) return false;
-            _this.locked = true;
+            //if (_this.locked) return false;
+            //_this.locked = true;
             if (_this.pageNow == page) return false;
 
             var run = function(page, dir, t) {
@@ -230,7 +230,7 @@
                 if (pre != _this.pageNow && next != _this.pageNow) {
                     var nowpre = _this.pageNow > 1 ? _this.pageNow - 1 : _this.total;
                     var nownext = _this.pageNow == _this.total ? 1 : _this.pageNow + 1;
-                    _this.parent.find(".ui-slide__panel:nth-child(" + nowpre + ")").animate({
+                    _this.parent.find(".ui-slide__panel:nth-child(" + nowpre + ")").stop(true, true).animate({
                         width: '0px',
                         height: '0px',
                         opacity: 0,
@@ -238,7 +238,7 @@
                         zIndex: 0,
                         marginTop: '135px'
                     }, t);
-                    _this.parent.find(".ui-slide__panel:nth-child(" + _this.pageNow + ")").animate({
+                    _this.parent.find(".ui-slide__panel:nth-child(" + _this.pageNow + ")").stop(true, true).animate({
                         width: '0px',
                         height: '0px',
                         opacity: 0,
@@ -246,7 +246,7 @@
                         zIndex: 0,
                         marginTop: '135px'
                     }, t);
-                    _this.parent.find(".ui-slide__panel:nth-child(" + nownext + ")").animate({
+                    _this.parent.find(".ui-slide__panel:nth-child(" + nownext + ")").stop(true, true).animate({
                         width: '0px',
                         height: '0px',
                         opacity: 0,
@@ -264,7 +264,7 @@
                     _this.parent.find(".ui-slide__panel:nth-child(" + pre + ") .elementOverlay").css({
                         opacity: 0.4
                     });
-                    _this.parent.find(".ui-slide__panel:nth-child(" + pre + ")").animate({
+                    _this.parent.find(".ui-slide__panel:nth-child(" + pre + ")").stop(true, true).animate({
                         opacity: 1,
                         left: _this.preLeft + 'px',
                         height: thumbHeight + 'px',
@@ -279,7 +279,7 @@
                     _this.parent.find(".ui-slide__panel:nth-child(" + page + ")").css({
                         zIndex: 3
                     });
-                    _this.parent.find(".ui-slide__panel:nth-child(" + page + ")").animate({
+                    _this.parent.find(".ui-slide__panel:nth-child(" + page + ")").stop(true, true).animate({
                         opacity: 1,
                         left: _this.pageNowLeft + 'px',
                         height: panelHeight + 'px',
@@ -301,7 +301,7 @@
                         zIndex: 2,
                         marginTop: thumb2MarginTop + 'px'
                     });
-                    _this.parent.find(".ui-slide__panel:nth-child(" + next + ")").animate({
+                    _this.parent.find(".ui-slide__panel:nth-child(" + next + ")").stop(true, true).animate({
                         opacity: 1,
                         left: _this.nextLeft + 'px',
                         height: thumbHeight + 'px',
@@ -317,7 +317,7 @@
                     _this.parent.find(".ui-slide__panel:nth-child(" + preP + ")").css({
                         zIndex: 0
                     });
-                    _this.parent.find(".ui-slide__panel:nth-child(" + preP + ")").animate({
+                    _this.parent.find(".ui-slide__panel:nth-child(" + preP + ")").stop(true, true).animate({
                         width: thumbWidth + 'px',
                         height: thumb2Height + 'px',
                         opacity: 0,
@@ -337,7 +337,7 @@
                     _this.parent.find(".ui-slide__panel:nth-child(" + next + ")").css({
                         zIndex: 2
                     });
-                    _this.parent.find(".ui-slide__panel:nth-child(" + next + ")").animate({
+                    _this.parent.find(".ui-slide__panel:nth-child(" + next + ")").stop(true, true).animate({
                         opacity: 1,
                         left: _this.nextLeft + 'px',
                         height: thumbHeight + 'px',
@@ -354,7 +354,7 @@
                     _this.parent.find(".ui-slide__panel:nth-child(" + page + ")").css({
                         zIndex: 3
                     }, t);
-                    _this.parent.find(".ui-slide__panel:nth-child(" + page + ")").animate({
+                    _this.parent.find(".ui-slide__panel:nth-child(" + page + ")").stop(true, true).animate({
                         opacity: 1,
                         left: _this.pageNowLeft + 'px',
                         height: panelHeight + 'px',
@@ -376,7 +376,7 @@
                         zIndex: 2,
                         marginTop: thumb2MarginTop + 'px'
                     });
-                    _this.parent.find(".ui-slide__panel:nth-child(" + pre + ")").animate({
+                    _this.parent.find(".ui-slide__panel:nth-child(" + pre + ")").stop(true, true).animate({
                         opacity: 1,
                         left: _this.preLeft + 'px',
                         height: thumbHeight + 'px',
@@ -393,7 +393,7 @@
                     _this.parent.find(".ui-slide__panel:nth-child(" + nextN + ")").css({
                         zIndex: 0
                     });
-                    _this.parent.find(".ui-slide__panel:nth-child(" + nextN + ")").animate({
+                    _this.parent.find(".ui-slide__panel:nth-child(" + nextN + ")").stop(true, true).animate({
                         width: thumbWidth + 'px',
                         height: thumb2Height + 'px',
                         opacity: 0,
