@@ -491,6 +491,8 @@
 
 .catalog-contents-item-list-item-title {
   line-height: 18px;
+  max-height: 40px;
+  overflow: hidden;
 }
 
 .catalog-contents-item-list-item-title .main {

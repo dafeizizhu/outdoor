@@ -118,6 +118,7 @@
 .routes-item-description {
   float: left;
   margin-left: 23px;
+  max-width: 600px;
 }
 
 .routes-item-description-title {
