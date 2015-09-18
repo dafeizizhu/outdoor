@@ -80,6 +80,9 @@
                 zIndex: 3,
                 marginTop: 0
             });
+            this.parent.find(".ui-slide__panel:nth-child(" + this.pageNow + ") img").css({
+                left: '190px'
+            });
             this.parent.find(".ui-slide__panel:nth-child(" + this.pageNow + ") .elementOverlay").css({
                 opacity: 0
             });
@@ -115,6 +118,10 @@
             });
             // this.parent.find(".ui-slide__panel:nth-child("+next+") .leftShadow").css({opacity:0});
             // this.parent.find(".ui-slide__panel:nth-child("+next+") .rightShadow").css({opacity:0});
+
+            this.parent.find('.ui-slide__panel img').css({
+                position: 'relative'
+            });
         },
         bind: function() {
             this.slidePrev = this.parent.find(".ui-slide__prev");
@@ -246,6 +253,9 @@
                         zIndex: 0,
                         marginTop: '135px'
                     }, t);
+                    _this.parent.find(".ui-slide__panel:nth-child(" + _this.pageNow + ") img").stop(true, true).animate({
+                        left: '190px'
+                    }, t);
                     _this.parent.find(".ui-slide__panel:nth-child(" + nownext + ")").stop(true, true).animate({
                         width: '0px',
                         height: '0px',
@@ -259,7 +269,10 @@
                     _this.parent.find(".ui-slide__panel:nth-child(" + _this.pageNow + ")").css({
                         zIndex: 0
                     });
-
+                    
+                    _this.parent.find(".ui-slide__panel:nth-child(" + _this.pageNow + ") img").css({
+                        left: 0
+                    });
 
                     _this.parent.find(".ui-slide__panel:nth-child(" + pre + ") .elementOverlay").css({
                         opacity: 0.4
@@ -287,6 +300,9 @@
                         zIndex: 3,
                         marginTop: '0'
                     }, t);
+                    _this.parent.find(".ui-slide__panel:nth-child(" + page + ") img").stop(true, true).animate({
+                        left: '190px'
+                    }, t)
                     _this.parent.find(".ui-slide__panel:nth-child(" + page + ") .elementOverlay").css({
                         opacity: 0
                     });
@@ -333,7 +349,9 @@
                     _this.parent.find(".ui-slide__panel:nth-child(" + _this.pageNow + ")").css({
                         zIndex: 0
                     });
-
+                    _this.parent.find(".ui-slide__panel:nth-child(" + _this.pageNow + ") img").css({
+                        left: 0
+                    });
                     _this.parent.find(".ui-slide__panel:nth-child(" + next + ")").css({
                         zIndex: 2
                     });
@@ -345,6 +363,7 @@
                         zIndex: 2,
                         marginTop: thumbMarginTop + 'px'
                     }, t);
+                    
                     _this.parent.find(".ui-slide__panel:nth-child(" + next + ") .elementOverlay").css({
                         opacity: 0.4
                     });
@@ -361,6 +380,10 @@
                         width: panelWidth + 'px',
                         zIndex: 3,
                         marginTop: '0px'
+                    }, t);
+
+                    _this.parent.find(".ui-slide__panel:nth-child(" + page + ") img").stop(true, true).animate({
+                        left: '190px'
                     }, t);
                     _this.parent.find(".ui-slide__panel:nth-child(" + page + ") .elementOverlay").css({
                         opacity: 0
