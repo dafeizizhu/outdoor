@@ -1,0 +1,14 @@
+link(rel='stylesheet', href='/css/includes-qq-custom-service.css')
+div.qq-custom-service.jq-qq-custom-service
+  div.qq-custom-service-arrow.jq-qq-custom-service-arrow.left
+    a(href='javascript:;', title='在线客服')
+  div.qq-custom-service-box.jq-qq-custom-service-box
+    div.qq-custom-service-box-title 在线客服
+    div.qq-custom-service-box-list
+      ul
+        each val in [1,2,3,4,5]
+          -var last = (val == 5) ? 'last' : ''
+          li(class='#{last}'): a(href='tencent://message/?uin=1234567890&Site=sc.chinaz.com&Menu=yes')
+            img(src='/images/qq.png')
+            | 在线客服#{val}号
+script(src='/js/includes-qq-custom-service.js')

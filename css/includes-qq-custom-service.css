@@ -1,0 +1,72 @@
+.qq-custom-service {
+  position: fixed;
+  top: 100px;
+  width: 220px;
+  right: -170px;
+}
+
+.qq-custom-service-arrow {
+  width: 50px;
+  height: 45px;
+  background-image: url(/images/qq-service-arrow.jpg);
+  float: left;
+  cursor: pointer;
+}
+
+.qq-custom-service-arrow.right {
+  background-position: 0px 0px;
+}
+
+.qq-custom-service-arrow.left {
+  background-position: -50px 0px;
+}
+
+.qq-custom-service-box {
+  width: 170px;
+  float: left;
+  background-color: #ffffff;
+}
+
+.qq-custom-service-box-title {
+  height: 45px;
+  line-height: 45px;
+  background-color: #f08326;
+  color: #ffffff;
+  font-size: 18px;
+  text-indent: 22px;
+}
+
+.qq-custom-service-box-list {
+  border: 1px solid #cccccc;
+}
+
+.qq-custom-service-box-list ul {
+  padding: 0 14px;
+  list-style: none;
+  margin: 0;
+}
+
+.qq-custom-service-box-list ul li {
+  height: 45px;
+  line-height: 45px;
+  font-size: 15px;
+  border-bottom: 1px solid #e3e3e3;
+  text-align: right;
+}
+
+.qq-custom-service-box-list ul li.last {
+  border-bottom: none;
+}
+
+.qq-custom-service-box-list ul li a {
+  color: #666666;
+  text-decoration: none;
+  outline: none;
+}
+
+.qq-custom-service-box-list ul li a img {
+  float: left;
+  margin-top: 7px;
+  border: none;
+  outline: none;
+}
