@@ -145,6 +145,11 @@
   border: 1px solid #e5e5e5;
 }
 
+.contents-tabs {
+  background-color: #ffffff;
+  z-index: 2;
+}
+
 .contents-tabs-item {
   float: left;
   height: 48px;
@@ -153,14 +158,36 @@
   border-bottom: 1px solid #e5e5e5;
   font-size: 20px;
   line-height: 48px;
-  color: #333333;
   font-weight: bold;
   cursor: pointer;
+}
+
+.contents-tabs-item a {
+  color: #333333;
+}
+
+.contents-tabs-item a:visited {
+  color: #333333;
+}
+
+.contents-tabs-item a:link {
+  color: #333333;
 }
 
 .contents-tabs-item.selected {
   border-color: #32a1ff;
   background-color: #32a1ff;
+}
+
+.contents-tabs-item.selected a {
+  color: #ffffff;
+}
+
+.contents-tabs-item.selected a:visited {
+  color: #ffffff;
+}
+
+.contents-tabs-item.selected a:link {
   color: #ffffff;
 }
 

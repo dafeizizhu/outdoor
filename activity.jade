@@ -56,14 +56,14 @@ html
             | 2014-11-20 12:00
     div.row
       div.contents
-        div.contents-tabs.clear-fix
-          div.contents-tabs-item.selected.jq-tab 团队行程
-          div.contents-tabs-item.jq-tab 费用说明
-          div.contents-tabs-item.jq-tab 报名方式
-          div.contents-tabs-item.jq-tab 重要说明
-          div.contents-tabs-item.jq-tab 集合地点
-          div.contents-tabs-item.jq-tab 温馨提示
-          div.contents-tabs-item.jq-tab 免费说明
+        div.contents-tabs.clear-fix.jq-tabs
+          div.contents-tabs-item.selected.jq-tab: a 团队行程
+          div.contents-tabs-item.jq-tab: a 费用说明
+          div.contents-tabs-item.jq-tab: a 报名方式
+          div.contents-tabs-item.jq-tab: a 重要说明
+          div.contents-tabs-item.jq-tab: a 集合地点
+          div.contents-tabs-item.jq-tab: a 温馨提示
+          div.contents-tabs-item.jq-tab: a 免费说明
         div.contents-details
           div.contents-details-item.clear-fix.xingcheng.jq-detail
             div.contents-details-item-content
@@ -355,4 +355,6 @@ html
           div.contents-details-item.mianfei.jq-detail 免费说明
     include ./includes/footer.jade
     script(src='/common/jquery/1.11.3/jquery.js')
+    script(src='/common/jquery-sticky/1.0.3/jquery.sticky.js')
+    script(src='/common/jquery-scrollspy/1.0.0/jquery-scrollspy.js')
     script(src='/js/activity.js')

@@ -1,23 +1,23 @@
-$(function () {
-  var $tabs = $('.jq-tab')
-  var $details = $('.jq-detail')
-
-  $tabs.on('click', function (evt) {
-    var index
-    var targetTab = this
-
-    $.each($tabs, function (i, tab) {
-      if (tab == targetTab) {
-        index = i
-      }
-    })
-
-    $(this).addClass('selected').siblings().removeClass('selected')
-    $details.eq(index).show().siblings().hide()
-  })
-
-  $details.eq(0).siblings().hide()
-})
+//$(function () {
+//  var $tabs = $('.jq-tab')
+//  var $details = $('.jq-detail')
+//
+//  $tabs.on('click', function (evt) {
+//    var index
+//    var targetTab = this
+//
+//    $.each($tabs, function (i, tab) {
+//      if (tab == targetTab) {
+//        index = i
+//      }
+//    })
+//
+//    $(this).addClass('selected').siblings().removeClass('selected')
+//    $details.eq(index).show().siblings().hide()
+//  })
+//
+//  $details.eq(0).siblings().hide()
+//})
 
 $(function () {
   var current = 0
@@ -67,5 +67,40 @@ $(function () {
 
   $next.on('click', function (evt) {
     select(current + 1)
+  })
+})
+
+$(function () {
+  var $tabsWrapper = $('.jq-tabs')
+
+  $tabsWrapper.sticky({
+    topSpacing: 0
+  })
+})
+
+$(function () {
+  var $jqDetails = $('.jq-detail')
+  var $jqTabs = $('.jq-tab')
+
+  $jqDetails.each(function (index) {
+    var position = $(this).position()
+
+    $(this).scrollspy({
+      min: position.top - 50,
+      max: position.top + $(this).height() - 50,
+      onEnter: function (element, position) {
+        $jqTabs.eq(index).addClass('selected').siblings().removeClass('selected')
+      }
+    })
+  })
+
+  $jqTabs.each(function (index) {
+    $(this).on('click', function (evt) {
+      evt.preventDefault()
+
+      $(this).addClass('selected').siblings().removeClass('selected')
+      var scrollTop = $jqDetails.eq(index).offset().top
+      $('html, body').scrollTop(scrollTop - 50)
+    })
   })
 })
