@@ -9,6 +9,6 @@ $(function () {
 
   $pager.css({
     position: 'relative',
-    left: (($pager.parent().outerWidth() - pagerWidth) / 2) + 'px'
+    width: pagerWidth + 'px'
   })
 })
