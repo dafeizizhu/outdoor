@@ -1,6 +1,6 @@
 .qq-custom-service {
   position: fixed;
-  top: 100px;
+  bottom: 100px;
   width: 220px;
   right: -170px;
 }
