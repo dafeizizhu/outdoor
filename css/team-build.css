@@ -1,0 +1,249 @@
+.nav-brand {
+  width: 213px;
+  height: 493px;
+  background-color: #1b73d0;
+  color: #ffffff;
+  position: absolute;
+  z-index: 999999 !important;
+}
+
+.nav-brand-title {
+  padding: 23px 0;
+  text-align: center;
+  background-color: #115fb1;
+}
+
+.nav-brand-content {
+  font-size: 12px;
+  padding: 0 11px;
+}
+
+.nav-brand-content-header {
+  text-align: center;
+  line-height: 45px;
+}
+
+.nav-brand-content-header em {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.nav-brand-content-item {
+  border-top: 1px solid #609dde;
+  border-bottom: 1px solid #609dde;
+}
+
+.nav-brand-content-qq {
+  margin: 35px 0;
+}
+
+.nav-brand-content-qq-icon {
+  width: 35px;
+  height: 38px;
+  float: left;
+  background-image: url(/images/qq-big-icon.png);
+}
+
+.nav-brand-content-qq-text {
+  padding-left: 40px;
+  line-height: 20px;
+}
+
+.nav-brand-content-qq-button {
+  padding-left: 40px;
+}
+
+.nav-brand-content-qq-button a {
+  width: 104px;
+  height: 34px;
+  float: left;
+  background-image: url(/images/qq-custom-service-button.png);
+  line-height: 34px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.nav-brand-content-qq-button a:hover {
+  background-image: url(/images/qq-custom-service-button-hover.png);
+}
+
+.nav-list {
+  margin-left: 213px;
+}
+
+.gallery {
+  height: 430px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  min-width: 1190px;
+}
+
+.gallery-content {
+  position: absolute;
+  overflow: hidden;
+  left: 50%;
+  margin-left: -754px;
+}
+
+.gallery-content-tabs {
+  position: absolute;
+  top: 376px;
+  z-index: 99999;
+  left: 372px;
+}
+
+.gallery-content-tabs-item {
+  height: 54px;
+  line-height: 54px;
+  padding: 0px 18px;
+  float: left;
+  background-image: url(/images/background-000000-opacity-50.png);
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.gallery-content-tabs-item.selected {
+  background-image: url(/images/background-ffffff-opacity-50.png);
+  border-bottom: 2px solid #ff8800;
+  height: 52px;
+}
+
+.banner {
+  height: 111px;
+}
+
+.banner-brand {
+  float: left;
+  margin-right: 5px;
+  width: 212px;
+  height: 109px;
+  border: 1px solid #f2f4f7;
+  background-image: url(/images/team-build-banner-brand-background.png);
+}
+
+.banner-brand div {
+  text-align: center;
+}
+
+.banner-brand-main {
+  margin-top: 33px;
+  font-size: 24px;
+  color: #1b73d0;
+  font-weight: bold;
+}
+
+.banner-brand-sub {
+  font-size: 14px;
+  color: #f23f39;
+  line-height: 20px;
+}
+
+.banner-act {
+  width: 931px;
+  height: 101px;
+  background-color: #f5f7fa;
+  float: left;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.banner-act-title {
+  font-size: 18px;
+  color: #444444;
+  line-height: 28px;
+}
+
+.banner-act-list {
+  position: relative;
+}
+
+.banner-act-list-item {
+  width: 148px;
+  height: 60px;
+  background-color: #e2ab18;
+  float: left;
+  border-radius: 4px;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.banner-act-list-sep {
+  position: relative;
+  top: 26px;
+  width: 40px;
+  height: 13px;
+  background-color: #e2ab18;
+  float: left;
+}
+
+.banner-act-list-item-icon {
+  float: left;
+  width: 60px;
+  height: 50px;
+  background-repeat: no-repeat;
+}
+
+.banner-act-list-item-icon.first {
+  background-image: url(/images/team-build-banner-act-icon-first.png);
+}
+
+.banner-act-list-item-icon.second {
+  background-image: url(/images/team-build-banner-act-icon-second.png);
+}
+
+.banner-act-list-item-icon.third {
+  background-image: url(/images/team-build-banner-act-icon-third.png);
+}
+
+.banner-act-list-item-icon.fouth {
+  background-image: url(/images/team-build-banner-act-icon-fouth.png);
+}
+
+.banner-act-list-item-text {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.banner-act-qq {
+  float: right;
+}
+
+.banner-act-qq-icon {
+  width: 35px;
+  height: 38px;
+  float: left;
+  background-image: url(/images/qq-big-icon.png);
+}
+
+.banner-act-qq-title {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #1b73d0;
+  width: 107px;
+}
+
+.banner-act-qq-phone {
+  padding: 4px;
+  border-top: 1px solid #cfcfcf;
+}
+
+.banner-act-qq-phone-icon {
+  width: 19px;
+  height: 19px;
+  float: left;
+  background-image: url(/images/team-build-banner-act-qq-phone-icon.png);
+}
+
+.banner-act-qq-phone-text {
+  font-size: 12px;
+  color: #555555;
+  line-height: 24px;
+  padding-left: 24px;
+}

@@ -229,6 +229,8 @@
             //_this.locked = true;
             if (_this.pageNow == page) return false;
 
+            _this.parent.find('.ui-slide__panel img').stop(true, true).css('left', 0)
+
             var run = function(page, dir, t) {
                 var pre = page > 1 ? page - 1 : _this.total;
                 var next = page == _this.total ? 1 : page + 1;

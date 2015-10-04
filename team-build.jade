@@ -1,0 +1,87 @@
+doctype html
+html
+  head
+    title 团队建设
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    link(rel='stylesheet', href='/common/normalize.css/3.0.3/normalize.css')
+    link(rel='stylesheet', href='/css/global.css')
+    link(rel='stylesheet', href='/css/team-build.css')
+    link(rel='stylesheet', href='/css/slide.css')
+  body
+    include ./includes/header.jade
+    div.nav.clear-fix
+      div.row.nav-bar
+        div.nav-brand
+          div.nav-brand-title 旅游线路分类
+          div.nav-brand-content
+            div.nav-brand-content-header: em 12年专注户外旅游、拓展
+            div.nav-brand-content-header 口碑最好的户外旅游平台
+            div.nav-brand-content-item
+              p 理念：安全、合作、环保、自助 
+              p 原则：认真、眼睛、踏实、陈恳
+              p 目标：个性、细心、安心、开心
+            div.nav-brand-content-header QQ群
+            div.nav-brand-content-item
+              p 咨询电话：400-838-9008
+              p 咨询手机：135 7094 3066
+                br
+                | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;135 7094 30
+              p 经营许可证：L-GD01139
+            div.nav-brand-content-qq
+              div.nav-brand-content-qq-icon
+              div.nav-brand-content-qq-text 服务时间：09:00-21:00
+              div.nav-brand-content-qq-button
+                a(href='#') QQ在线咨询
+        include ./includes/nav-list.jade 
+    div.clear-fix.gallery
+      div#roundSlide980.gallery-content
+        div.ui-slide.exp-slide-round
+          div.ui-slide__controls
+            div.ui-slide__prev.btn-slide-prev
+            div.ui-slide__next.btn-slide-next
+          div
+            each galleryTab, index in galleryTabs
+              div.ui-slide__panel(ref='#{index + 1}', id='ui-slide__panel#{index + 1}')
+                a.elementLink(href='javascript:void(0)', target='_blank')
+                img(src='/images/placeholder/gallery.png')
+                span.elementOverlay
+        div.gallery-content-tabs
+          each galleryTab, index in galleryTabs
+            - var selected = (index == 0 ? 'selected' : '')
+            div(ref='#{index + 1}', class='gallery-content-tabs-item jq-gallery-tabs-item #{selected}')
+              span #{galleryTab}
+    div.clear-fix.row
+      div.banner
+        div.banner-brand
+          div.banner-brand-main 携手12周年
+          div.banner-brand-sub since 2003-2015
+        div.banner-act
+          div.banner-act-title 活动报名流程
+          div.banner-act-list
+            div.banner-act-list-item
+              div.banner-act-list-item-icon.first
+              div.banner-act-list-item-text 在线或电话提出需求
+            div.banner-act-list-sep
+            div.banner-act-list-item
+              div.banner-act-list-item-icon.second
+              div.banner-act-list-item-text 制定行程、报价
+            div.banner-act-list-sep
+            div.banner-act-list-item
+              div.banner-act-list-item-icon.third
+              div.banner-act-list-item-text 确认需求预约付款
+            div.banner-act-list-sep
+            div.banner-act-list-item
+              div.banner-act-list-item-icon.fouth
+              div.banner-act-list-item-text 完成预约开心旅游
+            div.banner-act-qq
+              a.clear-fix(href='')
+                div.banner-act-qq-icon
+                div.banner-act-qq-title 立刻联系在线专员
+                div.banner-act-qq-phone
+                  div.banner-act-qq-phone-icon
+                  div.banner-act-qq-phone-text 400 838 69008
+    include ./includes/footer.jade
+    script(src='/common/jquery/1.11.3/jquery.js')
+    script(src='/js/jquery-slide.js')
+    script(src='/js/team-build.js')

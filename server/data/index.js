@@ -3,5 +3,6 @@ module.exports = {
   '/activities.jade': require('./activities'),
   '/activity.jade': require('./activity'),
   '/info.jade': require('./info'),
-  '/about.jade': require('./about')
+  '/about.jade': require('./about'),
+  '/team-build.jade': require('./team-build')
 }
