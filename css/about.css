@@ -162,3 +162,7 @@
 .bank-icon.pingan {
   background-image: url(/images/pingan-icon.png);
 }
+
+.underline {
+  text-decoration: underline;
+}
