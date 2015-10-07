@@ -81,6 +81,72 @@ html
                 div.banner-act-qq-phone
                   div.banner-act-qq-phone-icon
                   div.banner-act-qq-phone-text 400 838 69008
+    div.row
+      div.content.clear-fix
+        div.content-left
+          div.tabs
+            div.tabs-item: a(href='') 周边周边
+            div.tabs-item: a(href='') 川藏旅游
+            div.tabs-item.selected: a(href='') 广东周边
+            div.tabs-item: a(href='') 国内纯游
+            div.tabs-item: a(href='') 国外旅游
+            div.tabs-item: a(href='') 团队旅游
+            div.tabs-item.last: a(href='') 节日旅游
+          div.services-promise
+            div.services-promise-title 服务承诺
+            div.services-promise-list
+              div.services-promise-list-item.stroke
+                div.content
+                  span.title 阳光行程
+                  | ：坚持不够购物点全程纯玩，把更多的时间放在游玩和自由活动上，让行程变得更好玩、更自由、更实惠。
+              div.services-promise-list-item.price
+                div.content
+                  span.title 阳光价格
+                  | ：坚持不够购物点全程纯玩，把更多的时间放在游玩和自由活动上，让行程变得更
+              div.services-promise-list-item.service
+                div.content
+                  span.title 阳光服务
+                  | ：坚持不够购物点全程纯玩，把更多的时间放在游玩和自由活动上，让行程变得更好玩、更自由、更实惠。
+          div.services
+            div.services-item
+              div.services-item-title 广州市内上门接送
+              div.services-item-text 坚持不够购物点全程纯玩，把更多的 时间放在游玩和自由活动上，让行程 变得更好玩、更自由、更实惠。
+            div.services-item
+              div.services-item-title 独立包车，单独成行  
+              div.services-item-text 坚持不够购物点全程纯玩，把更多的 时间放在游玩和自由活动上，让行程 变得更好玩、更自由、更实惠。
+            div.services-item
+              div.services-item-title 团体再优惠
+              div.services-item-text 坚持不够购物点全程纯玩，把更多的 时间放在游玩和自由活动上，让行程 变得更好玩、更自由、更实惠。
+            div.services-item.last
+              div.services-item-title 上门服务
+              div.services-item-text 坚持不够购物点全程纯玩，把更多的 时间放在游玩和自由活动上，让行程 变得更好玩、更自由、更实惠。
+          div.business
+            div.business-item
+              a.clear-fix(href='')
+                div.business-item-icon.permit
+                div.business-item-text
+                  div.business-item-text-main 营业许可证
+                  div.business-item-text-sub business permit
+            div.business-item
+              a.clear-fix(href='')
+                div.business-item-icon.licence
+                div.business-item-text
+                  div.business-item-text-main 营业执照
+                  div.business-item-text-sub business licence
+        div.content-right
+          div.cases
+            div.cases-header 成功案例
+            div.cases-list
+              each value in [1,2,3,4,5,6,7,8,9,10,11,12]
+                -var even = (value % 2 == 0 ? 'even' : '')
+                div(class='cases-list-item #{even}')
+                  div.cases-list-item-thumb
+                    img(src='/images/placeholder/team-build-cases-list-item-thumb.png')
+                  div.cases-list-item-text
+                    p 客户名称：邮政
+                    p 游览路线：邮政邮政、邮政、邮政邮政邮政、邮政邮、政邮政 
+                    p 出游时间：2015.4.5
+                    p 团队人数：30人
     include ./includes/footer.jade
     script(src='/common/jquery/1.11.3/jquery.js')
     script(src='/js/jquery-slide.js')
