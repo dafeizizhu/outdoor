@@ -500,3 +500,49 @@
 .contents-details-shuoming .qrcode {
   float: left;
 }
+
+.contents-details-item.jihe p {
+  font-size: 12px;
+  padding: 0 95px;
+}
+
+.contents-details-item.jihe em {
+  font-style: normal;
+  font-weight: bold;
+}
+
+.contents-details-item .blue {
+  color: blue;
+}
+
+.contents-details-item .red {
+  color: red;
+}
+
+.contents-details-item .orange {
+  color: #ff9900;
+}
+
+.contents-details-item .center {
+  text-align: center;
+}
+
+.contents-details-item.tishi p {
+  font-size: 12px;
+  padding: 0 95px;
+}
+
+.contents-details-item.tishi em {
+  font-style: normal;
+  font-weight: bold;
+}
+
+.contents-details-item.mianze p {
+  font-size: 12px;
+  padding: 0 95px;
+}
+
+.contents-details-item.mianze em {
+  font-style: normal;
+  font-weight: bold;
+}
