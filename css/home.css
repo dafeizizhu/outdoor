@@ -295,6 +295,8 @@
   margin-bottom: 10px;
   padding-left: 77px;
   background-repeat: no-repeat;
+  background-color: #f8f8f8;
+  cursor: pointer;
 }
 
 .about-item.us {
