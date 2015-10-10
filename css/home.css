@@ -13,7 +13,7 @@
 
 .classification-item {
   padding-top: 7px;
-  padding-left: 10px;
+  padding-left: 5px;
   padding-bottom: 7px;
   border-bottom: 1px solid #609dde;
 }
@@ -26,7 +26,7 @@
 .classification-item.selected {
   border-left: 2px solid #fe3837;
   background-color: #303539;
-  padding-left: 8px;
+  padding-left: 3px;
 }
 
 .classification-item.selected.last {
@@ -73,6 +73,12 @@
   color: #ffffff;
 }
 
+.classification-item-container {
+  position: relative;
+  max-height: 52px;
+  overflow: hidden;
+}
+
 .classification-item-detail {
   display: none;
   position: absolute;
@@ -81,7 +87,7 @@
   border: 2px solid #1b73d0;
   background-color: #ffffff;
   color: #969696;
-  top: 63px;
+  top: 63px; 
   left: 190px;
   z-index: 2;
 }
@@ -104,6 +110,12 @@
 .classification-item-detail-list-item-list-item {
   font-size: 14px;
   margin-bottom: 33px;
+}
+
+.classification-item-more {
+  position: absolute;
+  right: 5px;
+  top: 15px;
 }
 
 .nav-list {
