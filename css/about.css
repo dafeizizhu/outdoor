@@ -64,6 +64,7 @@
 
 .about-contents-item p {
   text-indent: 2em;
+  line-height: 1.5em;
 }
 
 .about-contents-item p.no-indent {
