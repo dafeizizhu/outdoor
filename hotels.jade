@@ -1,0 +1,61 @@
+doctype html
+html
+  head
+    title 酒店介绍
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    link(rel='stylesheet', href='/common/normalize.css/3.0.3/normalize.css')
+    link(rel='stylesheet', href='/css/global.css')
+    link(rel='stylesheet', href='/css/hotels.css')
+  body
+    include ./includes/header.jade
+    div.nav.clear-fix
+      div.row.nav-bar
+        include ./includes/nav-list.jade
+    div.row
+      div.crumb 您当前所处的位置：首页 &gt; 酒店推荐
+    div.row
+      -var hotels = ['阳朔', '江西婺源', '龙脊梯田']
+      div.tabs.clear-fix
+        each hotel in hotels
+          -var selected = hotel == '阳朔' ? 'selected' : ''
+          if selected
+            div.tabs-item.selected.jq-tab #{hotel}
+          else
+            div.tabs-item.jq-tab #{hotel}
+      div.contents
+        each hotel in hotels
+          div.contents-item.jq-content
+            div.contents-item-title #{hotel}：红楼&梦 精品酒店－－古色古香
+            p 阳朔红楼梦酒店位于风景如画的遇龙河景区骥马村龙角山20号，距离阳朔县城区4.5公里。客栈以苗族吊脚楼式风格为衣，以江南园林之别致风雅为体，11间客房舒适雅韵适如其名，于每间观景阳台中可远眺青山，近闻水声。楼前可观小桥流水，可赏田园诗画，可感中国传统古典文化，并置身于乡村宁静质朴中。在这里您可以品尝到地道的中西美食，或事漫步田间、垂钓溪边、闲谈于庭院间。读书，发呆，闲聊，让心灵充分享受静谧安宁的一片净土。
+            p 酒店开业时间2014年07月，主楼高5层，客房总数11间（套）。酒店4楼设有空中餐厅喝5楼露天观景餐台，是品味美食，感受自然的好去处。
+            p 地址：阳朔县骥马村龙角山20号 酒店网址：
+              a(href='http://www.yangshuomn.com') http://yangshuomn.com
+            p.no-indent 上网服务
+            p 酒店提供宽带上网，公告区域提供
+              em 免费
+              | WIFI
+            p.no-indent 停车场
+            p 酒店提供
+              em 免费
+              | 停车位
+            p.no-indent 酒店服务
+            p
+              em 免费
+              | WIFI
+              em 免费
+              | 停车 中餐厅 西餐厅 接机服务（收费） 叫车服务 多种语言服务人员 自行车租借服务 叫醒服务 洗衣服务 旅游服务 行李寄存 票务服务 前台保险柜 
+              em 免费
+              | 旅游交通图 茶室 无烟楼层 24小时热水
+            p.no-indent 房间设施
+            p
+              em 免费
+              | 提供一次性洗漱用品、电热水壶、拖鞋、电视、室内卫生间、室内洗浴间、淋浴、保险箱、小冰箱、220V点呀插座、空调、独立写字台、吹风机、多种规格电源插座、迷你酒吧、
+              em 免费
+              | 瓶装水、电子磁卡门锁、座椅、无烟房、咖啡机/茶具、阳台、110V电压插座
+            p: img(src='/images/placeholder/hotels-contents-item-1.png')
+            p: img(src='/images/placeholder/hotels-contents-item-2.png')
+            p: img(src='/images/placeholder/hotels-contents-item-3.png')
+    include ./includes/footer.jade
+    script(src='/common/jquery/1.11.3/jquery.js')
+    script(src='/js/hotels.js')

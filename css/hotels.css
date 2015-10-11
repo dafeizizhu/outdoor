@@ -1,0 +1,40 @@
+.tabs {
+  margin-bottom: 10px;
+}
+
+.tabs-item {
+  height: 45px;
+  line-height: 45px;
+  font-size: 22px;
+  color: #333333;
+  float: left;
+  border: 1px solid #e8e8e8;
+  padding: 0 30px;
+  cursor: pointer;
+}
+
+.tabs-item.selected {
+  border: 1px solid #00a5f6;
+  background-color: #00a5f6;
+  color: #ffffff;
+}
+
+.contents-item-title {
+  line-height: 45px;
+  font-size: 22px;
+  color: #333333;
+}
+
+.contents-item p {
+  text-indent: 2em;
+  line-height: 25px;
+}
+
+.contents-item .no-indent {
+  text-indent: 0;
+}
+
+.contents-item em {
+  font-style: normal;
+  font-weight: bold;
+}
