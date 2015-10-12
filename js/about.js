@@ -15,6 +15,4 @@ $(function () {
       }
     })
   })
-
-  select(0)
 })
