@@ -887,6 +887,7 @@
   font-size: 28px;
   height: 28px;
   line-height: 28px;
+  margin-bottom: 5px;
 }
 
 .photoes-hr {
@@ -898,11 +899,21 @@
 
 .photoes-content-row {
   position: relative;
+  overflow: hidden;
 }
 
 .photoes-content-row-cell {
   float: left;
-  margin-right: 4px;
+  font-size: 0;
+  margin-right: 6px;
+}
+
+.photoes-content-row-cell.last {
+  margin-right: 0;
+}
+
+.photoes-content-row-cell img {
+  margin-bottom: 8px;
 }
 
 .photoes-content-row-cell.width-592 {
