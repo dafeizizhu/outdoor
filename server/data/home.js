@@ -79,11 +79,19 @@ module.exports = {
     '/images/placeholder/gallery.png',
     '/images/placeholder/gallery.png',
     '/images/placeholder/gallery.png',
+    '/images/placeholder/gallery.png',
+    '/images/placeholder/gallery.png',
+    '/images/placeholder/gallery.png',
+    '/images/placeholder/gallery.png',
     '/images/placeholder/gallery.png'
   ],
   galleryTabs: [
     '超值度假卡',
     '春节直降万元',
+    '再来一个',
+    '再来一个',
+    '再来一个',
+    '再来一个',
     '再来一个',
     '养生温泉'
   ],
