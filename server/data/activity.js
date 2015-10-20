@@ -23,5 +23,8 @@ module.exports = {
   }, {
     href: '',
     text: '户外保险',
+  }, {
+    href: '',
+    text: '旧网站入口',
   }]
 }

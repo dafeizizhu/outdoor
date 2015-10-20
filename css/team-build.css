@@ -35,7 +35,7 @@
 }
 
 .nav-brand-content-qq {
-  margin: 35px 0;
+  margin: 15px 0;
 }
 
 .nav-brand-content-qq-icon {
@@ -70,6 +70,7 @@
 
 .nav-list {
   margin-left: 213px;
+  width: 100%;
 }
 
 .gallery {
