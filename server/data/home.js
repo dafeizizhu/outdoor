@@ -109,6 +109,8 @@ module.exports = {
     title: '广东周边游',
     tabs: ['精选', '珠海', '深圳', '清远', '韶关', '惠州'],
     adImageUrl: '/images/placeholder/catalog-contents-item-left-guangdong.png',
+    adImageUrlUp: '/images/placeholder/catalog-contents-item-left-guangdong-up.png',
+    adImageUrlBottom: '/images/placeholder/catalog-contents-item-left-guangdong-bottom.png',
     items: [{
       title: {
         main: '<韶关丹霞山2日游>',
@@ -150,6 +152,8 @@ module.exports = {
     title: '川藏滇专线',
     tabs: ['精选', '西藏', '四川', '云南'],
     adImageUrl: '/images/placeholder/catalog-contents-item-left-chuanzang.png',
+    adImageUrlUp: '/images/placeholder/catalog-contents-item-left-chuanzang-up.png',
+    adImageUrlBottom: '/images/placeholder/catalog-contents-item-left-chuanzang-bottom.png',
     items: [{
       title: {
         main: '<韶关丹霞山2日游>',
@@ -191,6 +195,8 @@ module.exports = {
     title: '国内纯玩',
     tabs: ['精选', '广西', '海南', '港澳', '哈尔滨', '华东'],
     adImageUrl: '/images/placeholder/catalog-contents-item-left-guonei.png',
+    adImageUrlUp: '/images/placeholder/catalog-contents-item-left-guonei-up.png',
+    adImageUrlBottom: '/images/placeholder/catalog-contents-item-left-guonei-bottom.png',
     items: [{
       title: {
         main: '<韶关丹霞山2日游>',
@@ -232,6 +238,8 @@ module.exports = {
     title: '出境国外游',
     tabs: ['精选', '泰国', '沙巴', '尼泊尔', '日本', '俄罗斯'],
     adImageUrl: '/images/placeholder/catalog-contents-item-left-guowai.png',
+    adImageUrlUp: '/images/placeholder/catalog-contents-item-left-guowai-up.png',
+    adImageUrlBottom: '/images/placeholder/catalog-contents-item-left-guowai-bottom.png',
     items: [{
       title: {
         main: '<韶关丹霞山2日游>',
@@ -273,6 +281,8 @@ module.exports = {
     title: '团队专区',
     tabs: ['近期成团'],
     adImageUrl: '/images/placeholder/catalog-contents-item-left-tuandui.png',
+    adImageUrlUp: '/images/placeholder/catalog-contents-item-left-tuandui-up.png',
+    adImageUrlBottom: '/images/placeholder/catalog-contents-item-left-tuandui-bottom.png',
     items: [{
       title: {
         main: '<韶关丹霞山2日游>',
@@ -314,6 +324,8 @@ module.exports = {
     title: '五一活动',
     tabs: ['4/13出发', '4/13出发'],
     adImageUrl: '/images/placeholder/catalog-contents-item-left-huodong.png',
+    adImageUrlUp: '/images/placeholder/catalog-contents-item-left-huodong-up.png',
+    adImageUrlBottom: '/images/placeholder/catalog-contents-item-left-huodong-bottom.png',
     items: [{
       title: {
         main: '<韶关丹霞山2日游>',

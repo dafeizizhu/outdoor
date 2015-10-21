@@ -462,6 +462,7 @@
 .catalog-contents-item-left {
   float: left;
   width: 210px;
+  font-size: 0;
 }
 
 .catalog-contents-item-list {

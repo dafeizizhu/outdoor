@@ -129,7 +129,9 @@ html
             div.catalog-contents
               div.catalog-contents-item
                 div.catalog-contents-item-left
-                  img(src='#{catalog.adImageUrl}')
+                  img(src='#{catalog.adImageUrlUp}')
+                  a(href='#')
+                    img(src='#{catalog.adImageUrlBottom}')
                 div.catalog-contents-item-wrapper
                   each tab in catalog.tabs
                     div.catalog-contents-item-list.clear-fix.jq-catalog-content
