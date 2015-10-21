@@ -1,7 +1,7 @@
 doctype html
 html
   head
-    title Test
+    title 首页
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible' content='IE=edge')
     link(rel='stylesheet', href='/common/normalize.css/3.0.3/normalize.css')
@@ -245,6 +245,15 @@ html
               img(src='/images/placeholder/photo-9.png')
             div.photoes-content-row-cell.width-327.last
               img(src='/images/placeholder/photo-10.png')
+    div.row.clear-fix
+      div.links
+        div.links-title 友情链接
+        div.links-hr
+        each row in [1, 2, 3, 4, 5, 6]
+          div.links-row.clear-fix
+            each col in [1, 2, 3, 4, 5]
+              div.links-cell
+                a(href='#') 这个是友情链接#{row}#{col}，太长就显示不全了
     include ./includes/footer.jade
     script(src='/common/jquery/1.11.3/jquery.js')
     script(src='/js/jquery-slide.js')

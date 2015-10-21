@@ -936,3 +936,32 @@
 .photoes-content-row-cell.width-327 {
   width: 327px;
 }
+
+.links-title {
+  font-size: 28px;
+  height: 28px;
+  line-height: 28px;
+  margin-bottom: 5px;
+}
+
+.links-hr {
+  width: 926px;
+  height: 3px;
+  background-image: url(/images/photoes-hr.png);
+  margin-bottom: 5px;
+}
+
+.links-cell {
+  width: 170px;
+  text-overflow: ellipsis;
+  float: left;
+  margin-right: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.links-cell a {
+  font-size: 16px;
+  line-height: 30px;
+  color: #333333;
+}
