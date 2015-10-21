@@ -56,12 +56,13 @@ a:hover {
 
 .header {
   height: 112px;
+  margin-bottom: 0;
 }
 
 .logo {
-  margin-top: 17px;
-  width: 207px;
-  height: 87px;
+  margin-top: 28px;
+  width: 223px;
+  height: 64px;
   background: url(/images/logo.png);
   float: left;
 }
