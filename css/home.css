@@ -726,6 +726,7 @@
   text-align: center;
   font-size: 12px;
   background-repeat: no-repeat;
+  color: #333333;
 }
 
 .tools-list-item.jipiao, .tools-list-item.huoche {
@@ -763,6 +764,30 @@
 
 .tools-list-item.ditu {
   background-image: url(/images/tools-list-item-icon-ditu.png);
+}
+
+.tools-list-item.jipiao:hover {
+  background-image: url(/images/tools-list-item-icon-jipiao-hover.png);
+}
+
+.tools-list-item.huoche:hover {
+  background-image: url(/images/tools-list-item-icon-huoche-hover.png);
+}
+
+.tools-list-item.gongjiao:hover {
+  background-image: url(/images/tools-list-item-icon-gongjiao-hover.png);
+}
+
+.tools-list-item.tianqi:hover {
+  background-image: url(/images/tools-list-item-icon-tianqi-hover.png);
+}
+
+.tools-list-item.huilv:hover {
+  background-image: url(/images/tools-list-item-icon-huilv-hover.png);
+}
+
+.tools-list-item.ditu:hover {
+  background-image: url(/images/tools-list-item-icon-ditu-hover.png);
 }
 
 .guide {
