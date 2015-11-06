@@ -1,0 +1,25 @@
+link(rel='stylesheet', href='/css/right-side-bar.css')
+div.right-side-bar
+  div.right-side-bar-item
+    div.right-side-bar-item-icon.qq-service
+    div.right-side-bar-item-text 在线客服
+    div.right-side-bar-item-wrapper
+      div.right-side-bar-item-panel.qq-service
+        each val in [1, 2, 3, 4, 5, 6, 7, 8]
+          div.right-side-bar-item-panel-item
+            a(href='http://wpa.qq.com/msgrd?v=3&uin=343062838&site=qq&menu=yes', target='_blank')
+              div.right-side-bar-item-panel-item-icon
+                img(src='http://wpa.qq.com/pa?p=1:343062838:4')
+              div.right-side-bar-item-panel-item-link 燕子  343062838
+  div.right-side-bar-item
+    div.right-side-bar-item-icon.wx-qr
+    div.right-side-bar-item-text 微信客服
+    div.right-side-bar-item-wrapper
+      div.right-side-bar-item-panel.wx-qr
+        img(src='/images/right-side-bar-wx-qr-code.png')
+  div.right-side-bar-item
+    div.right-side-bar-item-icon.wx-qr
+    div.right-side-bar-item-text 微信公众号
+    div.right-side-bar-item-wrapper.top
+      div.right-side-bar-item-panel.wx-qr
+        img(src='/images/right-side-bar-wx-qr-code.png')
