@@ -2,7 +2,7 @@
   position: fixed;
   top: 615px;
   right: 1px;
-  z-index: 999999999;
+  z-index: 999999999 !important;
 }
 
 .right-side-bar-item {
@@ -90,4 +90,25 @@
 .right-side-bar-item-wrapper.top {
   bottom: 0;
   top: inherit;
+}
+
+.right-side-bar-item.back-to-top {
+  background-color: #e58b0f;
+  border-color: #e58b0f;
+}
+
+.right-side-bar-item.back-to-top:hover {
+  background-color: #fc9404;
+  border-color: #fc9404;
+}
+
+.right-side-bar-item.back-to-top .right-side-bar-item-text {
+  color: #ffffff;
+}
+
+.right-side-bar-item-icon.back-to-top {
+  width: 30px;
+  height: 37px;
+  background-image: url(/images/right-side-bar-back-to-top.png);
+  margin-top: 14px;
 }
