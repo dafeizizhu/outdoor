@@ -5,6 +5,7 @@
   color: #ffffff;
   position: absolute;
   z-index: 999999 !important;
+  overflow: hidden;
 }
 
 .classification-title {
@@ -174,7 +175,7 @@
 .recommend-routes {
   width: 219px;
   margin-right: 7px;
-  background-color: #fdd400;
+  background-color: #f8f8f8;
 }
 
 .recommend-routes-title {
