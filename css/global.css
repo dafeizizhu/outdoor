@@ -49,6 +49,10 @@ a:hover {
   zoom: 1;
 }
 
+.row.last {
+  margin-bottom: 0;
+}
+
 .row:after {
   content: "";
   clear: both;
@@ -156,7 +160,6 @@ a:hover {
 .footer {
   background-color: #f2f2f2;
   padding-top: 45px;
-  height: 216px;
 }
 
 .footer-col {
@@ -194,4 +197,19 @@ a:hover {
 
 .footer-col-weibo.t {
   background-image: url(/images/about-contact-tweibo-icon.png);
+}
+
+.footer-copyright {
+  position: relative;
+  top: -75px;
+}
+
+.footer-copyright-text {
+  font-size: 12px;
+  line-height: 20px;
+  margin-bottom: 35px;
+}
+
+.footer-copyright-imgs img {
+ margin-right: 10px;
 }
