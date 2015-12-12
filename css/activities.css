@@ -1,6 +1,15 @@
+.low-margin-bottom {
+  margin-bottom: 7px;
+}
+
+.filters {
+  border: 1px solid #e5e5e5;
+  padding: 6px 9px;
+}
+
 .filters-item {
-  margin-bottom: 17px;
-  line-height: 25px;
+  line-height: 36px;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .filters-item.big {
@@ -8,33 +17,29 @@
 }
 
 .filters-item-title {
-  font-size: 24px;
+  font-size: 20px;
   float: left;
+  color: #999999;
+  width: 104px;
+  text-align: right;
+  background-color: #f3f3f3;
 }
 
 .filters-item-options {
-  padding-left: 130px;
+  padding-left: 110px;
+  padding-top: 4px;
+  line-height: 27px;
 }
 
 .filters-item-options-item {
-  padding: 0 30px;
-  border-left: 1px solid #e8e8e8;
-  border-bottom: 1px solid #e8e8e8;
-  border-top: 1px solid #e8e8e8;
   float: left;
   cursor: pointer;
-}
-
-.filters-item-options-item.last {
-  border-right: 1px solid #e8e8e8;
+  padding: 0 5px;
+  font-size: 20px;
 }
 
 .filters-item-options-item.selected {
-  color: #ffffff;
-  font-size: 16px;
-  background-color: #00a5f6;
-  border-color: #00a5f6;
-  padding: 0 40px;
+  background-color: #fbedd4;
 }
 
 .filters-item-options-item.last.selected {
@@ -51,6 +56,8 @@
 
 .filters-item-range {
   float: right;
+  position: relative;
+  top: 3px;
 }
 
 .filters-item-range-wrapper {
