@@ -26,5 +26,44 @@ module.exports = {
   }, {
     href: '',
     text: '旧网站入口',
+  }],
+  guides: [{
+    title: '【龙迹户外创办人】',
+    name: '懒猫',
+    red: true
+  }, {
+    title: '【龙迹户外团队策划负责人】',
+    name: '海哥',
+    red: true
+  }, {
+    title: '【龙迹户外领队】',
+    name: '燕子'
+  }, {
+    title: '【龙迹户外领队】',
+    name: '飞翔'
+  }, {
+    title: '【龙迹户外领队】',
+    name: '娟子'
+  }, {
+    title: '【龙迹户外领队】',
+    name: '小康'
+  }, {
+    title: '【龙迹户外领队】',
+    name: '小龚'
+  }, {
+    title: '【龙迹户外领队】',
+    name: '石头'
+  }, {
+    title: '【龙迹户外领队】',
+    name: '小夏'
+  }, {
+    title: '【龙迹户外领队】',
+    name: 'joy不可爱'
+  }, {
+    title: '【龙迹户外兼职领队】',
+    name: '七七'
+  }, {
+    title: '【龙迹户外兼职领队】',
+    name: '小溪'
   }]
 }

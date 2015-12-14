@@ -172,6 +172,7 @@
   font-size: 18px;
   color: #333333;
   border-bottom: 1px solid #e4f2fd;
+  margin-bottom: 0;
 }
 
 .gonggao-list {
@@ -180,4 +181,37 @@
   line-height: 34px;
   font-size: 16px;
   color: #333333;
+  margin-top: 0;
+}
+
+.lingdui-title {
+  font-size: 18px;
+  color: #333333;
+  border-bottom: 1px solid #e4f2fd;
+  margin-bottom: 0;
+  margin-top: 20px;
+  line-height: 22px;
+}
+
+.lingdui-list-item {
+  color: #333333;
+}
+
+.lingdui-list-item.red {
+  color: #ff6701;
+}
+
+.lingdui-list-item-title {
+  line-height: 34px;
+  font-size: 18px;
+  float: left;
+  width: 240px;
+  text-align: right;
+  background-color: #f8f8f8;
+  margin-right: 15px;
+}
+
+.lingdui-list-item-name {
+  line-height: 34px;
+  font-size: 18px;
 }
