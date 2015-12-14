@@ -166,4 +166,18 @@
 
 .underline {
   text-decoration: underline;
+} 
+
+.gonggao-title {
+  font-size: 18px;
+  color: #333333;
+  border-bottom: 1px solid #e4f2fd;
+}
+
+.gonggao-list {
+  padding-left: 0;
+  list-style: none;
+  line-height: 34px;
+  font-size: 16px;
+  color: #333333;
 }
