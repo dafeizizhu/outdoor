@@ -5,5 +5,6 @@ module.exports = {
   '/info.jade': require('./info'),
   '/about.jade': require('./about'),
   '/team-build.jade': require('./team-build'),
-  '/hotels.jade': require('./hotels')
+  '/hotels.jade': require('./hotels'),
+  '/articles.jade': require('./articles')
 }

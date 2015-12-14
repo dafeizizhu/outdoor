@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title 唯美图文
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    link(rel='stylesheet', href='/common/normalize.css/3.0.3/normalize.css')
+    link(rel='stylesheet', href='/css/global.css')
+    link(rel='stylesheet', href='/css/articles.css')
+  body
+    include ./includes/header.jade
+    div.nav.clear-fix
+      div.row.nav-bar
+        include ./includes/nav-list.jade
+    div.row
+      div.crumb 您当前所处的位置：首页 &gt; 唯美图文
+    div.row
+      div 唯美图文
+    include ./includes/footer.jade
