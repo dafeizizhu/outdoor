@@ -68,7 +68,7 @@ html
                 div.recommend-content.clear-fix.jq-recommend-content
                   div.recommend-content-left
                     div.recommend-content-left-top
-                      p 【云南丽江5天】逢双号出团“云南－丽江古城、香格里拉、普达措、泸沽湖”经典五日游【云南丽江5天】逢双号出团“云南－丽江古城、香格里拉、普达措、泸沽湖”经典五日游
+                      p.title 【云南丽江5天】逢双号出团“云南－丽江古城、香格里拉、普达措、泸沽湖”经典五日游【云南丽江5天】逢双号出团“云南－丽江古城、香格里拉、普达措、泸沽湖”经典五日游
                       p 【出团时间】：2014年逢双号成团
                       p 【集合地点】：全国出发丽江集合
                       p 【行程天数】：5天4晚
@@ -205,6 +205,11 @@ html
                 a(href='')
                   div.tools-list-item.ditu 地图
         div.right-side
+          div.right-side-ads
+            each val in [1, 2, 3]
+              div.right-side-ads-item
+                a(href=''): img(src='/images/placeholder/right-side-ads-item.png')
+        div.right-side
           div.guide
             div.guide-title
               span.more 更多&gt;
@@ -229,6 +234,21 @@ html
                     img(src='/images/placeholder/hotels-list-item-thumb.png')
                   div.hotels-list-item-title
                     span 阳朔凤凰酒店
+        div.right-side
+          div.articles
+            div.articles-title
+              span.more 更多&gt;
+              | 推荐阅读
+            div.articles-list
+              each val in [1, 2, 3, 4, 5]
+                div.articles-list-item
+                  div.articles-list-item-thumb
+                    img(src='/images/placeholder/articles-list-item-thumb.png')
+                  div.articles-list-item-text
+                    div.articles-list-item-text-title 一路向北，去看中国白雪好长好长好长
+                    div.articles-list-item-text-content
+                      | 东北的冬天，对于一个出生 在南方，少见到雪的孩子来说好好长好长好长好长好长好长好长好长好长长好长好长...
+                      a(href='') 详细&gt;&gt;
     div.row.clear-fix
       div.photoes.clear-fix
         div.photoes-title 美图拍摄

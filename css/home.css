@@ -197,7 +197,6 @@
 }
 
 .recommend-routes-list-item.selected {
-  color: #ffffff;
   background-color: #efad08;
 }
 
@@ -222,12 +221,17 @@
 
 .recommend-content-left-top {
   background-color: #efad08;
-  color: #ffffff;
+  color: #666666;
   line-height: 22px;
   font-size: 14px;
   padding: 10px;
   height: 163px;
   position: relative;
+}
+
+.recommend-content-left-top .title {
+  color: #333333;
+  font-weight: bold;
 }
 
 .recommend-content-left-top p {
@@ -242,12 +246,12 @@
 }
 
 .recommend-content-left-top .currency {
-  color: #f8134e;
+  color: #ea5b24;
   font-size: 14px;
 }
 
 .recommend-content-left-top .number {
-  color: #f8134e;
+  color: #ea5b24;
   font-family: "Impact";
   font-size: 35px;
 }
@@ -539,7 +543,7 @@
 .right-side {
   float: right;
   width: 255px;
-  height: 511px;
+  margin-bottom: 20px;
 }
 
 .services {
@@ -639,10 +643,6 @@
 
 .services-promise-list-item.service .content {
   background-image: url(/images/services-promise-list-item-icon-service.png);
-}
-
-.announcement-and-tools {
-  margin-top: 42px;
 }
 
 .announcement {
@@ -791,14 +791,18 @@
   background-image: url(/images/tools-list-item-icon-ditu-hover.png);
 }
 
-.guide {
-  margin-top: 42px;
+.right-side-ads {
+  font-size: 0;
+}
+
+.right-side-ads-item {
+  margin-bottom: 10px;
 }
 
 .guide-title {
   height: 45px;
   line-height: 45px;
-  background-color: #f858aa;
+  background-color: #91c300;
   color: #ffffff;
   padding-left: 28px;
   padding-right: 10px;
@@ -845,17 +849,13 @@
   overflow: hidden;
 }
 
-.hotels {
-  margin-top: 42px;
-}
-
 .hotels-title {
   height: 45px;
   line-height: 45px;
   color: #ffffff;
   padding-left: 27px;
   padding-right: 10px;
-  background-color: #ffc032;
+  background-color: #91c300;
   background-repeat: no-repeat;
   background-image: url(/images/hotels-title-icon.png);
 }
@@ -900,6 +900,45 @@
   font-size: 14px;
 }
 
+.articles-title {
+  height: 45px;
+  line-height: 45px;
+  color: #ffffff;
+  padding-left: 27px;
+  padding-right: 10px;
+  background-color: #ff8800;
+  background-repeat: no-repeat;
+  background-image: url(/images/guide-title-icon.png);
+}
+
+.articles-title .more {
+  float: right;
+  font-size: 12px;
+}
+
+.articles-list {
+  border-left: 1px solid #ededed;
+  border-right: 1px solid #ededed;
+}
+
+.articles-list-item {
+  padding-top: 16px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid #ededed;
+}
+
+.articles-list-item-thumb {
+  width: 66px;
+  height: 66px;
+  float: left;
+}
+
+.articles-list-item-text {
+  padding-left: 74px;
+}
+
 .banner {
   float: left;
   width: 924px;
@@ -909,6 +948,7 @@
 
 .photoes {
   width: 926px;
+  float: left;
 }
 
 .photoes-title {

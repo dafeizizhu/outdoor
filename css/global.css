@@ -71,6 +71,15 @@ a:hover {
   float: left;
 }
 
+.logo2 {
+  width: 186px;
+  height: 43px;
+  background-image: url(/images/logo2.png);
+  float: left;
+  margin-top: 40px;
+  margin-left: 10px;
+}
+
 .search {
   width: 412px;
   height: 36px;
@@ -140,6 +149,10 @@ a:hover {
   padding: 0 25px;
 }
 
+.nav-list-item:hover {
+  background-color: #1b73d0;
+}
+
 .nav-list-item a {
   color: #ffffff;
   text-decoration: none;
@@ -149,6 +162,8 @@ a:hover {
   float: left;
   color: #409cfc;
   line-height: 63px;
+  width: 6px;
+  margin-left: -5px;
 }
 
 .crumb {
