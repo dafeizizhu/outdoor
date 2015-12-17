@@ -1,0 +1,43 @@
+.addons {
+  position: fixed;
+  bottom: 0;
+  height: 140px;
+  width: 100%;
+  min-width: 1000px;
+  z-index: 999999998 !important
+}
+
+.addons-background {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 1 !important;
+  left: 0;
+  top: 0;
+}
+
+.addons-content {
+  width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2 !important;
+}
+
+.addons-content-img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.addons-content-close {
+  cursor: pointer;
+  width: 39px;
+  height: 39px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url(/images/addons-content-close.png)
+}

@@ -13,3 +13,7 @@
 .recommend-contents-wrapper {
   +position: relative;
 }
+
+.links {
+  +width: 100%;
+}

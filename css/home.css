@@ -664,6 +664,7 @@
 .announcement-title .more {
   float: right;
   font-size: 12px;
+  color: #ffffff;
 }
 
 .announcement-list {
@@ -797,6 +798,13 @@
 
 .right-side-ads-item {
   margin-bottom: 10px;
+  width: 255px;
+  height: 90px;
+}
+
+.right-side-ads-item img {
+  width: 255px;
+  height: 90px;
 }
 
 .guide-title {
@@ -813,6 +821,7 @@
 .guide-title .more {
   float: right;
   font-size: 12px;
+  color: #ffffff;
 }
 
 .guide-list {
@@ -863,6 +872,7 @@
 .hotels-title .more {
   float: right;
   font-size: 12px;
+  color: #ffffff;
 }
 
 .hotels-list {
@@ -914,6 +924,7 @@
 .articles-title .more {
   float: right;
   font-size: 12px;
+  color: #ffffff;
 }
 
 .articles-list {
@@ -939,6 +950,22 @@
   padding-left: 74px;
 }
 
+.articles-list-item-text-title {
+  color: #666666;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.articles-list-item-text-content {
+  color: #666666;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.articles-list-item-text-content a {
+  color: #348be0;
+}
+
 .banner {
   float: left;
   width: 924px;
@@ -949,6 +976,7 @@
 .photoes {
   width: 926px;
   float: left;
+  margin-top: 20px;
 }
 
 .photoes-title {
@@ -1002,6 +1030,11 @@
 
 .photoes-content-row-cell.width-327 {
   width: 327px;
+}
+
+.links {
+  float: left;
+  margin-top: 20px;
 }
 
 .links-title {
