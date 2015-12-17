@@ -124,8 +124,8 @@ html
                 each tab, index in catalog.tabs
                   - var selected = (index == 0 ? 'selected' : '')
                   div(class='catalog-tabs-item #{selected} jq-catalog-tab') #{tab}
-                div.catalog-tabs-more
-                  a(href='') 更多线路&gt;
+                a(href='#')
+                  div.catalog-tabs-more 更多线路&gt;
             div.catalog-contents
               div.catalog-contents-item
                 div.catalog-contents-item-left
@@ -144,6 +144,37 @@ html
                             span.main #{tab} #{item.title.main}
                             span.sub #{item.title.sub}
                           div.catalog-contents-item-list-item-price #{item.price}
+        div.photoes.clear-fix
+          div.photoes-title 美图拍摄
+          div.photoes-hr
+          div.photoes-content
+            div.photoes-content-row
+              div.photoes-content-row-cell.width-592
+                img(src='/images/placeholder/photo-1.png')
+              div.photoes-content-row-cell.width-180
+                img(src='/images/placeholder/photo-2.png')
+                img(src='/images/placeholder/photo-3.png')
+              div.photoes-content-row-cell.width-140.last
+                img(src='/images/placeholder/photo-4.png')
+            div.photoes-content-row
+              div.photoes-content-row-cell.width-220
+                img(src='/images/placeholder/photo-5.png')
+              div.photoes-content-row-cell.width-180
+                img(src='/images/placeholder/photo-6.png')
+                img(src='/images/placeholder/photo-7.png')
+              div.photoes-content-row-cell.width-180
+                img(src='/images/placeholder/photo-8.png')
+                img(src='/images/placeholder/photo-9.png')
+              div.photoes-content-row-cell.width-327.last
+                img(src='/images/placeholder/photo-10.png')
+        div.links.clear-fix
+          div.links-title 友情链接
+          div.links-hr
+          each row in [1, 2, 3, 4, 5, 6]
+            div.links-row.clear-fix
+              each col in [1, 2, 3, 4, 5]
+                div.links-cell
+                  a(href='#') 这个是友情链接#{row}#{col}，太长就显示不全了
       div.right.clear-fix
         div.right-side
           div.services
@@ -177,7 +208,8 @@ html
           div.announcement-and-tools
             div.announcement
               div.announcement-title
-                span.more 更多&gt;
+                a(href='#')
+                  span.more 更多&gt;
                 | 龙迹公告
               div.announcement-list
                 div.announcement-list-item 2015年羊年放假安排及休息等等等等
@@ -212,7 +244,8 @@ html
         div.right-side
           div.guide
             div.guide-title
-              span.more 更多&gt;
+              a(href='#')
+                span.more 更多&gt;
               | 贴心领队
             div.guide-list
               each val in [1, 2, 3]
@@ -225,7 +258,8 @@ html
         div.right-side
           div.hotels
             div.hotels-title
-              span.more 更多&gt;
+              a(href='#')
+                span.more 更多&gt;
               | 酒店推荐
             div.hotels-list
               each val in [1, 2, 3]
@@ -237,7 +271,8 @@ html
         div.right-side
           div.articles
             div.articles-title
-              span.more 更多&gt;
+              a(href='#')
+                span.more 更多&gt;
               | 推荐阅读
             div.articles-list
               each val in [1, 2, 3, 4, 5]
@@ -249,39 +284,6 @@ html
                     div.articles-list-item-text-content
                       | 东北的冬天，对于一个出生 在南方，少见到雪的孩子来说好好长好长好长好长好长好长好长好长好长长好长好长...
                       a(href='') 详细&gt;&gt;
-    div.row.clear-fix
-      div.photoes.clear-fix
-        div.photoes-title 美图拍摄
-        div.photoes-hr
-        div.photoes-content
-          div.photoes-content-row
-            div.photoes-content-row-cell.width-592
-              img(src='/images/placeholder/photo-1.png')
-            div.photoes-content-row-cell.width-180
-              img(src='/images/placeholder/photo-2.png')
-              img(src='/images/placeholder/photo-3.png')
-            div.photoes-content-row-cell.width-140.last
-              img(src='/images/placeholder/photo-4.png')
-          div.photoes-content-row
-            div.photoes-content-row-cell.width-220
-              img(src='/images/placeholder/photo-5.png')
-            div.photoes-content-row-cell.width-180
-              img(src='/images/placeholder/photo-6.png')
-              img(src='/images/placeholder/photo-7.png')
-            div.photoes-content-row-cell.width-180
-              img(src='/images/placeholder/photo-8.png')
-              img(src='/images/placeholder/photo-9.png')
-            div.photoes-content-row-cell.width-327.last
-              img(src='/images/placeholder/photo-10.png')
-    div.row.clear-fix
-      div.links
-        div.links-title 友情链接
-        div.links-hr
-        each row in [1, 2, 3, 4, 5, 6]
-          div.links-row.clear-fix
-            each col in [1, 2, 3, 4, 5]
-              div.links-cell
-                a(href='#') 这个是友情链接#{row}#{col}，太长就显示不全了
     include ./includes/footer.jade
     script(src='/common/jquery/1.11.3/jquery.js')
     script(src='/js/jquery-slide.js')
@@ -290,3 +292,4 @@ html
     <script src="/js/home-ie7-fix.js"></script>
     <![endif]-->
     include ./includes/right-side-bar.jade
+    include ./includes/addons.jade

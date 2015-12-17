@@ -1,5 +1,5 @@
 $(function () {
-  var zIndexNumber = 10000
+  var zIndexNumber = 100000
   $('div').each(function () {
     $(this).css('zIndex', zIndexNumber);
     zIndexNumber -= 10
