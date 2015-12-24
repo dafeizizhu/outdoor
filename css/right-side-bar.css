@@ -53,6 +53,12 @@
   background-color: #ffffff;
 }
 
+.right-side-bar-item-panel.no-background {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
 .right-side-bar-item:hover .right-side-bar-item-wrapper {
   display: block;
 }
@@ -81,10 +87,6 @@
   line-height: 30px;
   font-size: 14px;
   color: #666666;
-}
-
-.right-side-bar-item-panel.wx-qr {
-  padding: 13px;
 }
 
 .right-side-bar-item-wrapper.top {
