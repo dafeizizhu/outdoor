@@ -112,6 +112,26 @@
   margin-bottom: 30px;
 }
 
+.routes-item.over .routes-item-description-title,
+.routes-item.over .routes-item-description-location,
+.routes-item.over .routes-item-description-text,
+.routes-item.over .routes-item-detail-price span {
+  color: #9f9f9f;
+}
+
+.routes-item.over .routes-item-detail-go-button {
+  background-color: #9f9f9f;
+}
+
+.routes-item.over img {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+}
+
 .routes-item.last {
   margin-bottom: 0;
 }
