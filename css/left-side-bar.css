@@ -1,0 +1,11 @@
+.left-side-bar {
+  position: fixed;
+  left: 1px;
+  z-index: 999999999 !important;
+}
+
+.left-side-bar-banner {
+  width: 78px;
+  height: 312px;
+  overflow: hidden;
+}
