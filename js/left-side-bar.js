@@ -9,4 +9,8 @@ $(function () {
   function window_resizeHandler(evt) {
     $leftSideBar.css('top', ($(window).height() - $leftSideBar.height()) / 2 + 'px')
   }
+
+  $leftSideBar.on('click', function (evt) {
+    $leftSideBar.hide()
+  })
 })
