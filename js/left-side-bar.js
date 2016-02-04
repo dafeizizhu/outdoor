@@ -1,5 +1,6 @@
 $(function () {
   var $leftSideBar = $('.jq-left-side-bar')
+  var $leftSideBarBannerClose = $('.jq-left-side-bar-banner-close')
 
   if ($leftSideBar.length > 0) {
     $(window).on('resize', window_resizeHandler)
@@ -10,7 +11,7 @@ $(function () {
     $leftSideBar.css('top', ($(window).height() - $leftSideBar.height()) / 2 + 'px')
   }
 
-  $leftSideBar.on('click', function (evt) {
+  $leftSideBarBannerClose.on('click', function (evt) {
     $leftSideBar.hide()
   })
 })

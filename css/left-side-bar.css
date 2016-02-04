@@ -14,3 +14,12 @@
   width: 210px;
   height: 430px;
 }
+
+.left-side-bar-banner-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 32px;
+  height: 32px;
+  background-image: url(/images/left-side-bar-banner-close.png);
+}
