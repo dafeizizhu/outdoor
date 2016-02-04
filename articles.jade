@@ -15,5 +15,94 @@ html
     div.row
       div.crumb 您当前所处的位置：首页 &gt; 唯美图文
     div.row
-      div 唯美图文
+      div.articles-head.clear-fix
+        div.articles-head-column.first
+          div.articles-head-column-header.clear-fix
+            span.articles-head-column-header-text 微阅·当季
+          div.articles-head-column-content.clear-fix
+            div.articles-head-column-content-slider
+              div.articles-head-column-content-slider-tabs
+                each title in ['关于爱情的唯美', '谢谢姑娘', '一个人的城市', '我会不会是那个', '你是我的迷']
+                  div.articles-head-column-content-slider-tabs-item.jq-head-slide-tab #{title}
+              div.articles-head-column-content-slider-contents
+                each val in [1, 2, 3, 4, 5]
+                  a(href='#').jq-head-slide-content
+                    div.articles-head-column-content-slider-contents-item
+                      div(style='position: absolute;') 占位符，可以删掉#{val}
+                      img(src='/images/placeholder/articles-head-column-slider-contents-item.png')
+        div.articles-head-column.second
+          div.articles-head-column-header.clear-fix
+            span.articles-head-column-header-text 活动·游记
+          div.articles-head-column-content.clear-fix
+            div.articles-head-column-content-list
+              each val in [1, 2, 3]
+                div.articles-head-column-content-list-item
+                  div.articles-head-column-content-list-item-thumb
+                    img(src='/images/placeholder/articles-head-column-content-list-item-thumb.png')
+                  div.articles-head-column-content-list-item-content
+                    div.articles-head-column-content-list-item-content-header
+                      span.main 他们的爱情
+                      span.sub （点击：238次）
+                    div.articles-head-column-content-list-item-content-content
+                      | 爸爸病了，高烧39度。这是我印象里他个位数次声波。一是因为他长期研究医药，深知日常保健之道；二是他性格乐观心情舒畅，像个老顽童似的玩语聊，玩MP4；三是他脾气倔强。本来脾气倔和生不生病...
+                      span.more: a(href='#') 详细
+    div.row
+      div.articles-content
+        div.articles-content-header
+          span.articles-content-header-main 唯美图文
+          span.articles-content-header-sub
+            | 东北的冬天，对于一个出生在南方，很少见到雪的孩子来说...
+            a.more(href='#') 详细
+        div.articles-content-content.clear-fix
+          div.articles-content-content-list.clear-fix
+            div.clear-fix
+              -var n = 29 
+              while --n > 0 
+                div.articles-content-content-list-item
+                  div.articles-content-content-list-item-thumb
+                    a(href='#')
+                      img(src='/images/placeholder/articles-content-content-list-item-thumb.png')
+                  div.articles-content-content-list-item-title 爱情的背景，令人难以忘怀
+                  div.articles-content-content-list-item-description 
+                    span.right 点击：111次
+                    | 上传于：2015/11/16
+            div.articles-content-content-list-pager
+              a.prev(href='#') 上一页
+              a.page(href='#') 1
+              a.page.selected(href='#') 2
+              a.page(href='#') 3
+              a.page(href='#') 4
+              a.next(href='#') 下一页
+          div.articles-content-content-side
+            div.articles-content-content-side-sector
+              div.articles-content-content-side-sector-header.orange
+                a.more(href='#') 更多&gt;
+                div.icon
+                span 推荐阅读
+              div.articles-content-content-side-sector-list
+                each val in [1, 2, 3, 4, 5]
+                  div.articles-content-content-side-sector-list-item
+                    div.articles-content-content-side-sector-list-item-thumb
+                      img(src='/images/placeholder/articles-content-content-side-sector-list-item-thumb.png')
+                    div.articles-content-content-side-sector-list-item-title 一路向北，去看中国白雪
+                    div.articles-content-content-side-sector-list-item-description
+                      | 东北的冬天，对于一个出生在南方，很少见到雪的孩子来说...
+                      a.more(href='#') 详细
+            div.articles-content-content-side-sector
+              div.articles-content-content-side-sector-header.yellow
+                a.more(href='#') 更多&gt;
+                div.icon
+                span 随机推荐
+              div.articles-content-content-side-sector-list
+                each val in [1, 2, 3, 4, 5]
+                  div.articles-content-content-side-sector-list-item
+                    div.articles-content-content-side-sector-list-item-thumb
+                      img(src='/images/placeholder/articles-content-content-side-sector-list-item-thumb.png')
+                    div.articles-content-content-side-sector-list-item-title 一路向北，去看中国白雪
+                    div.articles-content-content-side-sector-list-item-description
+                      | 东北的冬天，对于一个出生在南方，很少见到雪的孩子来说...
+                      a.more(href='#') 详细
+
     include ./includes/footer.jade
+    script(src='/common/jquery/1.11.3/jquery.js')
+    script(src='/js/articles.js')

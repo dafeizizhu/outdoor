@@ -1,0 +1,293 @@
+.articles-head {
+  border: 1px solid #e7e7e7;
+  padding: 10px 10px;
+}
+
+.articles-head-column {
+  float: left;
+  margin-right: 9px;
+}
+
+.articles-head-column.first {
+  width: 620px;
+}
+
+.articles-head-column.second {
+  margin-right: 0;
+  width: 535px;
+}
+
+.articles-head-column-header {
+  position: relative;
+  margin-bottom: 14px;
+}
+
+.articles-head-column-header-text {
+  font-size: 24px;
+  line-height: 32px;
+  color: #ff8800;
+  border-bottom: 2px solid #ff8800;
+}
+
+.articles-head-column-content-slider-tabs {
+  float: left;
+  background-color: #d89b31;
+  padding: 1px;
+}
+
+.articles-head-column-content-slider-tabs-item {
+  width: 158px;
+  height: 53px;
+  background-color: #fcb943;
+  margin-bottom: 2px;
+  text-align: center;
+  line-height: 53px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #fffffe;
+  cursor: pointer;
+}
+
+.articles-head-column-content-slider-tabs-item:last-child {
+  margin-bottom: 0;
+}
+
+.articles-head-column-content-slider-tabs-item:hover {
+  background-color: #fd9945;
+}
+
+.articles-head-column-content-slider-contents {
+  float: left;
+}
+
+.articles-head-column-content-slider-contents-item {
+  width: 460px;
+  height: 275px;
+  overflow: hidden;
+}
+
+.articles-head-column-content-slider-contents-item {
+  position: absolute;
+}
+
+.articles-head-column-content-list-item {
+  padding-bottom: 6px;
+  border-bottom: 1px solid #ededed;
+  margin-bottom: 10px;
+}
+
+.articles-head-column-content-list-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.articles-head-column-content-list-item-thumb {
+  width: 80px;
+  height: 80px;
+  float: left;
+  margin-right: 8px;
+}
+
+.articles-head-column-content-list-item-content-header {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.articles-head-column-content-list-item-content-header .main {
+  color: #ff8800;
+  font-weight: bold;
+}
+
+.articles-head-column-content-list-item-content-header .sub {
+  color: #999999;
+}
+
+.articles-head-column-content-list-item-content-content {
+  font-size: 14px;
+  line-height: 20px;
+  color: #666666;
+}
+
+.articles-head-column-content-list-item-content-content .more a, 
+.articles-head-column-content-list-item-content-content .more a:link,
+.articles-head-column-content-list-item-content-content .more a:visited {
+  color: #348be0;
+}
+
+.articles-content-header {
+  border-bottom: 1px solid #ececec;
+  margin-bottom: 10px;
+}
+
+.articles-content-header-main {
+  font-size: 24px;
+  line-height: 32px;
+  color: #ff8800;
+  border-bottom: 2px solid #ff8800;
+}
+
+.articles-content-header-sub {
+  font-size: 14px;
+  line-height: 16px;
+  color: #666666;
+  padding-left: 10px;
+}
+
+.articles-content-header-sub a.more,
+.articles-content-header-sub a.more:link,
+.articles-content-header-sub a.more:visited {
+  color: #348be0;
+}
+
+.articles-content-content-list {
+  float: left;
+  width: 944px;
+}
+
+.articles-content-content-list-item {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  width: 226px;
+  background-color: #f2f2f2;
+  padding-bottom: 13px;
+}
+
+.articles-content-content-list-item-thumb {
+  width: 226px;
+  height: 155px;
+  overflow: hidden;
+  margin-bottom: 4px;
+}
+
+.articles-content-content-list-item-title {
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+  padding-left: 10px;
+}
+
+.articles-content-content-list-item-description {
+  font-size: 12px;
+  line-height: 24px;
+  color: #999999;
+  padding-left: 10px;
+}
+
+.articles-content-content-list-item-description .right {
+  float: right;
+  margin-right: 10px;
+}
+
+.articles-content-content-list-pager {
+  display: table;
+  margin: 0 auto;
+}
+
+.articles-content-content-list-pager a {
+  line-height: 30px;
+  font-size: 14px;
+  color: #ff8800;
+  float: left;
+}
+
+.articles-content-content-list-pager .page {
+  width: 30px;
+  text-align: center;
+}
+
+.articles-content-content-list-pager .page.selected {
+  background-color: #ff8800;
+  color: #ffffff;
+}
+
+.articles-content-content-list-pager .prev,
+.articles-content-content-list-pager .next {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.articles-content-content-side {
+  width: 245px;
+  float: right;
+}
+
+.articles-content-content-side-sector-header {
+  height: 45px;
+  line-height: 45px;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.articles-content-content-side-sector-header.orange {
+  background-color: #ff8800;
+}
+
+.articles-content-content-side-sector-header.yellow {
+  background-color: #fdba45;
+}
+
+.articles-content-content-side-sector-header .icon {
+  width: 16px;
+  height: 16px;
+  background-image: url(/images/articles-content-side-sector-header-icon.png);
+  float: left;
+  position: relative;
+  top: 16px;
+  left: 8px;
+  margin-right: 16px;
+}
+
+.articles-content-content-side-sector-header a.more, 
+.articles-content-content-side-sector-header a.more:link, 
+.articles-content-content-side-sector-header a.more:visited {
+  color: #ffffff;
+  float: right;
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.articles-content-content-side-sector-list {
+  padding-top: 10px;
+  border-left: 1px solid #ededed;
+  border-right: 1px solid #ededed;
+}
+
+.articles-content-content-side-sector-list-item {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ededed;
+  margin-bottom: 16px;
+}
+
+.articles-content-content-side-sector-list-item-thumb {
+  width: 66px;
+  height: 66px;
+  overflow: hidden;
+  float: left;
+  padding-left: 4px;
+}
+
+.articles-content-content-side-sector-list-item-title {
+  padding-left: 78px;
+  color: #666666;
+  padding-right: 5px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: bold;
+}
+
+.articles-content-content-side-sector-list-item-description {
+  padding-left: 78px;
+  padding-right: 5px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #666666;
+}
+
+
+.articles-content-content-side-sector-list-item-description a.more,
+.articles-content-content-side-sector-list-item-description a.more:link,
+.articles-content-content-side-sector-list-item-description a.more:visited {
+  color: #348be0;
+}
