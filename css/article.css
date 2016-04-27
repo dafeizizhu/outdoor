@@ -73,6 +73,7 @@
   position: relative;
   margin: 0 auto;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .article-content-header-gallery-tabs-item img {

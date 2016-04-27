@@ -25,14 +25,15 @@ html
             div.article-content-header-gallery
               div.article-content-header-gallery-content
                 each val in [1, 2, 3, 4, 5, 6, 7]
-                  img(src='/images/placeholder/article-content-header-gallery-content.png')
+                  a(href='#').jq-gallery-item
+                    img(src='/images/placeholder/article-content-header-gallery-content.png')
               div.article-content-header-gallery-tabs
-                div.article-content-header-gallery-tabs-prev
+                div.article-content-header-gallery-tabs-prev.jq-gallery-prev
                 div.article-content-header-gallery-tabs-wrapper
                   each val in [1, 2, 3, 4, 5, 6, 7]
-                    div.article-content-header-gallery-tabs-item
+                    div.article-content-header-gallery-tabs-item.jq-gallery-tab
                       img(src='/images/placeholder/article-content-header-gallery-tabs-item.png')
-                div.article-content-header-gallery-tabs-next
+                div.article-content-header-gallery-tabs-next.jq-gallery-next
           div.article-content-body
             div.article-content-body-section
               p.article-content-body-section-p 刚在三亚过完今年的第二个夏天，都还没开始适应杭州阴冷的天气，我们就再度出发去过第三个夏天了！这次选择了东南亚 的热带岛国——新加坡。虽然这个国家的领土面积还不及杭州的一半，却创造了众多的世界之最。无论是全世界造价最高的 金沙酒店还是全世界最高的无边泳池，无论是全世界最高的摩天轮还是东南亚唯一的环球影城，都早已令我心驰神往。特地 赶圣诞节到来之前去是因为我知道一定会有一大波的打折促销等着我们！这个集购物、游乐、美食于一体的多种族文化国度 注定会给我们2014年的旅程画上一个完美的终结。新加坡，let's 购
@@ -124,6 +125,23 @@ html
                   div.article-right-sector-list-item-description
                     | 东北的冬天，对于一个出生在南方，很少见到雪的孩子来说...
                     a.more(href='#') 详细
+        //
+        div.article-left
+          div.article-left-schedule
+            div.article-left-schedule-sector
+              div.article-left-schedule-sector-title: a(href='#') D1
+              div.article-left-schedule-sector-item: a(href='#') 预告片
+              div.article-left-schedule-sector-item: a(href='#') 行程准备篇 
+              div.article-left-schedule-sector-item: a(href='#') 交通
+              div.article-left-schedule-sector-item: a(href='#') 滨海湾花园，金沙酒店观
+              div.article-left-schedule-sector-item: a(href='#') 新加坡滨海花园
+              div.article-left-schedule-sector-item: a(href='#') 新加坡摩天轮
+              div.article-left-schedule-sector-item: a(href='#') 滨海湾金山酒店景观
+              div.article-left-schedule-sector-item: a(href='#') 金海湾金沙购物中心
+              div.article-left-schedule-sector-title: a(href='#') D2
+              div.article-left-schedule-sector-item: a(href='#') 乌节路，克拉码头 
+              div.article-left-schedule-sector-item: a(href='#') ION Orchard
+              div.article-left-schedule-sector-item: a(href='#') 新加坡DFS环球免税店
     include ./includes/footer.jade
     script(src='/common/jquery/1.11.3/jquery.js')
     script(src='/js/article.js')
