@@ -166,6 +166,8 @@
   line-height: 24px;
   color: #333333;
   padding-left: 10px;
+  height: 48px;
+  overflow: hidden;
 }
 
 .articles-content-content-list-item-description {
